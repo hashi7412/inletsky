@@ -1,10 +1,11 @@
 import React from "react";
-import ServicesPage from "./pages/services";
+import { RouterProvider } from "react-router-dom";
+import routers from "./routes";
 
 const App: React.FC = () => {
     return (
         <React.Fragment>
-            <ServicesPage />
+            <RouterProvider router={routers} />
         </React.Fragment>
     )
 }
