@@ -1,11 +1,12 @@
 import React from "react";
-import ProductPage from "./pages/product";
-import { Container } from "./components/Container";
+import ServicesPage from "./pages/services";
 
-export const App: React.FC = () => {
+const App: React.FC = () => {
     return (
-        <Container>
-            <ProductPage />
-        </Container>
+        <React.Fragment>
+            <ServicesPage />
+        </React.Fragment>
     )
 }
+
+export default App;

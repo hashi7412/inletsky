@@ -21,7 +21,7 @@ interface InlineFlexPropsType {
 
 type QueryType = { [key: string]: InlineFlexPropsType };
 
-export interface FlexPropsType extends InlineFlexPropsType {
+export interface StyledFlexPropsType extends InlineFlexPropsType {
 	$queries?: QueryType
 }
 
@@ -72,10 +72,10 @@ const setStyle = ({
 	`
 }
 
-export const FlexContainer = styled.div<FlexPropsType>`
+export const FlexContainer = styled.div<StyledFlexPropsType>`
 	display: flex;
 
-	${({ $queries, ...rest }: FlexPropsType) => `
+	${({ $queries, ...rest }: StyledFlexPropsType) => `
 		${setStyle(rest)}
 		${
 			$queries 

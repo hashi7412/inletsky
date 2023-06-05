@@ -1,14 +1,15 @@
 import { FC } from "react";
-import { FlexChildContainer, FlexContainer, FlexPropsType, StyledFlexChildPropsType } from "./style";
+import { FlexChildContainer, FlexContainer, StyledFlexChildPropsType, StyledFlexPropsType } from "./style";
 
-interface PropsType extends FlexPropsType {
+interface FlexPropsType {
     children?: any
+    $style?: StyledFlexPropsType
     [key: string]: any
 }
 
-const Flex: FC<PropsType> = ({ children, ...rest }) => {
+const Flex: FC<FlexPropsType> = ({ children, $style, ...rest }) => {
     return (
-        <FlexContainer {...rest}>
+        <FlexContainer {...$style} {...rest}>
             {children}
         </FlexContainer>
     )

@@ -1,6 +1,13 @@
 import { createGlobalStyle } from "styled-components";
+import variables from "./variable";
+import { declearStyleVariables } from "../utils/style.util";
 
 const GlobalStyle = createGlobalStyle`
+
+	:root {
+		${declearStyleVariables(variables)}
+		--tbg: '#dfdfdf';
+	}
 
 	html {
 		box-sizing: border-box;
