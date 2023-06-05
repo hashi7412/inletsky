@@ -1,14 +1,17 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import ServicesPage from "../pages/services";
+import PublicLayout from "../layouts/public";
 
 const routers = createBrowserRouter([
     {
         path: "/",
-        element: <Navigate to={"/services"} />
-    },
-    {
-        path: "/services",
-        element: <ServicesPage />
+        element: <PublicLayout />,
+        children: [
+            {
+                path: "/services",
+                element: <ServicesPage />
+            }
+        ],
     },
     {
         path: "*",

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import variables from '../../../style/variable'
 
 export interface InlineTextPropsType {
     color?:				string
@@ -32,14 +33,15 @@ const setStyle = ({
 
 export const TextWrapper = styled.p<TextPropsType>`
     line-height: 1.5;
+	color: ${variables['--color-secondary']};
 
 	${({ queries, ...rest }: TextPropsType) => `
 		${setStyle(rest)}
 		${
 			queries 
-				? Object.keys(queries).reverse()?.map((endpoint: string) => {
-						return `@media (max-width: ${endpoint}px) {
-							${setStyle(queries[endpoint])}
+				? Object.keys(queries).reverse()?.map((breakpoint: string) => {
+						return `@media (max-width: ${breakpoint}px) {
+							${setStyle(queries[breakpoint])}
 						}`;
 					}).join('') 
 				: ``

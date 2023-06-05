@@ -1,17 +1,19 @@
 import React, { FC } from "react";
 import { HeadingContainer, HeadingPropsType } from "./style";
 
-interface PropsType extends HeadingPropsType {
+interface PropsType {
     children?: any
-    level: 1 | 2 | 3 | 4 | 5 | 6
+    level: HeadingLevelType
+    $style?: Partial<HeadingPropsType>
     [key: string]: any
 }
 
-const Heading: FC<PropsType> = ({ children, level, ...rest }) => {
+const Heading: FC<PropsType> = ({ children, level, $style, ...rest }) => {
     return (
         <HeadingContainer
             as={`h${level}`}
             level={level}
+            {...$style}
             {...rest}
         >
             {children}

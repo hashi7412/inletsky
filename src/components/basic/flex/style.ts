@@ -3,17 +3,17 @@ import styled from 'styled-components';
 interface InlineFlexPropsType {
 	flex?:					string
 	fDirection?:			'column' | 'row' | 'row-reverse' | 'column-reverse'
-	fWrap?:				'wrap' | 'no-wrap';
+	fWrap?:					'wrap' | 'no-wrap';
 	vAlign?:				string
 	hAlign?:				string
 	gap?:					string
-	count?:				number
-	p?:					string
+	count?:					number
+	p?:						string
 	mb?:					string
-	w?:					string
+	w?:						string
 	minW?:					string
 	maxW?:					string
-	h?:					string
+	h?:						string
 	minH?:					string
 	maxH?:					string
 	between?:				string
@@ -79,9 +79,9 @@ export const FlexContainer = styled.div<StyledFlexPropsType>`
 		${setStyle(rest)}
 		${
 			queries 
-				? Object.keys(queries).reverse()?.map((endpoint: string) => {
-						return `@media (max-width: ${endpoint}px) {
-							${setStyle(queries[endpoint])}
+				? Object.keys(queries).reverse()?.map((breakpoint: string) => {
+						return `@media (max-width: ${breakpoint}px) {
+							${setStyle(queries[breakpoint])}
 						}`;
 					}).join('') 
 				: ``

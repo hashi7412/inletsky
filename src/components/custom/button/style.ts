@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export type StyledButtonType = {
-    $bg?: string
-    $color?: string
-    $p?: string
-    $w?: string
-    $h?: string
-    $fsize?: string
+    bg?: string
+    color?: string
+    p?: string
+    w?: string
+    h?: string
+    fsize?: string
 }
 
 export const StyledButton = styled.button<StyledButtonType>`
@@ -15,13 +15,13 @@ export const StyledButton = styled.button<StyledButtonType>`
     justify-content: center;
     gap: 0.3rem;
     text-transform: uppercase;
-    font-weight: 700;
+    border-radius: 5rem;
 
-    ${({ $w }) => $w ? `width: ${$w};` : ``}
-    ${({ $h }) => `line-height: ${$h ? $h : '3rem'};`}
-    ${({ $h }) => `min-height: ${$h ? $h : '3rem'};`}
-    ${({ $p }) => `padding: ${$p ?? '0 1rem'};`}
-    ${({ $bg }) => $bg ? `background: ${$bg};` : ``}
-    ${({ $color }) => $color ? `color: ${$color};` : ``}
-    ${({ $fsize }) => $fsize ? `font-size: ${$fsize};` : ``}
+    ${({ w }) => w ? `width: ${w};` : ``}
+    ${({ h }) => `line-height: ${h ? h : '2.69rem'};`}
+    ${({ h }) => `min-height: ${h ? h : '2.69rem'};`}
+    ${({ p }) => `padding: ${p ?? '0 2rem'};`}
+    ${({ bg }) => bg ? `background: ${bg};` : ``}
+    ${({ color }) => color ? `color: ${color};` : ``}
+    ${({ fsize }) => fsize ? `font-size: ${fsize};` : ``}
 `

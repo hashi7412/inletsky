@@ -1,29 +1,35 @@
 import React from "react";
-import { ListContainer, StyledListItem } from "./style";
+import { Dot, ListContainer, StyledListItem, StyledListItemPropsType, StyledListPropsType } from "./style";
 
-type ListPropsType = {
+type ListPropsType = StyledListPropsType & {
     children: any
 }
 
 type ListItemPropsType = {
     children: any
+    $style?: StyledListItemPropsType
+    hideDot?: boolean
 }
 
 const List: React.FC<ListPropsType> = ({
-    children
+    children,
+    ...rest
 }) => {
     return (
-        <ListContainer>
+        <ListContainer {...rest}>
             {children}
         </ListContainer>
     )
 }
 
 export const ListItem: React.FC<ListItemPropsType> = ({
-    children
+    children,
+    $style,
+    hideDot
 }) => {
     return (
-        <StyledListItem>
+        <StyledListItem {...$style}>
+            {hideDot ? null : <Dot />}
             {children}
         </StyledListItem>
     )

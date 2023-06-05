@@ -73,9 +73,9 @@ export const GridContainer = styled.div<GridPropsType>`
 		${setStyle(rest)}
 		${
 			$queries 
-				? Object.keys($queries).reverse()?.map((endpoint: string) => {
-						return `@media (max-width: ${endpoint}px) {
-							${setStyle($queries[endpoint])}
+				? Object.keys($queries).reverse()?.map((breakpoint: string) => {
+						return `@media (max-width: ${breakpoint}px) {
+							${setStyle($queries[breakpoint])}
 						}`;
 					}).join('') 
 				: ``

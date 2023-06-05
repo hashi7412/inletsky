@@ -4,12 +4,22 @@ import { IconWrapper, IconWrapperType } from "./style";
 const icons = {
     'Plus': (
         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0.5H7V7.5H0V9.5H7V16.5H9V9.5H16V7.5H9V0.5Z" fill="#007AFC" />
+            <path fillRule="evenodd" clipRule="evenodd" d="M9 0.5H7V7.5H0V9.5H7V16.5H9V9.5H16V7.5H9V0.5Z" fill="#007AFC" />
         </svg>
     ),
-    'Refresh': (
-        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill="currentColor" d="M5.943 13.881a5.47 5.47 0 01-1.6-4.788l1.995.647-1.476-5.838L.104 7.74l2.078.667a7.6 7.6 0 002.16 7.03c2.349 2.283 5.798 2.828 8.666 1.677l-.54-2.162c-2.12 1.01-4.759.647-6.525-1.07zM17.766 11.518a7.6 7.6 0 00-2.16-7.03C13.256 2.204 9.807 1.658 6.94 2.81l.54 2.161c2.12-1.01 4.759-.646 6.525 1.07a5.47 5.47 0 011.6 4.789l-1.995-.647 1.476 5.839 4.758-3.839-2.078-.666z"></path>
+    'ArrowLeft': (
+        <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.8535 18.236L4.56185 25.5277L11.8535 32.8193L13.3264 31.3464L8.54935 26.5693L46.2285 26.5693L46.2285 24.486L8.54935 24.486L13.3264 19.7089L11.8535 18.236Z" fill="white" />
+        </svg>
+    ),
+    'ArrowRight': (
+        <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M38.9375 32.8187L46.2292 25.527L38.9375 18.2354L37.4646 19.7083L42.2417 24.4854L4.5625 24.4854L4.5625 26.5687L42.2417 26.5687L37.4646 31.3458L38.9375 32.8187Z" fill="white" />
+        </svg>
+    ),
+    'ChevronArrowDown': (
+        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.01 7.71211L12.02 1.70211L10.607 0.287109L6.01 4.88711L1.414 0.287109L0 1.70111L6.01 7.71211Z" fill="white" />
         </svg>
     )
 }
