@@ -11,7 +11,7 @@ export interface InlineTextPropsType {
 type QueryType = { [key: string]: Partial<InlineTextPropsType> };
 
 export interface TextPropsType extends InlineTextPropsType{
-	$queries?: QueryType
+	queries?: QueryType
 }
 
 const setStyle = ({
@@ -33,13 +33,13 @@ const setStyle = ({
 export const TextWrapper = styled.p<TextPropsType>`
     line-height: 1.5;
 
-	${({ $queries, ...rest }: TextPropsType) => `
+	${({ queries, ...rest }: TextPropsType) => `
 		${setStyle(rest)}
 		${
-			$queries 
-				? Object.keys($queries).reverse()?.map((endpoint: string) => {
+			queries 
+				? Object.keys(queries).reverse()?.map((endpoint: string) => {
 						return `@media (max-width: ${endpoint}px) {
-							${setStyle($queries[endpoint])}
+							${setStyle(queries[endpoint])}
 						}`;
 					}).join('') 
 				: ``

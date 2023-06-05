@@ -16,7 +16,7 @@ interface InlineHeadingPropsType {
 type QueryType = { [key: string]: Partial<InlineHeadingPropsType> };
 
 export interface HeadingPropsType extends InlineHeadingPropsType{
-	$queries?: QueryType
+	queries?: QueryType
 }
 
 const setStyle = ({
@@ -51,13 +51,13 @@ export const HeadingContainer = styled.p<HeadingPropsType>`
     font-weight: 700;
     line-height: 1.3;
 
-    ${({ $queries, ...rest }: HeadingPropsType) => `
+    ${({ queries, ...rest }: HeadingPropsType) => `
         ${setStyle(rest)}
 		${
-			$queries 
-				? Object.keys($queries).reverse()?.map((endpoint: string) => {
+			queries 
+				? Object.keys(queries).reverse()?.map((endpoint: string) => {
 						return `@media (max-width: ${endpoint}px) {
-							${setStyle($queries[endpoint])}
+							${setStyle(queries[endpoint])}
 						}`;
 					}).join('') 
 				: ``
