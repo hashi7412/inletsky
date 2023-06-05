@@ -1,5 +1,5 @@
 import React from "react";
-import { InputBoard, InputContainer, InputContent, InputLabel, InputWrapper, StyledInput } from "./style";
+import { InputBoard, InputContainer, InputContent, InputLabel, InputWrapper, StyledInput, StyledTextarea } from "./style";
 
 type InputPropsType = {
     label?: string | React.ReactNode
@@ -20,6 +20,27 @@ const Input: React.FC<InputPropsType> = ({
             <InputContent>
                 <InputWrapper>
                     <StyledInput {...rest} />
+                    {helpSide}
+                </InputWrapper>
+                <InputBoard />
+            </InputContent>
+        </InputContainer>
+    )
+}
+
+type TextareaPropsType = InputPropsType & {}
+
+const Textarea: React.FC<TextareaPropsType> = ({
+    label,
+    helpSide,
+    ...rest
+}) => {
+    return (
+        <InputContainer>
+            {label && (<InputLabel>{label}</InputLabel>)}
+            <InputContent>
+                <InputWrapper>
+                    <StyledTextarea {...rest} />
                     {helpSide}
                 </InputWrapper>
                 <InputBoard />
