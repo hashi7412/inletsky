@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import variables from '../../../style/variable';
+import { GV } from '../../../utils/style.util';
 
 interface InlineHeadingPropsType {
 	color?: string
@@ -52,7 +53,7 @@ export const HeadingContainer = styled.p<HeadingPropsType>`
     ${({ level }) => level ? `font-size: var(--font-size-${level});` : ``}
 
     font-weight: 700;
-    line-height: ${variables['--line-height']};
+    line-height: ${GV('line-height')};
 
     ${({ level, queries, ...rest }: HeadingPropsType) => `
         ${setStyle(rest, level)}

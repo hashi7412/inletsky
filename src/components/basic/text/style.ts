@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import variables from '../../../style/variable'
+import { GV } from '../../../utils/style.util'
 
 export interface InlineTextPropsType {
     color?:				string
@@ -33,7 +34,7 @@ const setStyle = ({
 
 export const TextWrapper = styled.p<TextPropsType>`
     line-height: 1.5;
-	color: ${variables['--color-secondary']};
+	color: ${GV('color-secondary')};
 
 	${({ queries, ...rest }: TextPropsType) => `
 		${setStyle(rest)}

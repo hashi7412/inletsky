@@ -28,7 +28,12 @@ const Item: React.FC<ItemPropsType> = ({
                     fDirection: isReverse ? "row-reverse" : "row",
                     vAlign: "flex-start",
                     gap: "3.375rem",
-                    w: "calc(100% - 15rem)"
+                    w: "calc(100% - 15rem)",
+                    queries: {
+                        992: {
+                            w: "100%"
+                        }
+                    }
                 }}
             >
                 <ImageWrapper><img src={image} /></ImageWrapper>
@@ -37,10 +42,14 @@ const Item: React.FC<ItemPropsType> = ({
                     <Heading
                         level={4}
                         $style={{
-                            align: isReverse ? "right" : "left",
+                            align: isReverse ? "right" : "left"
                         }}
                     >{title}</Heading>
-                    <P>{desc}</P>
+                    <P
+                        $style={{
+                            align: isReverse ? "right" : "left"
+                        }}
+                    >{desc}</P>
                 </Flex>
             </Flex>
         </Flex>

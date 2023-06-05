@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import variables from "../../../style/variable";
+import { GV } from "../../../utils/style.util";
 
 export const InputContainer = styled.div`
     display: flex;
@@ -37,7 +38,7 @@ export const InputBoard = styled.div`
     transform: translate(0, -50%);
     width: 100%;
     height: 100%;
-    background: ${variables['--input-bg']};
+    background: ${GV('input-bg')};
     border-radius: 1rem;
 `
 

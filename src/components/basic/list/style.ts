@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import variables from "../../../style/variable";
+import { GV } from "../../../utils/style.util";
 
 interface InlineListPropsType {
 	dir?:                    'column' | 'row' | 'row-reverse' | 'column-reverse',
@@ -86,6 +87,6 @@ export const Dot = styled.span`
 	display: inline-block;
 	width: 10px;
 	height: 10px;
-	background: ${variables['--danger']};
+	background: ${GV("danger")};
 	border-radius: 50%;
 `
