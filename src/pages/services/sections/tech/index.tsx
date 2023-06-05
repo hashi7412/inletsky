@@ -6,10 +6,10 @@ import Flex from "../../../../components/basic/flex";
 
 const TechSection = () => {
     return (
-        <Flex>
-            <Flex>
+        <Flex $style={{ fDirection: "column", vAlign: "center", mb: "7rem" }}>
+            <Flex $style={{ fDirection: "column", vAlign: "center" }}>
                 <Badge>Our Favorite Folder Of The</Badge>
-                <Heading level={1}>Technologies</Heading>
+                <Heading level={1} $style={{ align: "center" }}>Technologies</Heading>
             </Flex>
             <Grid>
                 {/*  */}

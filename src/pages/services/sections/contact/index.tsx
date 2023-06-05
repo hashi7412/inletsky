@@ -7,30 +7,33 @@ import Panel from "../../../../components/custom/panel";
 import Input from "../../../../components/custom/input";
 import Checkbox from "../../../../components/custom/checkbox";
 import Button from "../../../../components/custom/button";
+import variables from "../../../../style/variable";
 
 const ContactSection = () => {
     return (
-        <Flex>
-            <Flex>
+        <Flex $style={{ fDirection: "column", p: "0 3.125rem", gap: "3.25rem", mb: "7rem" }}>
+            <Flex $style={{ fDirection: "column", vAlign: "center", gap: "0.5rem" }}>
                 <Badge>Let Us Know What You’re Looking for</Badge>
-                <Heading level={1}>We’ll Build it for You</Heading>
-                <P>We are passionate about delivering great software and services.</P>
+                <Heading level={1} $style={{ align: "center" }}>We’ll Build it for You</Heading>
+                <P $style={{ align: "center" }}>We are passionate about delivering great software and services.</P>
             </Flex>
             <Panel>
-                <Flex>
-                    <Flex>
-                        <Flex>
-                            <Input value="" placeholder="Name*" />
-                            <Input value="" placeholder="Email*" />
+                <Flex $style={{ fDirection: "column" }}>
+                    <Flex $style={{ fDirection: "column", gap: "1.875rem" }}>
+                        <Flex $style={{ gap: "6.25rem" }}>
+                            <Input value="" onChange={() => { }} placeholder="Name*" />
+                            <Input value="" onChange={() => { }} placeholder="Email*" />
                         </Flex>
-                        <Input value="" placeholder="What are you seeking for?" />
-                        <Input value="" placeholder="How did you hear about Inletsky?" />
-                        <Input value="" placeholder="Message" />
+                        <Input value="" onChange={() => { }} placeholder="What are you seeking for?" />
+                        <Input value="" onChange={() => { }} placeholder="How did you hear about Inletsky?" />
+                        <Input value="" onChange={() => { }} placeholder="Message" />
                         <Checkbox
                             label={"I agree to the Terms & Conditions*"}
                         />
                     </Flex>
-                    <Button>Send message →</Button>
+                    <Flex $style={{ hAlign: "center" }}>
+                        <Button $style={{ bg: variables['--danger'] }}>Send message →</Button>
+                    </Flex>
                 </Flex>
             </Panel>
         </Flex>

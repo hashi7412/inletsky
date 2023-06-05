@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import variables from "../../../style/variable";
 
 export const InputContainer = styled.div`
     display: flex;
     flex-direction: column;
+    width: 100%;
     margin-bottom: 1rem;
 `
 
@@ -22,7 +24,7 @@ export const InputWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 1.7rem;
     line-height: 3.5rem;
     min-height: 3.5rem;
     z-index: 1;
@@ -35,8 +37,8 @@ export const InputBoard = styled.div`
     transform: translate(0, -50%);
     width: 100%;
     height: 100%;
-    background: #FFFFFF;
-    border: 1px solid #f0f0f2;
+    background: ${variables['--input-bg']};
+    border-radius: 1rem;
 `
 
 export const StyledInput = styled.input`
@@ -47,8 +49,7 @@ export const StyledInput = styled.input`
     background: none;
     border: none;
     outline: none;
-    font-size: 1.2rem;
-    font-weight: 900;
+    font-size: 1rem;
 `
 
 export const StyledTextarea = styled(StyledInput)``

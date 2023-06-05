@@ -4,15 +4,18 @@ import { declearStyleVariables } from "../utils/style.util";
 
 const GlobalStyle = createGlobalStyle`
 
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 	:root {
 		${declearStyleVariables(variables)}
-		--tbg: '#dfdfdf';
 	}
 
 	html {
 		box-sizing: border-box;
-		
-		background: #F0F0F2;
+		font-family: 'Montserrat', sans-serif;
+		background: ${variables['--bg']};
+		color: ${variables['--color']};
+		line-height: 150%;
 	}
 	*, *::before, *::after {
 		box-sizing: inherit;
@@ -61,7 +64,6 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	html {
-		font-family: Arial, Helvetica, sans-serif;
 		-ms-text-size-adjust: 100%;
 		-webkit-text-size-adjust: 100%;
 	}
