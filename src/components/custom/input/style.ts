@@ -28,6 +28,17 @@ export const InputWrapper = styled.div`
     z-index: 1;
 `
 
+export const InputBoard = styled.div`
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid #f0f0f2;
+`
+
 export const StyledInput = styled.input`
     flex: 1;
     display: block;
@@ -40,13 +51,4 @@ export const StyledInput = styled.input`
     font-weight: 900;
 `
 
-export const InputBoard = styled.div`
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 100%;
-    height: 100%;
-    background: #FFFFFF;
-    border: 1px solid #f0f0f2;
-`
+export const StyledTextarea = styled(StyledInput)``
