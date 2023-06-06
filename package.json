@@ -20,9 +20,7 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "@types/helmet": "^4.0.0",
     "@types/swiper": "^6.0.0",
-    "helmet": "^7.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
