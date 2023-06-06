@@ -19,7 +19,7 @@ export const InputContent = styled.div`
     position: relative;
 `
 
-export const InputWrapper = styled.div`
+export const InputWrapper = styled.label`
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -52,4 +52,5 @@ export const StyledInput = styled.input`
     font-size: 1rem;
 `
 
-export const StyledTextarea = styled(StyledInput)``
+export const StyledTextarea = styled(StyledInput)`
+`

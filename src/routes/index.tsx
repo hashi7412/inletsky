@@ -8,6 +8,10 @@ const routers = createBrowserRouter([
         element: <PublicLayout />,
         children: [
             {
+                path: "/",
+                element: <Navigate to={"/services"} />
+            },
+            {
                 path: "/services",
                 element: <ServicesPage />
             }

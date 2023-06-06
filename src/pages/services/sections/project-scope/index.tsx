@@ -11,6 +11,7 @@ import Image3 from "../../../../assets/illustration/project-scope/3.svg";
 import Image4 from "../../../../assets/illustration/project-scope/4.svg";
 import Image5 from "../../../../assets/illustration/project-scope/5.svg";
 import { ColSeparator } from "./components/item/style";
+import { GV } from "../../../../utils/style.util";
 
 const ProjectScopeSection = () => {
     return (
@@ -68,7 +69,7 @@ const ProjectScopeSection = () => {
                     desc="Our Q/A testing does not occur at the conclusion of the development process. Instead, the process begins once the team has created a UI layout and continues till the launch stage. To guarantee that the design meets the criteria, our QA assurance engineer will use automated or manual testing methods."
                 />
             </Flex>
-            <Link to="">discuss my web app development project  →</Link>
+            <Link to="" $style={{ color: GV("danger"), textTransform: "uppercase" }}>discuss my web app development project  →</Link>
         </Flex>
     )
 }

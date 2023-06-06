@@ -3,14 +3,21 @@ import { FooterContainer } from "./style";
 import Flex from "../../basic/flex";
 import Logo from "../../basic/Logo";
 import List, { ListItem } from "../../basic/list";
-import { Link } from "react-router-dom";
 import Heading from "../../basic/heading";
 import { GV } from "../../../utils/style.util";
+import { Span } from "../../basic/text";
+import Icon from "../../custom/icon";
+import Link from "../../basic/link";
 
 const Footer = () => {
     return (
         <FooterContainer>
-            <Flex>
+            <Flex
+                $style={{
+                    fDirection: "column",
+                    gap: "2.5rem"
+                }}
+            >
                 <Flex
                     $style={{
                         hAlign: 'space-between',
@@ -134,6 +141,51 @@ const Footer = () => {
                                 <Link to={""}>Contact</Link>
                             </ListItem>
                         </List>
+                    </Flex>
+                </Flex>
+                <Flex
+                    $style={{
+                        hAlign: "space-between",
+                        queries: {
+                            768: {
+                                fDirection: "column",
+                                hAlign: "center",
+                                vAlign: "center",
+                                gap: "1rem"
+                            }
+                        }
+                    }}
+                >
+                    <Flex $style={{ gap: "1rem" }}>
+                        <Link to={""}>
+                            <Span $style={{color: GV("color-secondary"), size: "0.8rem"}}>© Inletsky</Span>
+                        </Link>
+                        <Link to={""}>
+                            <Span $style={{color: GV("color-secondary"), size: "0.8rem"}}>Terms</Span>
+                        </Link>
+                        <Link to={""}>
+                            <Span $style={{color: GV("color-secondary"), size: "0.8rem"}}>Privacy</Span>
+                        </Link>
+                        <Link to={""}>
+                            <Span $style={{color: GV("color-secondary"), size: "0.8rem"}}>Security</Span>
+                        </Link>
+                    </Flex>
+                    <Flex $style={{ gap: "2rem", hAlign: "center" }}>
+                        <Link to={""}>
+                            <Icon icon="Github" />
+                        </Link>
+                        <Link to={""}>
+                            <Icon icon="Twitter" />
+                        </Link>
+                        <Link to={""}>
+                            <Icon icon="Linkedin" />
+                        </Link>
+                        <Link to={""}>
+                            <Icon icon="FaceBook" />
+                        </Link>
+                        <Link to={""}>
+                            <Icon icon="Instagram" />
+                        </Link>
                     </Flex>
                 </Flex>
             </Flex>
