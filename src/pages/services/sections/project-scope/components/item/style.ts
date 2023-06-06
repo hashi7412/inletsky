@@ -1,13 +1,18 @@
 import styled from "styled-components";
 import variables from "../../../../../../style/variable";
+import { GV } from "../../../../../../utils/style.util";
 
 export const ImageWrapper = styled.div`
     padding: 3.75rem;
     border-radius: 50%;
-    background: ${variables["--bg-sub"]};
+    background: ${GV('bg-sub')};
 
     img {
         display: flex;
+    }
+
+    @media (max-width: 768px) {
+        display: none;
     }
 `
 
@@ -16,7 +21,7 @@ export const Separator = styled.span`
     width: 3px;
     height: 3.25rem;
     align-self: center;
-    background: ${variables['--danger']};
+    background: ${GV('danger')};
 `
 
 export const ColSeparator = styled.span`
@@ -24,5 +29,5 @@ export const ColSeparator = styled.span`
     align-self: center;
     width: 3.25rem;
     height: 3px;
-    background: ${variables['--danger']};
+    background: ${GV('danger')};
 `

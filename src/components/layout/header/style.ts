@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import variables from "../../../style/variable";
+import { GV } from "../../../utils/style.util";
 
 export const HeaderContainer = styled.header`
     position: fixed;
@@ -11,6 +12,10 @@ export const HeaderContainer = styled.header`
     width: 100%;
     height: 157px;
     padding: 0 2.85rem;
-    background: ${variables['--bg']};
-    border-bottom: 1px solid ${variables['--bg-sub']};
+    background: ${GV("bg")};
+    border-bottom: 1px solid ${GV('bg-sub')};
+
+    @media (max-width: 1200px) {
+        height: 100px;
+    }
 `

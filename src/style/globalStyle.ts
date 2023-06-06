@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import variables from "./variable";
-import { declearStyleVariables } from "../utils/style.util";
+import variables, { smVariables } from "./variable";
+import { GV, declearStyleVariables } from "../utils/style.util";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -11,11 +11,9 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	html {
-		box-sizing: border-box;
-		font-family: 'Montserrat', sans-serif;
-		background: ${variables['--bg']};
-		color: ${variables['--color']};
-		line-height: 150%;
+		@media (max-width: 768px) {
+			${declearStyleVariables(smVariables)}
+		}
 	}
 	*, *::before, *::after {
 		box-sizing: inherit;
@@ -70,6 +68,12 @@ const GlobalStyle = createGlobalStyle`
 
 	body {
 		margin: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat', sans-serif;
+		background: ${GV('bg')};
+		color: ${GV('color')};
+		line-height: 150%;
+		font-size: ${GV('font-size')};
 	}
 
 	article,

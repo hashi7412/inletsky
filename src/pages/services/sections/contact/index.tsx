@@ -8,6 +8,7 @@ import Input from "../../../../components/custom/input";
 import Checkbox from "../../../../components/custom/checkbox";
 import Button from "../../../../components/custom/button";
 import variables from "../../../../style/variable";
+import { GV } from "../../../../utils/style.util";
 
 const ContactSection = () => {
     return (
@@ -32,7 +33,7 @@ const ContactSection = () => {
                         />
                     </Flex>
                     <Flex $style={{ hAlign: "center" }}>
-                        <Button $style={{ bg: variables['--danger'] }}>Send message →</Button>
+                        <Button $style={{ bg: GV("danger") }}>Send message →</Button>
                     </Flex>
                 </Flex>
             </Panel>

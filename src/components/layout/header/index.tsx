@@ -6,6 +6,7 @@ import Flex from "../../basic/flex";
 import { Link } from "react-router-dom";
 import Button from "../../custom/button";
 import variables from "../../../style/variable";
+import { GV } from "../../../utils/style.util";
 
 const Header = () => {
     return (
@@ -15,7 +16,7 @@ const Header = () => {
             <Flex $style={{ vAlign: "center", gap: "1.75rem" }}>
                 <Link to={""}>LOGIN</Link>
                 <Link to={""}>
-                    <Button $style={{ bg: variables['--danger'] }}>SIGNUP</Button>
+                    <Button $style={{ bg: GV('danger') }}>SIGNUP</Button>
                 </Link>
             </Flex>
         </HeaderContainer>

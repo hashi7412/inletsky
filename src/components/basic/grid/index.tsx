@@ -1,14 +1,18 @@
 import { FC } from "react";
 import { GridChildContainer, GridContainer, GridPropsType, StyledGridChildPropsType } from "./style";
 
-interface PropsType extends GridPropsType {
+interface PropsType {
     children?: any
+    $style: GridPropsType
     [key: string]: any
 }
 
-const Grid: FC<PropsType> = ({ children, ...rest }) => {
+const Grid: FC<PropsType> = ({ children, $style, ...rest }) => {
     return (
-        <GridContainer {...rest}>
+        <GridContainer 
+            {...$style}
+            {...rest}
+        >
             {children}
         </GridContainer>
     )
