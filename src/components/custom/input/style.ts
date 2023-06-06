@@ -6,7 +6,6 @@ export const InputContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 1rem;
 `
 
 export const InputLabel = styled.span`

@@ -3,7 +3,7 @@ import { GridChildContainer, GridContainer, GridPropsType, StyledGridChildPropsT
 
 interface PropsType {
     children?: any
-    $style: GridPropsType
+    $style?: GridPropsType
     [key: string]: any
 }
 

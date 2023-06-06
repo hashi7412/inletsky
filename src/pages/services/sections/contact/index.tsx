@@ -7,21 +7,44 @@ import Panel from "../../../../components/custom/panel";
 import Input from "../../../../components/custom/input";
 import Checkbox from "../../../../components/custom/checkbox";
 import Button from "../../../../components/custom/button";
-import variables from "../../../../style/variable";
 import { GV } from "../../../../utils/style.util";
 
 const ContactSection = () => {
     return (
-        <Flex $style={{ fDirection: "column", p: "0 3.125rem", gap: "3.25rem", mb: "7rem" }}>
+        <Flex
+            $style={{
+                fDirection: "column",
+                p: "0 3.125rem",
+                gap: "3.25rem",
+                mb: "7rem",
+                queries: {
+                    992: {
+                        p: "0 1rem"
+                    }
+                }
+            }}
+        >
             <Flex $style={{ fDirection: "column", vAlign: "center", gap: "0.5rem" }}>
                 <Badge>Let Us Know What You’re Looking for</Badge>
                 <Heading level={1} $style={{ align: "center" }}>We’ll Build it for You</Heading>
                 <P $style={{ align: "center" }}>We are passionate about delivering great software and services.</P>
             </Flex>
             <Panel>
-                <Flex $style={{ fDirection: "column" }}>
+                <Flex $style={{ fDirection: "column", gap: "1rem" }}>
                     <Flex $style={{ fDirection: "column", gap: "1.875rem" }}>
-                        <Flex $style={{ gap: "6.25rem" }}>
+                        <Flex
+                            $style={{
+                                gap: "6.25rem",
+                                queries: {
+                                    992: {
+                                        gap: "2rem"
+                                    },
+                                    768: {
+                                        fDirection: "column"
+                                    }
+                                }
+                            }}
+                        >
                             <Input value="" onChange={() => { }} placeholder="Name*" />
                             <Input value="" onChange={() => { }} placeholder="Email*" />
                         </Flex>

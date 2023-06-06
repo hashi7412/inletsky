@@ -12,6 +12,7 @@ interface InlineHeadingPropsType {
 	h?: string
 	minH?: string
 	maxH?: string
+	txtTransform?: 'uppercase' | 'lowercase' | 'capitalize'
 }
 
 type QueryType = { [key: string]: Partial<InlineHeadingPropsType> };
@@ -32,6 +33,7 @@ const setStyle = (
 		h,
 		minH,
 		maxH,
+		txtTransform
 	}: Partial<InlineHeadingPropsType>,
 	level?: HeadingLevelType,
 ) => {
@@ -46,6 +48,7 @@ const setStyle = (
 		${minH ? `max-height:		${minH};` : ``}
 		${maxH ? `max-height:		${maxH};` : ``}
         ${level ? `font-size:       var(--font-size-${level});` : ``}
+        ${txtTransform ? `text-transform: ${txtTransform};` : ``}
 	`
 }
 
