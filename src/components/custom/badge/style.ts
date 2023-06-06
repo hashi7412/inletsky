@@ -11,7 +11,8 @@ export const BadgeContainer = styled.div`
     border-radius: 10rem;
     font-size: 0.75rem;
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
         font-size: 0.5rem;
+        border: 1px solid ${GV('danger')};
     }
 `

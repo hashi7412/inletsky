@@ -6,6 +6,7 @@ interface InlineListPropsType {
 	dir?:                    'column' | 'row' | 'row-reverse' | 'column-reverse',
 	vAlign?:				string
 	hAlign?:				string
+	gap?:					string
 }
 
 type QueryType = { [key: string]: InlineListPropsType };
@@ -17,12 +18,14 @@ export interface StyledListPropsType extends InlineListPropsType {
 const setStyle = ({
 	dir,
 	vAlign,
-	hAlign
+	hAlign,
+	gap
 }: StyledListPropsType) => {
 	return `
 		${dir				? `flex-direction:	${dir};`	: ``}
 		${vAlign			? `align-items:		${vAlign};` : ``}
 		${hAlign			? `justify-content:	${hAlign};` : ``}
+		${gap				? `gap:				${gap};`	: ``}
 	`
 }
 
@@ -47,6 +50,7 @@ export const ListContainer = styled.ul<StyledListPropsType>`
 
 interface InlineListItemPropsType {
 	size?: string
+	color?: string
 }
 
 type ListItemQueryType = { [key: string]: InlineListItemPropsType };
@@ -56,10 +60,12 @@ export interface StyledListItemPropsType extends InlineListItemPropsType {
 }
 
 const setListItemStyle = ({
-	size
+	size,
+	color
 }: InlineListItemPropsType) => {
 	return `
 		${size				? `font-size:		${size};`	: ``}
+		${color				? `color:			${color};`	: ``}
 	`
 }
 

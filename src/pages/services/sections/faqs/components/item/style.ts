@@ -21,10 +21,21 @@ export const FaqItemContainer = styled.div<{ isActive: boolean }>`
             display: none;
         }
     `}
+
+    @media (max-width: 600px) {
+        padding: 1rem 0.5rem;
+    }
 `
 
 export const FaqItemThumb = styled.label`
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
     cursor: pointer;
+
+    @media (max-width: 600px) {
+        h4 {
+            font-size: 0.7rem;
+        }
+    }
 `

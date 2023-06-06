@@ -18,7 +18,7 @@ const HeroSection = () => {
                         fDirection: "column",
                         gap: "1.5rem",
                         queries: {
-                            768: {
+                            992: {
                                 vAlign: "center"
                             }
                         }
@@ -26,7 +26,7 @@ const HeroSection = () => {
                 >
                     <Heading level={1} $style={{
                         queries: {
-                            768: {
+                            992: {
                                 align: "center"
                             }
                         }

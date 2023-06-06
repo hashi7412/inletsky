@@ -15,8 +15,23 @@ const FaqsSection = () => {
     }
 
     return (
-        <Flex $style={{ fDirection: "column", p: "0 7.5rem", gap: "3.125rem", mb: "7rem" }}>
-            <Flex $style={{ fDirection: "column", vAlign: "center" }}>
+        <Flex
+            $style={{
+                fDirection: "column",
+                p: "0 7.5rem",
+                gap: "3.125rem",
+                mb: "7rem",
+                queries: {
+                    992: {
+                        p: "0 2rem"
+                    },
+                    600: {
+                        p: "0 1rem"
+                    }
+                }
+            }}
+        >
+            <Flex $style={{ fDirection: "column", vAlign: "center", gap: "1rem" }}>
                 <Badge>Question people often asks</Badge>
                 <Heading level={1} $style={{ align: "center" }}>FAQs</Heading>
             </Flex>

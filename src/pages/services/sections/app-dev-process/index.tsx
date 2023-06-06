@@ -11,7 +11,7 @@ const AppDevProcessSection = () => {
     return (
         <Flex $style={{ p: "0 3.125rem", mb: "7rem" }}>
             <AppDevProcessContainer>
-                <Flex $style={{ fDirection: "column", vAlign: "center" }}>
+                <Flex $style={{ fDirection: "column", vAlign: "center", gap: "1rem" }}>
                     <Badge>Need a Roadmap to a Seamless Web</Badge>
                     <Heading level={1} $style={{ align: "center" }}>App Development Process</Heading>
                 </Flex>

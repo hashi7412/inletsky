@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
 
 	html {
 		@media (max-width: 768px) {
-			${declearStyleVariables(smVariables)}
+			${declearStyleVariables(smVariables, "!important")}
 		}
 	}
 	*, *::before, *::after {
@@ -74,6 +74,7 @@ const GlobalStyle = createGlobalStyle`
 		color: ${GV('color')};
 		line-height: 150%;
 		font-size: ${GV('font-size')};
+		overflow-x: hidden;
 	}
 
 	article,
@@ -90,6 +91,8 @@ const GlobalStyle = createGlobalStyle`
 	section,
 	summary {
 		display: block;
+		margin: 0;
+		padding: 0;
 	}
 
 	audio,

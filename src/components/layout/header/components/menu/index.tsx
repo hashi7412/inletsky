@@ -6,6 +6,7 @@ import { MenuContainer, MenuLink } from "./style";
 const Menu = () => {
     return (
         <MenuContainer>
+            <label htmlFor="rwd__menu" className={'rwd__close'}><Icon icon="Close" /></label>
             <Flex
                 as={"ul"}
                 $style={{
@@ -27,13 +28,16 @@ const Menu = () => {
                 <Flex as={"li"}>
                     <MenuLink to={""}>
                         customers
-                        <Icon icon="ChevronArrowDown" />
                     </MenuLink>
                 </Flex>
                 <Flex as={"li"}>
                     <MenuLink to={""}>
                         blog
-                        <Icon icon="ChevronArrowDown" />
+                    </MenuLink>
+                </Flex>
+                <Flex as={"li"}>
+                    <MenuLink to={""}>
+                        Login
                     </MenuLink>
                 </Flex>
             </Flex>
