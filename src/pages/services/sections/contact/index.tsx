@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Flex from "../../../../components/basic/flex";
 import Badge from "../../../../components/custom/badge";
 import Heading from "../../../../components/basic/heading";
 import { P } from "../../../../components/basic/text";
 import Panel from "../../../../components/custom/panel";
-import Input from "../../../../components/custom/input";
 import Checkbox from "../../../../components/custom/checkbox";
 import Button from "../../../../components/custom/button";
 import { GV } from "../../../../utils/style.util";
+import { Input, Textarea } from "../../../../components/custom/input";
 
 const ContactSection = () => {
+
+    const [isAgreed, setIsAgreed] = useState<boolean>(false);
     return (
         <Flex
             $style={{
@@ -50,10 +52,12 @@ const ContactSection = () => {
                         </Flex>
                         <Input value="" onChange={() => { }} placeholder="What are you seeking for?" />
                         <Input value="" onChange={() => { }} placeholder="How did you hear about Inletsky?" />
-                        <Input value="" onChange={() => { }} placeholder="Message" />
+                        <Textarea value="" onChange={() => { }} placeholder="Message" />
                         <Checkbox
                             label={"I agree to the Terms & Conditions*"}
-                        />
+                            isChecked={isAgreed}
+                            onChange={() => setIsAgreed((prev) => !prev)}
+                        />  
                     </Flex>
                     <Flex $style={{ hAlign: "center" }}>
                         <Button $style={{ bg: GV("danger") }}>Send message →</Button>

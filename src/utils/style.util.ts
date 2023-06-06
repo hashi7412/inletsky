@@ -5,7 +5,6 @@ export const declearStyleVariables = (variables: { [key: string]: string }, suff
 	Object.keys(variables).map((key: string) => {
 		css += `--${key}: ${variables[key]} ${suffix ?? ""};`;
 	})
-	console.log('declearStyleVariables', css);
 	return css;
 }
 

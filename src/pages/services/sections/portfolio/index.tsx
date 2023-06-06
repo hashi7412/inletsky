@@ -63,7 +63,6 @@ const SwiperContainer = styled.div`
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
             height: 100%;
             content: "";
         }
@@ -174,7 +173,7 @@ const PortfolioSection = () => {
                                 vAlign: "flex-start",
                                 hAlign: "center",
                                 gap: "2rem",
-                                w: "55%",
+                                w: "65%",
                                 queries: {
                                     767: {
                                         gap: "1rem"
@@ -205,7 +204,7 @@ const PortfolioSection = () => {
                                 vAlign: "flex-start",
                                 hAlign: "center",
                                 gap: "2rem",
-                                w: "55%",
+                                w: "65%",
                                 queries: {
                                     767: {
                                         gap: "1rem"
@@ -236,7 +235,7 @@ const PortfolioSection = () => {
                                 vAlign: "flex-start",
                                 hAlign: "center",
                                 gap: "2rem",
-                                w: "55%",
+                                w: "65%",
                                 queries: {
                                     767: {
                                         gap: "1rem"

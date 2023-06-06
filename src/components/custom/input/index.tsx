@@ -9,7 +9,7 @@ type InputPropsType = {
     helpSide?: any
 }
 
-const Input: React.FC<InputPropsType> = ({
+export const Input: React.FC<InputPropsType> = ({
     label,
     helpSide,
     ...rest
@@ -30,7 +30,7 @@ const Input: React.FC<InputPropsType> = ({
 
 type TextareaPropsType = InputPropsType & {}
 
-const Textarea: React.FC<TextareaPropsType> = ({
+export const Textarea: React.FC<TextareaPropsType> = ({
     label,
     helpSide,
     ...rest
@@ -40,7 +40,7 @@ const Textarea: React.FC<TextareaPropsType> = ({
             {label && (<InputLabel>{label}</InputLabel>)}
             <InputContent>
                 <InputWrapper>
-                    <StyledTextarea {...rest} />
+                    <StyledTextarea as="textarea" rows={5} {...rest} />
                     {helpSide}
                 </InputWrapper>
                 <InputBoard />
@@ -48,5 +48,3 @@ const Textarea: React.FC<TextareaPropsType> = ({
         </InputContainer>
     )
 }
-
-export default Input;

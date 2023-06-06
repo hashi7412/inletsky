@@ -13,6 +13,7 @@ import Image4 from "../../../../assets/illustration/services/4.svg";
 import Image5 from "../../../../assets/illustration/services/5.svg";
 import Image6 from "../../../../assets/illustration/services/6.svg";
 import Grid from "../../../../components/basic/grid";
+import { GV } from "../../../../utils/style.util";
 
 const DevServicesSection = () => {
     return (
@@ -202,7 +203,7 @@ const DevServicesSection = () => {
                     </Flex>
                 </Grid>
             </Flex>
-            <Link to="">hire dedicated developement team  →</Link>
+            <Link to="" $style={{ color: GV("danger"), textTransform: "uppercase" }}>hire dedicated developement team  →</Link>
         </Flex>
     )
 }

@@ -7,6 +7,7 @@ import List, { ListItem } from "../../../../components/basic/list";
 import Link from "../../../../components/basic/link";
 import { HeroContainer, ImageWrapper } from "./style";
 import HeroSvg from '../../../../assets/illustration/hero.svg';
+import { GV } from "../../../../utils/style.util";
 
 const HeroSection = () => {
     return (
@@ -79,7 +80,7 @@ const HeroSection = () => {
                                 }
                             }}>Free full-cycle quality assurance</ListItem>
                     </List>
-                    <Link to="">want a free consultation  →</Link>
+                    <Link to="" $style={{ color: GV("danger"), textTransform: "uppercase" }}>want a free consultation  →</Link>
                 </Flex>
                 <ImageWrapper>
                     <img src={HeroSvg} />

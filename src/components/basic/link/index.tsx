@@ -1,19 +1,24 @@
 import React from "react";
-import { StyledLink } from "./style";
+import { StyledLink, StyledLinkPropsType } from "./style";
 import { LinkProps } from 'react-router-dom';
 
 type LinkPropsType = {
     children: any
     to: string
+    $style?: StyledLinkPropsType
 }
 
 const Link: React.FC<LinkPropsType> = ({
     children,
     to,
+    $style,
     ...rest
 }) => {
     return (
-        <StyledLink to={to} {...rest}>
+        <StyledLink
+            to={to}
+            {...$style}
+            {...rest}>
             {children}
         </StyledLink>
     )

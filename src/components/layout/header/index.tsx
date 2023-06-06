@@ -5,7 +5,6 @@ import Menu from "./components/menu";
 import Flex from "../../basic/flex";
 import { Link } from "react-router-dom";
 import Button from "../../custom/button";
-import variables from "../../../style/variable";
 import { GV } from "../../../utils/style.util";
 import Icon from "../../custom/icon";
 
