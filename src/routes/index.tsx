@@ -12,7 +12,7 @@ const routers = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <></>
+                element: <BrainnetPage />
             },
             {
                 path: "/services",
@@ -25,10 +25,6 @@ const routers = createBrowserRouter([
             {
                 path: "/solutions",
                 element: <MultiCouldSolutionsPage />
-            },
-            {
-                path: "/brainnet",
-                element: <BrainnetPage />
             }
         ],
     },

@@ -74,56 +74,56 @@ const FaqsSection = () => {
                     <FaqItem
                         title="What can I do with 3D rendering in Inletsky GL JS v2?"
                         content="With Atlas, you can self-host Inletsky maps and geocoding APIs, Streets, Satellite, and Terrain tilesets, and Inletsky Studio on your network, behind a firewall, or even air-gapped. Use Atlas to power on-premises applications using Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and Android."
-                        onClick={() => setActiveItem(5)}
-                        isActive={activeIndex === 5}
+                        onClick={() => setActiveItem(6)}
+                        isActive={activeIndex === 6}
                     />
                     <FaqItem
                         title="What are the new features or improvements for 3D rendering?"
                         content="With Atlas, you can self-host Inletsky maps and geocoding APIs, Streets, Satellite, and Terrain tilesets, and Inletsky Studio on your network, behind a firewall, or even air-gapped. Use Atlas to power on-premises applications using Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and Android."
-                        onClick={() => setActiveItem(5)}
-                        isActive={activeIndex === 5}
+                        onClick={() => setActiveItem(7)}
+                        isActive={activeIndex === 7}
                     />
                     <FaqItem
                         title="What is the free form camera API?"
                         content="With Atlas, you can self-host Inletsky maps and geocoding APIs, Streets, Satellite, and Terrain tilesets, and Inletsky Studio on your network, behind a firewall, or even air-gapped. Use Atlas to power on-premises applications using Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and Android."
-                        onClick={() => setActiveItem(5)}
-                        isActive={activeIndex === 5}
+                        onClick={() => setActiveItem(8)}
+                        isActive={activeIndex === 8}
                     />
                     <FaqItem
                         title="What can I do with the free form camera?"
                         content="With Atlas, you can self-host Inletsky maps and geocoding APIs, Streets, Satellite, and Terrain tilesets, and Inletsky Studio on your network, behind a firewall, or even air-gapped. Use Atlas to power on-premises applications using Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and Android."
-                        onClick={() => setActiveItem(5)}
-                        isActive={activeIndex === 5}
+                        onClick={() => setActiveItem(9)}
+                        isActive={activeIndex === 9}
                     />
                     <FaqItem
                         title="Which map projections are supported?"
                         content="With Atlas, you can self-host Inletsky maps and geocoding APIs, Streets, Satellite, and Terrain tilesets, and Inletsky Studio on your network, behind a firewall, or even air-gapped. Use Atlas to power on-premises applications using Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and Android."
-                        onClick={() => setActiveItem(5)}
-                        isActive={activeIndex === 5}
+                        onClick={() => setActiveItem(10)}
+                        isActive={activeIndex === 10}
                     />
                     <FaqItem
                         title="What pricing is available with GL JS?"
                         content="With Atlas, you can self-host Inletsky maps and geocoding APIs, Streets, Satellite, and Terrain tilesets, and Inletsky Studio on your network, behind a firewall, or even air-gapped. Use Atlas to power on-premises applications using Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and Android."
-                        onClick={() => setActiveItem(5)}
-                        isActive={activeIndex === 5}
+                        onClick={() => setActiveItem(11)}
+                        isActive={activeIndex === 11}
                     />
                     <FaqItem
                         title="Do I pay by the number of map tiles loaded?"
                         content="With Atlas, you can self-host Inletsky maps and geocoding APIs, Streets, Satellite, and Terrain tilesets, and Inletsky Studio on your network, behind a firewall, or even air-gapped. Use Atlas to power on-premises applications using Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and Android."
-                        onClick={() => setActiveItem(5)}
-                        isActive={activeIndex === 5}
+                        onClick={() => setActiveItem(12)}
+                        isActive={activeIndex === 12}
                     />
                     <FaqItem
                         title="Offline Caching"
                         content="With Atlas, you can self-host Inletsky maps and geocoding APIs, Streets, Satellite, and Terrain tilesets, and Inletsky Studio on your network, behind a firewall, or even air-gapped. Use Atlas to power on-premises applications using Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and Android."
-                        onClick={() => setActiveItem(5)}
-                        isActive={activeIndex === 5}
+                        onClick={() => setActiveItem(13)}
+                        isActive={activeIndex === 13}
                     />
                     <FaqItem
                         title="What are some upcoming features of Inletsky GL JS?"
                         content="With Atlas, you can self-host Inletsky maps and geocoding APIs, Streets, Satellite, and Terrain tilesets, and Inletsky Studio on your network, behind a firewall, or even air-gapped. Use Atlas to power on-premises applications using Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and Android."
-                        onClick={() => setActiveItem(5)}
-                        isActive={activeIndex === 5}
+                        onClick={() => setActiveItem(14)}
+                        isActive={activeIndex === 14}
                     />
                 </Flex>
             </Flex>
