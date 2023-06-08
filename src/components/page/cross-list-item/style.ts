@@ -1,6 +1,5 @@
-import styled from "styled-components";
-import variables from "../../../../../../style/variable";
-import { GV } from "../../../../../../utils/style.util";
+import styled from "styled-components"
+import { GV } from "../../../utils/style.util"
 
 export const ImageWrapper = styled.div`
     padding: 3.75rem;
@@ -9,19 +8,12 @@ export const ImageWrapper = styled.div`
 
     img {
         display: flex;
+        max-width: 55px;
     }
 
     @media (max-width: 768px) {
         display: none;
     }
-`
-
-export const Separator = styled.span`
-    display: inline-block;
-    width: 3px;
-    height: 3.25rem;
-    align-self: center;
-    background: ${GV('danger')};
 `
 
 export const ColSeparator = styled.span`

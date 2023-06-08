@@ -23,13 +23,8 @@ interface InlineGridPropsType {
 
 type QueryType = { [key: string]: InlineGridPropsType };
 
-export interface GridPropsType extends InlineGridPropsType {
+export interface StyledGridPropsType extends InlineGridPropsType {
 	queries?: QueryType
-}
-
-export interface StyledGridChildPropsType {
-	w?: string
-	h?: string
 }
 
 const setStyle = ({
@@ -72,10 +67,10 @@ const setStyle = ({
 	`
 }
 
-export const GridContainer = styled.div<GridPropsType>`
+export const GridContainer = styled.div<StyledGridPropsType>`
 	display: grid;
 
-	${({ queries, ...rest }: GridPropsType) => `
+	${({ queries, ...rest }: StyledGridPropsType) => `
 		${setStyle(rest)}
 		${
 			queries 
@@ -87,9 +82,4 @@ export const GridContainer = styled.div<GridPropsType>`
 				: ``
 		}
 	`}
-`
-
-export const GridChildContainer = styled.div<StyledGridChildPropsType>`
-	${({ w }) => w ? `width: ${w};` : ``}
-	${({ h }) => h ? `height: ${h};` : ``}
 `

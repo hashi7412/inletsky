@@ -2,11 +2,11 @@ import React from "react";
 import Heading from "../../../../components/basic/heading";
 import { P } from "../../../../components/basic/text";
 import Badge from "../../../../components/custom/badge";
-import ExplorerButton from "./explore";
 
 import Subsection from "../../../../components/layout/subsection";
 import Flex from "../../../../components/basic/flex";
 import { StyledHeroContainer } from "./style";
+import ExplorerButton from "../../../geospatial-ai/sections/hero/explore";
 
 const HeroSection = () => {
     return (
@@ -25,11 +25,11 @@ const HeroSection = () => {
                         }
                     }
                 }}>
-                    <Badge>Instant automated detection,for anything.</Badge>
+                    <Badge>Most cost-effective way possible through cloud IT solutions</Badge>
                     <Heading level={1} $style={{
                         align: "center",
                         mb: "1.5rem"
-                    }}>Geospatial AI</Heading>
+                    }}>Multi-Cloud Solutions</Heading>
                     <Flex $style={{
                         vAlign: "center",
                         w: "65%"
@@ -46,11 +46,10 @@ const HeroSection = () => {
                                     size: "10px"
                                 }
                             }
-                        }}>he power to dynamically manage your ground assets and critical infrastructure.Remotely. At scale. Cost effectively.</P>
+                        }}>Having your data and applications located in the optimal cloud environment for your workloads not only delivers performance benefits, it also enables you to enjoy huge cost savings.</P>
                     </Flex>
-
+                    <ExplorerButton />
                 </Flex>
-                <ExplorerButton />
             </Subsection>
         </StyledHeroContainer>
     )

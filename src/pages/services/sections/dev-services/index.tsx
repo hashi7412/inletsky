@@ -46,7 +46,7 @@ const DevServicesSection = () => {
                     <Grid $style={{
                         columns: "3",
                         gap: "0 1.875rem",
-                        $queries: {
+                        queries: {
                             992: {
                                 columns: "2"
                             },

@@ -17,6 +17,7 @@ interface InlineFlexPropsType {
 	minH?:					string
 	maxH?:					string
 	between?:				string
+	overflow?:				"auto" | "scroll" | "scroll-x" | "scroll-y" | "hidden" | string
 }
 
 type QueryType = { [key: string]: InlineFlexPropsType };
@@ -46,7 +47,8 @@ const setStyle = ({
 	h,
 	minH,
 	maxH,
-	between
+	between,
+	overflow
 }: InlineFlexPropsType) => {
 	return `
 		${flex				? `flex:			${flex};` : ``}
@@ -63,6 +65,7 @@ const setStyle = ({
 		${h					? `height:			${h};` : ``}
 		${minH				? `max-height:		${minH};` : ``}
 		${maxH				? `max-height:		${maxH};` : ``}
+		${overflow			? `overflow:		${overflow};` : ``}
 		${between ? `
 			margin: 0 calc(-${between} * 2) 0 -${between};
 			&>* {

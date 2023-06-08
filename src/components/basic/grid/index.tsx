@@ -1,33 +1,16 @@
-import { FC } from "react";
-import { GridChildContainer, GridContainer, GridPropsType, StyledGridChildPropsType } from "./style";
+import React from "react";
+import { GridContainer, StyledGridPropsType } from "./style";
 
-interface PropsType {
+type GridPropsType = {
     children?: any
-    $style?: GridPropsType
-    [key: string]: any
+    $style?: StyledGridPropsType
 }
 
-const Grid: FC<PropsType> = ({ children, $style, ...rest }) => {
+const Grid: React.FC<GridPropsType> = ({ children, $style }) => {
     return (
-        <GridContainer 
-            {...$style}
-            {...rest}
-        >
+        <GridContainer {...$style}>
             {children}
         </GridContainer>
-    )
-}
-
-interface GridChildPropsType extends StyledGridChildPropsType {
-    children?: any
-    [key: string]: any
-}
-
-export const GridChild: FC<GridChildPropsType> = ({ children, ...rest }) => {
-    return (
-        <GridChildContainer {...rest}>
-            {children}
-        </GridChildContainer>
     )
 }
 
