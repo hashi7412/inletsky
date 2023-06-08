@@ -52,7 +52,7 @@ const Card = styled.div<{ bg?: string }>`
 
 const SwiperContainer = styled.div`
     width: 100%;
-    height: 50vw;
+    height: 45vw;
 
     & .swiper-slide-active {
         z-index: 5;
@@ -69,7 +69,7 @@ const SwiperContainer = styled.div`
 
         &.swiper-slide-active {
             > div:first-child {
-                transform: scale(1.4);
+                transform: scale(1.2);
             }
         }
         &:not(.swiper-slide-active) {
