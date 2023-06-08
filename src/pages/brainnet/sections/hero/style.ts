@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Bg from "../../../../assets/img/geospatial-ai-hero.png";
+import Bg from "../../../../assets/img/home-hero.png";
 import Flex from "../../../../components/basic/flex";
 
 export const StyledHeroContainer = styled(Flex)`
@@ -18,7 +18,6 @@ export const StyledHeroContainer = styled(Flex)`
         background: no-repeat url(${Bg});
         background-position: top;
         background-size: cover;
-        mix-blend-mode: screen;
         content: "";
         z-index: -2;
 
@@ -26,7 +25,7 @@ export const StyledHeroContainer = styled(Flex)`
             background-position: center 150px;
         }
 
-        @media (max-width: 608px) {
+        @media (max-width: 600px) {
             background-position: center 300px;
         }
     }
@@ -42,5 +41,9 @@ export const StyledHeroContainer = styled(Flex)`
         background-size: cover;
         content: "";
         z-index: -1;
+    }
+
+    @media (max-width: 600px) {
+        height: calc(100vh + 200px);
     }
 `

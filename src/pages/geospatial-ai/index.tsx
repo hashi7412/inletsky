@@ -6,6 +6,7 @@ import IntelligenceSection from "./sections/intelligence";
 import PatnersSection from "./sections/partners";
 import AiMinuteSection from "./sections/ai-minute";
 import ReachUsSection from "./sections/reach-us";
+import { BgSection } from "./style";
 
 const GeospatialAiPage = () => {
     return (
@@ -14,9 +15,11 @@ const GeospatialAiPage = () => {
             <DetectionSection />
             <DataKindSection />
             <IntelligenceSection />
-            <PatnersSection />
-            <AiMinuteSection />
-            <ReachUsSection />
+            <BgSection>
+                <PatnersSection />
+                <AiMinuteSection />
+                <ReachUsSection />
+            </BgSection>
         </React.Fragment>
     )
 }
