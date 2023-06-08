@@ -12,8 +12,18 @@ import Img2 from "../../../../assets/illustration/partners/2.svg"
 import Img3 from "../../../../assets/illustration/partners/3.svg"
 import Img4 from "../../../../assets/illustration/partners/4.png"
 import Img5 from "../../../../assets/illustration/partners/5.svg"
+import Img6 from "../../../../assets/illustration/partners/6.svg"
+import Img7 from "../../../../assets/illustration/partners/7.svg"
+import Img8 from "../../../../assets/illustration/partners/8.svg"
+import Img9 from "../../../../assets/illustration/partners/9.svg"
+import Img10 from "../../../../assets/illustration/partners/10.svg"
+import Img11 from "../../../../assets/illustration/partners/11.svg"
+import Img12 from "../../../../assets/illustration/partners/12.svg"
+import Img13 from "../../../../assets/illustration/partners/13.svg"
+import Img14 from "../../../../assets/illustration/partners/14.svg"
+import Img15 from "../../../../assets/illustration/partners/15.svg"
 
-const PatnersSection = () => {
+const ClientSection = () => {
     return (
         <Subsection>
             <Flex $style={{
@@ -30,8 +40,8 @@ const PatnersSection = () => {
                         }
                     }
                 }}>
-                    <Badge>WE WORK WITH SOME OF THE BEST TO UNLOCK IMPOSSIBLE AI.</Badge>
-                    <Heading level={1}>Our Partners</Heading>
+                    <Badge>Trusted by the industry leaders</Badge>
+                    <Heading level={1}>Our Clients</Heading>
                 </Flex>
                 <Grid $style={{
                     justifyContent: "center",
@@ -50,6 +60,16 @@ const PatnersSection = () => {
                     <img src={Img3} />
                     <img src={Img4} />
                     <img src={Img5} />
+                    <img src={Img6} />
+                    <img src={Img7} />
+                    <img src={Img8} />
+                    <img src={Img9} />
+                    <img src={Img10} />
+                    <img src={Img11} />
+                    <img src={Img12} />
+                    <img src={Img13} />
+                    <img src={Img14} />
+                    <img src={Img15} />
                 </Grid>
                 <Link to="" $style={{
                     color: GV("danger"),
@@ -60,4 +80,4 @@ const PatnersSection = () => {
     )
 }
 
-export default PatnersSection;
+export default ClientSection;

@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "../../../../components/basic/heading";
 import { P } from "../../../../components/basic/text";
 import Badge from "../../../../components/custom/badge";
+
 import Subsection from "../../../../components/layout/subsection";
 import Flex from "../../../../components/basic/flex";
 import { StyledHeroContainer } from "./style";
@@ -24,11 +25,11 @@ const HeroSection = () => {
                         }
                     }
                 }}>
-                    <Badge>Instant automated detection,for anything.</Badge>
+                    <Badge>Explore what’s new with inletsky</Badge>
                     <Heading level={1} $style={{
                         align: "center",
                         mb: "1.5rem"
-                    }}>Geospatial AI</Heading>
+                    }}>BrainNet. GL JS</Heading>
                     <Flex $style={{
                         vAlign: "center",
                         w: "65%"
@@ -45,7 +46,7 @@ const HeroSection = () => {
                                     size: "10px"
                                 }
                             }
-                        }}>he power to dynamically manage your ground assets and critical infrastructure.Remotely. At scale. Cost effectively.</P>
+                        }}>BrainNet. GL JS is a Networking library for vector networking on  the Web. Its performance, real-time styling, and interactivity features set the bar for anyone building fast, immersive tech on the web.</P>
                     </Flex>
 
                 </Flex>

@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header<{ isHide: boolean, isBg: boolean }>
 	transform: translate(-50%, 0);
 	z-index: 8000;
 	width: 100%;
-	transition: all ease-in-out .3s;
+	transition: all ease-in-out .5s;
 
 	${({ isBg }) => isBg ? `
 		background: ${GV("bg-sub")};

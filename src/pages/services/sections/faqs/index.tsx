@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import Flex from "../../../../components/basic/flex";
 import Badge from "../../../../components/custom/badge";
 import Heading from "../../../../components/basic/heading";
-import { P } from "../../../../components/basic/text";
-import Icon from "../../../../components/custom/icon";
-import FaqItem from "./components/item";
 import Subsection from "../../../../components/layout/subsection";
+import FaqItem from "../../../../components/page/faq-item";
 
 const FaqsSection = () => {
 

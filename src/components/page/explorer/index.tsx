@@ -1,7 +1,7 @@
 import React from "react";
-import { Span } from "../../../../../components/basic/text";
 import { ExplorerContainer } from "./style";
-import Icon from "../../../../../components/custom/icon";
+import { Span } from "../../basic/text";
+import Icon from "../../custom/icon";
 
 const ExplorerButton = () => {
     return (
