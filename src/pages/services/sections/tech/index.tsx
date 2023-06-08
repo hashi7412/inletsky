@@ -24,56 +24,59 @@ import TechIamge18 from "../../../../assets/illustration/tech/18.svg"
 import TechIamge19 from "../../../../assets/illustration/tech/19.svg"
 import TechIamge20 from "../../../../assets/illustration/tech/20.svg"
 import TechIamge21 from "../../../../assets/illustration/tech/21.svg"
+import Subsection from "../../../../components/layout/subsection";
 
 const TechSection = () => {
     return (
-        <Flex $style={{ fDirection: "column", vAlign: "center", gap: "4rem", mb: "7rem" }}>
-            <Flex $style={{ fDirection: "column", vAlign: "center", gap: "1rem" }}>
-                <Badge>Our Favorite Folder Of The</Badge>
-                <Heading level={1} $style={{ align: "center" }}>Technologies</Heading>
-            </Flex>
-            <Grid
-                $style={{
-                    w: "100%",
-                    gap: "2rem",
-                    columns: "7",
-                    p: "0 2rem",
-                    $queries: {
-                        992: {
-                            columns: "5"
-                        },
-                        768: {
-                            columns: "4"
-                        },
-                        600: {
-                            columns: "3"
+        <Subsection>
+            <Flex $style={{ fDirection: "column", vAlign: "center", gap: "4rem" }}>
+                <Flex $style={{ fDirection: "column", vAlign: "center", gap: "1rem" }}>
+                    <Badge>Our Favorite Folder Of The</Badge>
+                    <Heading level={1} $style={{ align: "center" }}>Technologies</Heading>
+                </Flex>
+                <Grid
+                    $style={{
+                        w: "100%",
+                        gap: "2rem",
+                        columns: "7",
+                        p: "0 2rem",
+                        $queries: {
+                            992: {
+                                columns: "5"
+                            },
+                            768: {
+                                columns: "4"
+                            },
+                            600: {
+                                columns: "3"
+                            }
                         }
-                    }
-                }}
-            >
-                <img src={TechIamge1} />
-                <img src={TechIamge2} />
-                <img src={TechIamge3} />
-                <img src={TechIamge4} />
-                <img src={TechIamge5} />
-                <img src={TechIamge6} />
-                <img src={TechIamge7} />
-                <img src={TechIamge8} />
-                <img src={TechIamge9} />
-                <img src={TechIamge10} />
-                <img src={TechIamge11} />
-                <img src={TechIamge12} />
-                <img src={TechIamge13} />
-                <img src={TechIamge14} />
-                <img src={TechIamge15} />
-                <img src={TechIamge16} />
-                <img src={TechIamge17} />
-                <img src={TechIamge18} />
-                <img src={TechIamge19} />
-                <img src={TechIamge20} />
-                <img src={TechIamge21} />
-            </Grid>
-        </Flex>
+                    }}
+                >
+                    <img src={TechIamge1} />
+                    <img src={TechIamge2} />
+                    <img src={TechIamge3} />
+                    <img src={TechIamge4} />
+                    <img src={TechIamge5} />
+                    <img src={TechIamge6} />
+                    <img src={TechIamge7} />
+                    <img src={TechIamge8} />
+                    <img src={TechIamge9} />
+                    <img src={TechIamge10} />
+                    <img src={TechIamge11} />
+                    <img src={TechIamge12} />
+                    <img src={TechIamge13} />
+                    <img src={TechIamge14} />
+                    <img src={TechIamge15} />
+                    <img src={TechIamge16} />
+                    <img src={TechIamge17} />
+                    <img src={TechIamge18} />
+                    <img src={TechIamge19} />
+                    <img src={TechIamge20} />
+                    <img src={TechIamge21} />
+                </Grid>
+            </Flex>
+        </Subsection>
     )
 }
 

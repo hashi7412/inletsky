@@ -1,6 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
-import ServicesPage from "../pages/services";
 import PublicLayout from "../layouts/public";
+import ServicesPage from "../pages/services";
+import GeospatialAiPage from "../pages/geospatial-ai";
 
 const routers = createBrowserRouter([
     {
@@ -9,17 +10,21 @@ const routers = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Navigate to={"/services"} />
+                element: <></>
             },
             {
                 path: "/services",
                 element: <ServicesPage />
+            },
+            {
+                path: "/geospatial-ai",
+                element: <GeospatialAiPage />
             }
         ],
     },
     {
         path: "*",
-        element: <Navigate to={"/"} />
+        element: <></>
     }
 ])
 

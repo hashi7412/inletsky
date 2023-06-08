@@ -1,7 +1,7 @@
 import React from "react";
 import { FooterContainer } from "./style";
 import Flex from "../../basic/flex";
-import Logo from "../../basic/Logo";
+import Logo from "../../basic/logo";
 import List, { ListItem } from "../../basic/list";
 import Heading from "../../basic/heading";
 import { GV } from "../../../utils/style.util";

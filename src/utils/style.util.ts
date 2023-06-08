@@ -11,3 +11,5 @@ export const declearStyleVariables = (variables: { [key: string]: string }, suff
 export const GV = (key: keyof typeof variables) => {
 	return `var(--${key})`
 }
+
+export const setStyle = () => {}

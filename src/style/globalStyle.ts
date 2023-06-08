@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import variables, { smVariables } from "./variable";
+import variables, { desVariables, smVariables, tabVariables } from "./variable";
 import { GV, declearStyleVariables } from "../utils/style.util";
 
 const GlobalStyle = createGlobalStyle`
@@ -11,6 +11,14 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	html {
+		@media (max-width: 1200px) {
+			${declearStyleVariables(desVariables, "!important")}
+		}
+		
+		@media (max-width: 992px) {
+			${declearStyleVariables(tabVariables, "!important")}
+		}
+		
 		@media (max-width: 768px) {
 			${declearStyleVariables(smVariables, "!important")}
 		}
@@ -163,6 +171,7 @@ const GlobalStyle = createGlobalStyle`
 
 	img {
 		border: 0;
+		max-width: 100%;
 	}
 
 	svg:not(:root) {

@@ -11,4 +11,8 @@ export const PanelContainer = styled.div<StyledPanelType>`
     border-radius: 1.5rem;
     ${({ p }) => `padding: ${p ?? '2.5rem 3rem'};`}
     height: 100%;
+
+    @media (max-width: 768px) {
+        ${({ p }) => `padding: ${p ?? '1.5rem 1rem'};`}
+    }
 `
