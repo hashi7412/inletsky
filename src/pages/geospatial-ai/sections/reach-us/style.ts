@@ -6,4 +6,8 @@ export const Container = styled(Subsection)`
     background: rgba(26, 45, 71, 0.3);
     backdrop-filter: blur(20px);
     border-radius: 25px;
+
+    @media (max-width: 768px) {
+        margin: 0 1rem;
+    }
 `

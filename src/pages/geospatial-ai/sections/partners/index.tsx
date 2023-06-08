@@ -23,15 +23,27 @@ const PatnersSection = () => {
             }}>
                 <Flex $style={{
                     fDirection: "column",
-                    gap: "1rem"
+                    gap: "1rem",
+                    queries: {
+                        768: {
+                            vAlign: "center"
+                        }
+                    }
                 }}>
                     <Badge>WE WORK WITH SOME OF THE BEST TO UNLOCK IMPOSSIBLE AI.</Badge>
                     <Heading level={1}>Our Partners</Heading>
                 </Flex>
                 <Grid $style={{
+                    justifyContent: "center",
                     justifyItems: "center",
+                    gap: "2rem",
                     w: "100%",
-                    columns: "5"
+                    columns: "5",
+                    queries: {
+                        768: {
+                            columns: "3"
+                        }
+                    }
                 }}>
                     <img src={Img1} />
                     <img src={Img2} />

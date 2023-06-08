@@ -14,12 +14,12 @@ const Subsection: React.FC<SubsectionPropsType> = ({
         mb: "7rem",
         p: "0 1rem",
         ...$style,
-        queries: {
-            768: {
-                mb: "3rem",
-                ...($style?.queries ? ["768"] : {})
-            }
-        }
+        // queries: {
+        //     768: {
+        //         mb: "3rem",
+        //         ...($style?.queries ? ["768"] : {})
+        //     }
+        // }
     }
     return (
         <SubsectionContainer

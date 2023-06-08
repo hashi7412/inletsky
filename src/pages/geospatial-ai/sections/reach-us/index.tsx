@@ -21,7 +21,12 @@ const ReachUsSection = () => {
                         fDirection: "column",
                         vAlign: "center",
                         maxW: "700px",
-                        gap: "2rem"
+                        gap: "2rem",
+                        queries: {
+                            768: {
+                                gap: "1rem"
+                            }
+                        }
                     }}
                 >
                     <Badge>accelerate your speed-to-insight</Badge>
@@ -30,7 +35,12 @@ const ReachUsSection = () => {
                     }}>Reach Us</Heading>
                     <P $style={{
                         align: "center",
-                        size: "20px"
+                        size: "20px",
+                        queries: {
+                            768: {
+                                size: "10px"
+                            }
+                        }
                     }}>What if you could develop and train AI models in minutes without labeled data? Let us help you transcend data limitations and unleash the value of AI in your business today.</P>
                     <Button $style={{
                         bg: GV("danger")

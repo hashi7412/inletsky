@@ -18,7 +18,12 @@ const DataKindSection = () => {
             <Flex $style={{
                 fDirection: "column",
                 vAlign: "center",
-                gap: "3rem"
+                gap: "3rem",
+                queries: {
+                    768: {
+                        gap: "1rem"
+                    }
+                }
             }}>
                 <Badge>any kind of data</Badge>
                 <Flex $style={{
@@ -33,6 +38,10 @@ const DataKindSection = () => {
                     queries: {
                         992: {
                             fDirection: "column"
+                        },
+                        768: {
+                            w: "80%",
+                            gap: "2rem"
                         }
                     }
                 }}>
@@ -50,12 +59,22 @@ const DataKindSection = () => {
                             <Flex $style={{
                                 fDirection: "column",
                                 vAlign: "center",
-                                gap: "3rem"
+                                gap: "3rem",
+                                queries: {
+                                    768: {
+                                        gap: "1rem"
+                                    }
+                                }
                             }}>
                                 <img src={Image1} />
                                 <List>
                                     <ListItem $style={{
-                                        size: "20px"
+                                        size: "20px",
+                                        queries: {
+                                            768: {
+                                                size: "12px"
+                                            }
+                                        }
                                     }}>Full Motion Video</ListItem>
                                 </List>
                             </Flex>
@@ -75,12 +94,22 @@ const DataKindSection = () => {
                             <Flex $style={{
                                 fDirection: "column",
                                 vAlign: "center",
-                                gap: "3rem"
+                                gap: "3rem",
+                                queries: {
+                                    768: {
+                                        gap: "1rem"
+                                    }
+                                }
                             }}>
                                 <img src={Image2} />
                                 <List>
                                     <ListItem $style={{
-                                        size: "20px"
+                                        size: "20px",
+                                        queries: {
+                                            768: {
+                                                size: "12px"
+                                            }
+                                        }
                                     }}>Geospatial Data</ListItem>
                                 </List>
                             </Flex>
@@ -100,12 +129,22 @@ const DataKindSection = () => {
                             <Flex $style={{
                                 fDirection: "column",
                                 vAlign: "center",
-                                gap: "3rem"
+                                gap: "3rem",
+                                queries: {
+                                    768: {
+                                        gap: "1rem"
+                                    }
+                                }
                             }}>
                                 <img src={Image3} />
                                 <List>
                                     <ListItem $style={{
-                                        size: "20px"
+                                        size: "20px",
+                                        queries: {
+                                            768: {
+                                                size: "12px"
+                                            }
+                                        }
                                     }}>Image Data</ListItem>
                                 </List>
                             </Flex>
