@@ -40,7 +40,7 @@ const TechSection = () => {
                         gap: "2rem",
                         columns: "7",
                         p: "0 2rem",
-                        $queries: {
+                        queries: {
                             992: {
                                 columns: "5"
                             },

@@ -3,16 +3,16 @@ import { PanelContainer, StyledPanelType } from "./style";
 
 type PanelPropsType = {
     children: any
-    style?: StyledPanelType
+    $style?: StyledPanelType
 }
 
 const Panel: React.FC<PanelPropsType> = ({
     children,
-    style,
+    $style,
     ...rest
 }) => {
     return (
-        <PanelContainer {...style}>
+        <PanelContainer {...$style}>
             {children}
         </PanelContainer>
     )

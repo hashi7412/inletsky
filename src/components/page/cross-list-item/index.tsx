@@ -1,8 +1,9 @@
 import React from "react";
-import Flex from "../../../../../../components/basic/flex";
-import { ImageWrapper, Separator } from "./style";
-import Heading from "../../../../../../components/basic/heading";
-import { P } from "../../../../../../components/basic/text";
+import Flex from "../../basic/flex";
+import { ImageWrapper } from "./style";
+import Seperator from "../seperator";
+import Heading from "../../basic/heading";
+import { P } from "../../basic/text";
 
 type ItemPropsType = {
     image: any
@@ -11,7 +12,7 @@ type ItemPropsType = {
     isReverse?: boolean
 }
 
-const Item: React.FC<ItemPropsType> = ({
+const CrossListItem: React.FC<ItemPropsType> = ({
     image,
     title,
     desc,
@@ -37,7 +38,7 @@ const Item: React.FC<ItemPropsType> = ({
                 }}
             >
                 <ImageWrapper><img src={image} /></ImageWrapper>
-                <Separator />
+                <Seperator />
                 <Flex $style={{ fDirection: "column", gap: "2.125rem" }}>
                     <Heading
                         level={4}
@@ -56,4 +57,4 @@ const Item: React.FC<ItemPropsType> = ({
     )
 }
 
-export default Item;
+export default CrossListItem;

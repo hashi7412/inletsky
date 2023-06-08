@@ -4,15 +4,15 @@ import Flex from "../../../../components/basic/flex";
 import Heading from "../../../../components/basic/heading";
 import { P } from "../../../../components/basic/text";
 import Link from "../../../../components/basic/link";
-import Item from "./components/item";
 import Image1 from "../../../../assets/illustration/project-scope/1.svg";
 import Image2 from "../../../../assets/illustration/project-scope/2.svg";
 import Image3 from "../../../../assets/illustration/project-scope/3.svg";
 import Image4 from "../../../../assets/illustration/project-scope/4.svg";
 import Image5 from "../../../../assets/illustration/project-scope/5.svg";
-import { ColSeparator } from "./components/item/style";
 import { GV } from "../../../../utils/style.util";
 import Subsection from "../../../../components/layout/subsection";
+import CrossListItem from "../../../../components/page/cross-list-item";
+import { ColSeparator } from "../../../../components/page/cross-list-item/style";
 
 const ProjectScopeSection = () => {
     return (
@@ -38,33 +38,33 @@ const ProjectScopeSection = () => {
                     fDirection: "column",
                     gap: "2.5rem"
                 }}>
-                    <Item
+                    <CrossListItem
                         image={Image1}
                         title="Designer"
                         desc="UI/UX Designers are responsible for the whole appearance and feel of a web application, including the User Interface (UI) and User Experience (UX) design. They impact design decisions since they are in charge of the entire product design, including color, typeface, navigation, and other elements."
                     />
                     <ColSeparator />
-                    <Item
+                    <CrossListItem
                         isReverse
                         image={Image2}
                         title="Backend Developer"
                         desc="Want a clear picture of database structure, data processing, and third-party integrations? Our backend web applications developers will manage everything for you in a timely manner. They actively ensure that data is exchanged securely and efficiently."
                     />
                     <ColSeparator />
-                    <Item
+                    <CrossListItem
                         image={Image3}
                         title="Frontend Developers"
                         desc="The visual aspect of a web app is the face of your brand. Hire web app developers to determine how your users will view and interact. They bring the web app's layout to life by building scripts and collaborating with dynamic libraries and frameworks."
                     />
                     <ColSeparator />
-                    <Item
+                    <CrossListItem
                         isReverse
                         image={Image4}
                         title="Product Manager"
                         desc="Our domain-savvy product manager keeps the team focused and protects the project scope. They are in charge of the budget, planning, and ensuring that the team is filled with the greatest minds."
                     />
                     <ColSeparator />
-                    <Item
+                    <CrossListItem
                         image={Image5}
                         title="Quality Assurance Engineer"
                         desc="Our Q/A testing does not occur at the conclusion of the development process. Instead, the process begins once the team has created a UI layout and continues till the launch stage. To guarantee that the design meets the criteria, our QA assurance engineer will use automated or manual testing methods."

@@ -2,6 +2,7 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import PublicLayout from "../layouts/public";
 import ServicesPage from "../pages/services";
 import GeospatialAiPage from "../pages/geospatial-ai";
+import MultiCouldSolutionsPage from "../pages/multi-cloud-solutions";
 
 const routers = createBrowserRouter([
     {
@@ -19,6 +20,10 @@ const routers = createBrowserRouter([
             {
                 path: "/geospatial-ai",
                 element: <GeospatialAiPage />
+            },
+            {
+                path: "/solutions",
+                element: <MultiCouldSolutionsPage />
             }
         ],
     },
