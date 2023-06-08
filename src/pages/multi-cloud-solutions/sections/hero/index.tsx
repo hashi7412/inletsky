@@ -6,7 +6,7 @@ import Badge from "../../../../components/custom/badge";
 import Subsection from "../../../../components/layout/subsection";
 import Flex from "../../../../components/basic/flex";
 import { StyledHeroContainer } from "./style";
-import ExplorerButton from "../../../geospatial-ai/sections/hero/explore";
+import ExplorerButton from "../../../../components/page/explorer";
 
 const HeroSection = () => {
     return (

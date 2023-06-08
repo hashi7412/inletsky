@@ -1,9 +1,8 @@
 import React from "react";
-import Heading from "../../../../../../components/basic/heading";
-import Icon from "../../../../../../components/custom/icon";
-import Flex from "../../../../../../components/basic/flex";
-import { P } from "../../../../../../components/basic/text";
 import { FaqItemContainer, FaqItemThumb } from "./style";
+import Heading from "../../basic/heading";
+import Icon from "../../custom/icon";
+import { P } from "../../basic/text";
 
 interface FaqItemPropsType {
     title: string
