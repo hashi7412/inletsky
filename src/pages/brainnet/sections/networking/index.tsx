@@ -90,12 +90,6 @@ const Section = styled.div`
     @media (max-width: 1440px) {
         margin-left: 0;
     }
-
-    @media (max-width: 600px) {
-        > div:first-child {
-            display: none;
-        }
-    }
 `
 
 const PrevButton = styled.div`

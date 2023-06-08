@@ -5,12 +5,15 @@ import SolutionSection from "./sections/solutions";
 import RecentWorkSection from "./sections/recent-work";
 import EnvironmentSection from "./sections/environment";
 import ContactSection from "../services/sections/contact";
+import { BgSection } from "./style";
 
 const MultiCouldSolutionsPage = () => {
     return (
         <React.Fragment>
-            <HeroSection />
-            <DeliveringSection />
+            <BgSection>
+                <HeroSection />
+                <DeliveringSection />   
+            </BgSection>
             <SolutionSection />
             <RecentWorkSection />
             <EnvironmentSection />
