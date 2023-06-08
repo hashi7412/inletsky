@@ -19,6 +19,7 @@ export const ExplorerContainer = styled(Link)`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 5;
 
     > span {
         text-transform: uppercase;

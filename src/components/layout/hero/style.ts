@@ -19,10 +19,7 @@ const setInlineStyle = ({
     mb
 }: InlineStyledHeroContainerPropsType) => {
     return `
-		${bg ? `background:				${bg};` : ``}
 		${mb ? `margin-bottom:		    ${mb};` : ``}
-        mix-blend-mode: screen;
-        background-size: cover;
 	`
 }
 
