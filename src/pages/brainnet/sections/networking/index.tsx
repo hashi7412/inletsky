@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import Badge from "../../../../components/custom/badge";
@@ -136,19 +136,23 @@ const NextButton = styled.div`
 
 const NetworkingSection = () => {
 
+    const sliderRef = React.useRef<HTMLDivElement>(null);
+
     const onSlidePrev = () => {
-        const prevBtn = document.querySelector('.swiper-button-prev') as HTMLElement;
+        if (!sliderRef.current) return
+        const prevBtn = sliderRef.current.querySelector('.swiper-button-prev') as HTMLElement;
         prevBtn?.click();
     }
 
     const onSlideNext = () => {
-        const nextBtn = document.querySelector('.swiper-button-next') as HTMLElement;
+        if (!sliderRef.current) return
+        const nextBtn = sliderRef.current.querySelector('.swiper-button-next') as HTMLElement;
         nextBtn?.click();
     }
 
     return (
         <Section>
-            <SwiperContainer>
+            <SwiperContainer ref={sliderRef}>
                 <Swiper
                     slidesPerView={2}
                     loop={true}

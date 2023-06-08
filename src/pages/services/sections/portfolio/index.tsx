@@ -136,13 +136,17 @@ const NextButton = styled.div`
 
 const PortfolioSection = () => {
 
+    const sliderRef = React.useRef<HTMLDivElement>(null);
+
     const onSlidePrev = () => {
-        const prevBtn = document.querySelector('.swiper-button-prev') as HTMLElement;
+        if (!sliderRef.current) return
+        const prevBtn = sliderRef.current.querySelector('.swiper-button-prev') as HTMLElement;
         prevBtn?.click();
     }
 
     const onSlideNext = () => {
-        const nextBtn = document.querySelector('.swiper-button-next') as HTMLElement;
+        if (!sliderRef.current) return
+        const nextBtn = sliderRef.current.querySelector('.swiper-button-next') as HTMLElement;
         nextBtn?.click();
     }
 
@@ -153,7 +157,7 @@ const PortfolioSection = () => {
                 <Heading level={1} $style={{ align: "center" }}>Portfolio</Heading>
                 <P $style={{ align: "center" }}>Build. Launch. Grow</P>
             </Flex>
-            <SwiperContainer>
+            <SwiperContainer ref={sliderRef}>
                 <Swiper
                     slidesPerView={2}
                     loop={true}

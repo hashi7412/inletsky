@@ -6,6 +6,7 @@ import NetworksSection from "./sections/networks";
 import TestimonialsSection from "./sections/testimonials";
 import ServicesSection from "./sections/services";
 import HeroSection from "./sections/hero";
+import GetStartedSection from "./sections/get-started";
 
 const BrainnetPage = () => {
     return (
@@ -17,6 +18,7 @@ const BrainnetPage = () => {
             <TestimonialsSection />
             <ServicesSection />
             <FaqsSection />
+            <GetStartedSection />
         </React.Fragment>
     )
 }
