@@ -19,7 +19,13 @@ const IntelligenceSection = () => {
                     gap: "2rem"
                 }}>
                     <Flex $style={{
-                        gap: "1rem"
+                        gap: "1rem",
+                        queries: {
+                            768: {
+                                fDirection: "column-reverse",
+                                gap: "2rem"
+                            }
+                        }
                     }}>
                         <ImageWrapper>
                             <img src={Image} />
@@ -32,11 +38,22 @@ const IntelligenceSection = () => {
                         }}>
                             <Badge>say goodbye to labeling</Badge>
                             <Heading level={1} $style={{
-                                align: "right"
+                                align: "right",
+                                queries: {
+                                    768: {
+                                        align: "center"
+                                    }
+                                }
                             }}>The new standard of Intelligence.</Heading>
                             <P $style={{
                                 align: "right",
-                                size: "20px"
+                                size: "20px",
+                                queries: {
+                                    768: {
+                                        align: "center",
+                                        size: "10px"
+                                    }
+                                }
                             }}>The days of labeling data by hand over weeks, months, or even years are gone. LiDAR is an end-to-end AI pipeline that automates the analysis of a variety of large, unstructured datasets, from security camera footage to geospatial imagery. You can ingest, search, and categorize your data - build and train models - run inference - and integrate or access LiDAR through cloud-hosted APIs. Integrate LiDAR into your current workflows today to exponentially accelerate your speed-to-insight.</P>
                         </Flex>
                     </Flex>

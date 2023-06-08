@@ -18,17 +18,40 @@ const AiMinuteSection = () => {
                 gap: "4rem"
             }}>
                 <Flex $style={{
-                    gap: "2rem"
+                    gap: "2rem",
+                    queries: {
+                        768: {
+                            fDirection: "column",
+                            vAlign: "center"
+                        }
+                    }
                 }}>
                     <Flex $style={{
                         fDirection: "column",
                         vAlign: "flex-start",
-                        gap: "2rem"
+                        gap: "2rem",
+                        queries: {
+                            768: {
+                                vAlign: "center"
+                            }
+                        }
                     }}>
                         <Badge>say goodbye to labeling</Badge>
-                        <Heading level={1}>AI in Minutes, Not Months.</Heading>
+                        <Heading level={1} $style={{
+                            queries: {
+                                768: {
+                                    align: "center"
+                                }
+                            }
+                        }}>AI in Minutes, Not Months.</Heading>
                         <P $style={{
-                            size: "20px"
+                            size: "20px",
+                            queries: {
+                                768: {
+                                    align: "center",
+                                    size: "10px"
+                                }
+                            }
                         }}>You don’t really want AI, you want answers. Getting them today takes months - or years - and costs millions of dollars. What if you could get around the problem of needing massive amounts of human-labeled data? What if you could use AI to get critical insights - even when data is unstructured or sparse? Instead of needing months of human labeling to have some base AI performance in a new situation, RAIC can get to work immediately, radically reducing the latency between data collection and actionable insights.</P>
                     </Flex >
                     <img src={Image} />

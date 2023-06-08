@@ -24,7 +24,7 @@ interface InlineGridPropsType {
 type QueryType = { [key: string]: InlineGridPropsType };
 
 export interface GridPropsType extends InlineGridPropsType {
-	$queries?: QueryType
+	queries?: QueryType
 }
 
 export interface StyledGridChildPropsType {
@@ -75,13 +75,13 @@ const setStyle = ({
 export const GridContainer = styled.div<GridPropsType>`
 	display: grid;
 
-	${({ $queries, ...rest }: GridPropsType) => `
+	${({ queries, ...rest }: GridPropsType) => `
 		${setStyle(rest)}
 		${
-			$queries 
-				? Object.keys($queries).reverse()?.map((breakpoint: string) => {
+			queries 
+				? Object.keys(queries).reverse()?.map((breakpoint: string) => {
 						return `@media (max-width: ${breakpoint}px) {
-							${setStyle($queries[breakpoint])}
+							${setStyle(queries[breakpoint])}
 						}`;
 					}).join('') 
 				: ``
