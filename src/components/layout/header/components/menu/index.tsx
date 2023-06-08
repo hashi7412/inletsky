@@ -1,46 +1,76 @@
 import React from "react";
 import Flex from "../../../../basic/flex";
 import Icon from "../../../../custom/icon";
-import { MenuContainer, MenuLink } from "./style";
+import { Hamburger, MenuContainer, MenuLink, Nav, StyledMenuItem, Submenu, SubmenuItem } from "./style";
 
-const Menu = () => {
+type MenuPropsType = {
+    isOpen: boolean
+    closeMenu: any
+}
+
+type MenuLinkItemPropsType = {
+    to: string
+    label: string
+}
+
+type MenuItemPropsType = MenuLinkItemPropsType | { label: string, submenu: MenuLinkItemPropsType[] }
+
+const MenuItem: React.FC<MenuItemPropsType> = (props) => {
+
+    let label = props.label;
+    let to = "#";
+    let submenu: MenuLinkItemPropsType[] | null = null;
+
+    if ('to' in props) {
+        to = props.to;
+    } else {
+        submenu = props.submenu;
+    }
+
     return (
-        <MenuContainer>
-            <label htmlFor="rwd__menu" className={'rwd__close'}><Icon icon="Close" /></label>
-            <Flex
-                as={"ul"}
-                $style={{
-                    gap: "1.875rem"
-                }}
-            >
-                <Flex as={"li"}>
-                    <MenuLink to={""}>
-                        Solutions
-                        <Icon icon="ChevronArrowDown" />
-                    </MenuLink>
-                </Flex>
-                <Flex as={"li"}>
-                    <MenuLink to={""}>
-                        developers
-                        <Icon icon="ChevronArrowDown" />
-                    </MenuLink>
-                </Flex>
-                <Flex as={"li"}>
-                    <MenuLink to={""}>
-                        customers
-                    </MenuLink>
-                </Flex>
-                <Flex as={"li"}>
-                    <MenuLink to={""}>
-                        blog
-                    </MenuLink>
-                </Flex>
-                <Flex as={"li"}>
-                    <MenuLink to={""}>
-                        Login
-                    </MenuLink>
-                </Flex>
-            </Flex>
+        <MenuLink>
+            <StyledMenuItem to={to}>
+                {label}
+                {!('to' in props) && (
+                    <Icon icon="ChevronArrowDown" />
+                )}
+            </StyledMenuItem>
+            {submenu !== null && (
+                <Submenu>
+                    {submenu.map((item: MenuLinkItemPropsType, index: number) => (
+                        <Flex key={index} as={"li"}>
+                            <SubmenuItem to={item.to}>
+                                {item.label}
+                            </SubmenuItem>
+                        </Flex>
+
+                    ))}
+
+                </Submenu>
+            )}
+        </MenuLink>
+    )
+}
+
+const Menu: React.FC<MenuPropsType> = ({ isOpen, closeMenu }) => {
+    return (
+        <MenuContainer isOpen={isOpen}>
+            <Nav>
+                <MenuItem label="Solutions" submenu={[
+                    { label: "Solution 1", to: "/" },
+                    { label: "Solution 2", to: "/" }
+                ]} />
+                <MenuItem label="developers" submenu={[
+                    { label: "Web Designers", to: "/" },
+                    { label: "Frontend Developers", to: "/" },
+                    { label: "Backend Developers", to: "/" },
+                    { label: "Project Manager", to: "/" },
+                    { label: "Quality Assurance Engineer", to: "/" }
+                ]} />
+                <MenuItem to="" label="customers" />
+                <MenuItem to="" label="blog" />
+                <MenuItem to="" label="Login" />
+            </Nav>
         </MenuContainer>
     )
 }

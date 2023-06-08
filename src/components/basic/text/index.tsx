@@ -17,6 +17,7 @@ export const Span: FC<SpanPropsType> = ({ children, $style, ...rest }) => {
     return (
         <SpanWrapper
             {...$style}
+            as={"span"}
             {...rest}
         >
             {children}
@@ -26,7 +27,8 @@ export const Span: FC<SpanPropsType> = ({ children, $style, ...rest }) => {
 
 export const P: FC<PPropsType> = ({ children, $style, ...rest }) => {
     return (
-        <TextWrapper as='p'
+        <TextWrapper
+            as='p'
             {...$style}
             {...rest}
         >

@@ -4,8 +4,10 @@ interface InlineGridPropsType {
 	flex?:						string
 	fDirection?:				'column' | 'row' | 'row-reverse' | 'column-reverse'
 	fWrap?:						'wrap' | 'no-wrap';
-	vAlign?:					string
-	hAlign?:					string
+	alignItems?:				string
+	alignContent?:				string
+	justifyContent?:			string
+	justifyItems?:				string
 	gap?:						string
 	p?:							string
 	mb?:						string
@@ -34,8 +36,9 @@ const setStyle = ({
 	flex,
 	fDirection,
 	fWrap,
-	vAlign,
-	hAlign,
+	alignItems,
+	justifyContent,
+	justifyItems,
 	gap,
 	p,
 	mb,
@@ -52,8 +55,9 @@ const setStyle = ({
 		${flex              ? `flex:				${flex};`           : ``}
 		${fDirection        ? `flex-direction:		${fDirection};`     : ``}
 		${fWrap             ? `flex-wrap:			${fWrap};`          : ``}
-		${vAlign            ? `align-items:			${vAlign};`         : ``}
-		${hAlign            ? `justify-content:		${hAlign};`         : ``}
+		${alignItems        ? `align-items:			${alignItems};`     : ``}
+		${justifyContent    ? `justify-content:		${justifyContent};` : ``}
+		${justifyItems    	? `justify-items:		${justifyItems};`   : ``}
 		${gap               ? `gap:					${gap};`            : ``}
 		${p                 ? `padding:				${p};`              : ``}
 		${mb                ? `margin-bottom:		${mb};`             : ``}

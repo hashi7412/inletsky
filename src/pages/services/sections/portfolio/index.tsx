@@ -83,8 +83,6 @@ const SwiperContainer = styled.div`
 const Section = styled.div`
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    margin-left: calc((1440px - 100vw) / 2);
     align-items: center;
     gap: 1rem;
     margin-bottom: 7rem;
