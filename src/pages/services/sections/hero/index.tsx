@@ -45,6 +45,7 @@ const HeroSection = () => {
                     }}>
                         <Flex
                             $style={{
+                                flex: "5",
                                 fDirection: "column",
                                 gap: "1.5rem",
                                 queries: {
