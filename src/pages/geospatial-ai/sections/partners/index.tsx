@@ -22,6 +22,7 @@ const PatnersSection = () => {
             }}>
                 <Flex $style={{
                     fDirection: "column",
+                    vAlign: "center",
                     gap: "1rem",
                     queries: {
                         768: {
