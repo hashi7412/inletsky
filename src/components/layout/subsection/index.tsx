@@ -11,15 +11,15 @@ const Subsection: React.FC<SubsectionPropsType> = ({
     ...rest
 }) => {
     $style = {
-        mb: "7rem",
+        mb: "12rem",
         p: "0 1rem",
         ...$style,
-        // queries: {
-        //     768: {
-        //         mb: "3rem",
-        //         ...($style?.queries ? ["768"] : {})
-        //     }
-        // }
+        queries: {
+            768: {
+                mb: "5rem",
+                ...($style?.queries ? ["768"] : {})
+            }
+        }
     }
     return (
         <SubsectionContainer

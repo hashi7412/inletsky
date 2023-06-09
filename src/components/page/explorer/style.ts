@@ -12,19 +12,15 @@ const animation = keyframes`
 
 export const ExplorerContainer = styled(Link)`
     position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
     left: 50%;
     transform: translate(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     z-index: 5;
 
-    > span {
+    span {
         text-transform: uppercase;
         transform: rotate(-90deg);
-        line-height: 150px;
+        line-height: 135px;
     }
 
     svg {
