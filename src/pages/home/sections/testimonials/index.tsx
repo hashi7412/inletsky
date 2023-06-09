@@ -13,6 +13,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import Avatar from "../../../../assets/img/avatar.png";
+import SlideNavigate from "../../../../components/slide-navigate";
+import Subsection from "../../../../components/layout/subsection";
 
 const PrevButton = styled.div`
     position: relative;
@@ -90,181 +92,178 @@ const TestimonialsSection = () => {
     }
 
     return (
-        <Flex $style={{
-            fDirection: "column",
-            vAlign: "center",
-            mb: "7rem",
-            gap: "3rem"
+        <Subsection $style={{
+            bg: GV("bg-sub"),
+            p: "2rem 0"
         }}>
             <Flex $style={{
                 fDirection: "column",
                 vAlign: "center",
-                gap: "1rem"
+                gap: "3rem"
             }}>
-                <Badge>Tell us what to explore</Badge>
-                <Heading level={1}>Testimonials</Heading>
-                <P>Search and geocoding is tied to everything we build — maps, navigation, AR — and underlies every app that helps humans explore their world.</P>
+                <Flex $style={{
+                    fDirection: "column",
+                    vAlign: "center",
+                    gap: "1rem"
+                }}>
+                    <Badge>Tell us what to explore</Badge>
+                    <Heading level={1}>Testimonials</Heading>
+                    <P>Search and geocoding is tied to everything we build — maps, navigation, AR — and underlies every app that helps humans explore their world.</P>
+                </Flex>
+                <SwiperContainer ref={sliderRef}>
+                    <Swiper
+                        slidesPerView={"auto"}
+                        spaceBetween={20}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        modules={[Navigation]}
+                        className="mySwiper"
+                        grabCursor={true}
+                        navigation={true}
+                        loop={true}
+                        dir="rtl"
+                    >
+                        <SwiperSlide>
+                            <Card>
+                                <Flex $style={{
+                                    vAlign: "center",
+                                    gap: "0.5rem"
+                                }}>
+                                    <img src={Avatar} />
+                                    <Heading level={5}>Joe Smith</Heading>
+                                </Flex>
+                                <P $style={{
+                                    align: "left",
+                                    size: "12px"
+                                }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
+                            </Card>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card>
+                                <Flex $style={{
+                                    vAlign: "center",
+                                    gap: "0.5rem"
+                                }}>
+                                    <img src={Avatar} />
+                                    <Heading level={5}>Joe Smith</Heading>
+                                </Flex>
+                                <P $style={{
+                                    align: "left",
+                                    size: "12px"
+                                }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
+                            </Card>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card>
+                                <Flex $style={{
+                                    vAlign: "center",
+                                    gap: "0.5rem"
+                                }}>
+                                    <img src={Avatar} />
+                                    <Heading level={5}>Joe Smith</Heading>
+                                </Flex>
+                                <P $style={{
+                                    align: "left",
+                                    size: "12px"
+                                }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
+                            </Card>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card>
+                                <Flex $style={{
+                                    vAlign: "center",
+                                    gap: "0.5rem"
+                                }}>
+                                    <img src={Avatar} />
+                                    <Heading level={5}>Joe Smith</Heading>
+                                </Flex>
+                                <P $style={{
+                                    align: "left",
+                                    size: "12px"
+                                }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
+                            </Card>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card>
+                                <Flex $style={{
+                                    vAlign: "center",
+                                    gap: "0.5rem"
+                                }}>
+                                    <img src={Avatar} />
+                                    <Heading level={5}>Joe Smith</Heading>
+                                </Flex>
+                                <P $style={{
+                                    align: "left",
+                                    size: "12px"
+                                }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
+                            </Card>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card>
+                                <Flex $style={{
+                                    vAlign: "center",
+                                    gap: "0.5rem"
+                                }}>
+                                    <img src={Avatar} />
+                                    <Heading level={5}>Joe Smith</Heading>
+                                </Flex>
+                                <P $style={{
+                                    align: "left",
+                                    size: "12px"
+                                }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
+                            </Card>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card>
+                                <Flex $style={{
+                                    vAlign: "center",
+                                    gap: "0.5rem"
+                                }}>
+                                    <img src={Avatar} />
+                                    <Heading level={5}>Joe Smith</Heading>
+                                </Flex>
+                                <P $style={{
+                                    align: "left",
+                                    size: "12px"
+                                }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
+                            </Card>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card>
+                                <Flex $style={{
+                                    vAlign: "center",
+                                    gap: "0.5rem"
+                                }}>
+                                    <img src={Avatar} />
+                                    <Heading level={5}>Joe Smith</Heading>
+                                </Flex>
+                                <P $style={{
+                                    align: "left",
+                                    size: "12px"
+                                }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
+                            </Card>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card>
+                                <Flex $style={{
+                                    vAlign: "center",
+                                    gap: "0.5rem"
+                                }}>
+                                    <img src={Avatar} />
+                                    <Heading level={5}>Joe Smith</Heading>
+                                </Flex>
+                                <P $style={{
+                                    align: "left",
+                                    size: "12px"
+                                }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
+                            </Card>
+                        </SwiperSlide>
+                    </Swiper>
+                </SwiperContainer>
+                <SlideNavigate sliderRef={sliderRef} />
             </Flex>
-            <SwiperContainer ref={sliderRef}>
-                <Swiper
-                    slidesPerView={"auto"}
-                    spaceBetween={20}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[Navigation]}
-                    className="mySwiper"
-                    grabCursor={true}
-                    navigation={true}
-                    loop={true}
-                    dir="rtl"
-                >
-                    <SwiperSlide>
-                        <Card>
-                            <Flex $style={{
-                                vAlign: "center",
-                                gap: "0.5rem"
-                            }}>
-                                <img src={Avatar} />
-                                <Heading level={5}>Joe Smith</Heading>
-                            </Flex>
-                            <P $style={{
-                                align: "left",
-                                size: "12px"
-                            }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
-                        </Card>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Card>
-                            <Flex $style={{
-                                vAlign: "center",
-                                gap: "0.5rem"
-                            }}>
-                                <img src={Avatar} />
-                                <Heading level={5}>Joe Smith</Heading>
-                            </Flex>
-                            <P $style={{
-                                align: "left",
-                                size: "12px"
-                            }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
-                        </Card>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Card>
-                            <Flex $style={{
-                                vAlign: "center",
-                                gap: "0.5rem"
-                            }}>
-                                <img src={Avatar} />
-                                <Heading level={5}>Joe Smith</Heading>
-                            </Flex>
-                            <P $style={{
-                                align: "left",
-                                size: "12px"
-                            }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
-                        </Card>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Card>
-                            <Flex $style={{
-                                vAlign: "center",
-                                gap: "0.5rem"
-                            }}>
-                                <img src={Avatar} />
-                                <Heading level={5}>Joe Smith</Heading>
-                            </Flex>
-                            <P $style={{
-                                align: "left",
-                                size: "12px"
-                            }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
-                        </Card>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Card>
-                            <Flex $style={{
-                                vAlign: "center",
-                                gap: "0.5rem"
-                            }}>
-                                <img src={Avatar} />
-                                <Heading level={5}>Joe Smith</Heading>
-                            </Flex>
-                            <P $style={{
-                                align: "left",
-                                size: "12px"
-                            }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
-                        </Card>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Card>
-                            <Flex $style={{
-                                vAlign: "center",
-                                gap: "0.5rem"
-                            }}>
-                                <img src={Avatar} />
-                                <Heading level={5}>Joe Smith</Heading>
-                            </Flex>
-                            <P $style={{
-                                align: "left",
-                                size: "12px"
-                            }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
-                        </Card>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Card>
-                            <Flex $style={{
-                                vAlign: "center",
-                                gap: "0.5rem"
-                            }}>
-                                <img src={Avatar} />
-                                <Heading level={5}>Joe Smith</Heading>
-                            </Flex>
-                            <P $style={{
-                                align: "left",
-                                size: "12px"
-                            }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
-                        </Card>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Card>
-                            <Flex $style={{
-                                vAlign: "center",
-                                gap: "0.5rem"
-                            }}>
-                                <img src={Avatar} />
-                                <Heading level={5}>Joe Smith</Heading>
-                            </Flex>
-                            <P $style={{
-                                align: "left",
-                                size: "12px"
-                            }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
-                        </Card>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Card>
-                            <Flex $style={{
-                                vAlign: "center",
-                                gap: "0.5rem"
-                            }}>
-                                <img src={Avatar} />
-                                <Heading level={5}>Joe Smith</Heading>
-                            </Flex>
-                            <P $style={{
-                                align: "left",
-                                size: "12px"
-                            }}>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</P>
-                        </Card>
-                    </SwiperSlide>
-                </Swiper>
-            </SwiperContainer>
-            <Flex>
-                <PrevButton onClick={onSlideNext}>
-                    <Icon icon="ArrowLeft" />
-                </PrevButton>
-                <NextButton onClick={onSlidePrev}>
-                    <Icon icon="ArrowRight" />
-                </NextButton>
-            </Flex>
-        </Flex>
+        </Subsection>
     )
 }
 

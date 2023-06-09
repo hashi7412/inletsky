@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
-import { GV } from "../../../../utils/style.util";
 
 import { Badge, Icon } from "../../../../components/custom";
 import { Flex, Heading, P, Link } from "../../../../components/basic";
@@ -14,6 +13,7 @@ import Image3 from "../../../../assets/img/portfolio/3.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import SlideNavigate from "../../../../components/slide-navigate";
 
 const Card = styled.div<{ bg?: string }>`
     position: relative;
@@ -95,57 +95,9 @@ const Section = styled.div`
     }
 `
 
-const PrevButton = styled.div`
-    position: relative;
-    cursor: pointer;
-
-    &:after {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        z-index: -1;
-        transform: translate(-40%, -50%);
-        width: 30px;
-        height: 30px;
-        background: ${GV("danger")};
-        border-radius: 50%;
-        content: "";
-    }
-`
-
-const NextButton = styled.div`
-    position: relative;
-    cursor: pointer;
-
-    &:after {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        z-index: -1;
-        transform: translate(40%, -50%);
-        width: 30px;
-        height: 30px;
-        background: ${GV("danger")};
-        border-radius: 50%;
-        content: "";
-    }
-`
-
 const PortfolioSection = () => {
 
     const sliderRef = React.useRef<HTMLDivElement>(null);
-
-    const onSlidePrev = () => {
-        if (!sliderRef.current) return
-        const prevBtn = sliderRef.current.querySelector('.swiper-button-prev') as HTMLElement;
-        prevBtn?.click();
-    }
-
-    const onSlideNext = () => {
-        if (!sliderRef.current) return
-        const nextBtn = sliderRef.current.querySelector('.swiper-button-next') as HTMLElement;
-        nextBtn?.click();
-    }
 
     return (
 
@@ -266,14 +218,7 @@ const PortfolioSection = () => {
                         </SwiperSlide>
                     </Swiper>
                 </SwiperContainer>
-                <Flex>
-                    <PrevButton onClick={onSlidePrev}>
-                        <Icon icon="ArrowLeft" />
-                    </PrevButton>
-                    <NextButton onClick={onSlideNext}>
-                        <Icon icon="ArrowRight" />
-                    </NextButton>
-                </Flex>
+                <SlideNavigate sliderRef={sliderRef} />
             </Section>
         </motion.div>
     )

@@ -7,6 +7,7 @@ import TestimonialsSection from "./sections/testimonials";
 import ServicesSection from "./sections/services";
 import HeroSection from "./sections/hero";
 import GetStartedSection from "./sections/get-started";
+import { BgSection } from "./style";
 
 const BrainnetPage = () => {
     return (
@@ -14,9 +15,11 @@ const BrainnetPage = () => {
             <HeroSection />
             <NetworkingSection />
             <ClientSection />
-            <NetworksSection />
-            <TestimonialsSection />
-            <ServicesSection />
+            <BgSection>
+                <NetworksSection />
+                <TestimonialsSection />
+                <ServicesSection />
+            </BgSection>
             <FaqsSection />
             <GetStartedSection />
         </React.Fragment>

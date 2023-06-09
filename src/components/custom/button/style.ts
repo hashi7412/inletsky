@@ -19,7 +19,7 @@ export const StyledButton = styled.button<StyledButtonType>`
     text-transform: uppercase;
     border-radius: 5rem;
     font-size: ${GV("font-size")};
-    transition: all ease-in-out .3s;
+    transition: all ease-in-out .1s;
 
     ${({ w }) => w ? `width: ${w};` : ``}
     ${({ h }) => `line-height: ${h ? h : '2.69rem'};`}
@@ -32,5 +32,6 @@ export const StyledButton = styled.button<StyledButtonType>`
 
     &:hover {
         box-shadow: 0 0 10px 0 #898989a0;
+        transform: scale(1.05);
     }
 `
