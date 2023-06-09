@@ -36,6 +36,7 @@ const ClientSection = () => {
                 <Flex $style={{
                     fDirection: "column",
                     gap: "1rem",
+                    vAlign: "center",
                     queries: {
                         768: {
                             vAlign: "center"
