@@ -3,7 +3,7 @@ import PublicLayout from "../layouts/public";
 import ServicesPage from "../pages/services";
 import GeospatialAiPage from "../pages/geospatial-ai";
 import MultiCouldSolutionsPage from "../pages/multi-cloud-solutions";
-import BrainnetPage from "../pages/brainnet";
+import HomePage from "../pages/home";
 
 const routers = createBrowserRouter([
     {
@@ -12,7 +12,7 @@ const routers = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <BrainnetPage />
+                element: <HomePage />
             },
             {
                 path: "/services",
