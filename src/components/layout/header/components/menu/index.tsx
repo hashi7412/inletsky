@@ -2,6 +2,7 @@ import React from "react";
 import Flex from "../../../../basic/flex";
 import Icon from "../../../../custom/icon";
 import { Hamburger, MenuContainer, MenuLink, Nav, StyledMenuItem, Submenu, SubmenuItem } from "./style";
+import _ROUTERS from "../../../../../constants/menu.constant";
 
 type MenuPropsType = {
     isOpen: boolean
@@ -57,9 +58,9 @@ const Menu: React.FC<MenuPropsType> = ({ isOpen, closeMenu }) => {
         <MenuContainer isOpen={isOpen}>
             <Nav>
                 {/* <MenuItem to="" label="Home" /> */}
-                <MenuItem to="" label="Services" />
-                <MenuItem to="" label="Geospatial AI" />
-                <MenuItem to="" label="Solutions" />
+                <MenuItem to={_ROUTERS.services} label="Services" />
+                <MenuItem to={_ROUTERS.geospatial_ai} label="Geospatial AI" />
+                <MenuItem to={_ROUTERS.solutions} label="Solutions" />
                 <MenuItem to="" label="Login" />
             </Nav>
         </MenuContainer>
