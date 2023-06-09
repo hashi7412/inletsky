@@ -7,6 +7,7 @@ export type StyledPanelType = {
 }
 
 export const PanelContainer = styled.div<StyledPanelType>`
+    flex: 1;
     background: ${GV('bg-sub')};
     border-radius: 1.5rem;
     ${({ p }) => `padding: ${p ?? '2.5rem 3rem'};`}

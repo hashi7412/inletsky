@@ -1,13 +1,9 @@
 import React, { useState } from "react";
-import Flex from "../../../../components/basic/flex";
-import Badge from "../../../../components/custom/badge";
-import Heading from "../../../../components/basic/heading";
-import { P } from "../../../../components/basic/text";
-import Panel from "../../../../components/custom/panel";
-import Checkbox from "../../../../components/custom/checkbox";
-import Button from "../../../../components/custom/button";
+import { motion } from "framer-motion";
 import { GV } from "../../../../utils/style.util";
-import { Input, Textarea } from "../../../../components/custom/input";
+
+import { Flex, Heading, P } from "../../../../components/basic";
+import { Badge, Panel, Input, Textarea, Button, Checkbox } from "../../../../components/custom";
 import Subsection from "../../../../components/layout/subsection";
 
 const ContactSection = () => {
@@ -28,44 +24,72 @@ const ContactSection = () => {
                 }}
             >
                 <Flex $style={{ fDirection: "column", vAlign: "center", gap: "0.5rem" }}>
-                    <Badge>Let Us Know What You’re Looking for</Badge>
-                    <Heading level={1} $style={{ align: "center" }}>We’ll Build it for You</Heading>
-                    <P $style={{ align: "center" }}>We are passionate about delivering great software and services.</P>
+                    <motion.div
+                        initial={{ opacity: 0, translateY: 20 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true, amount: 1 }}
+                    >
+                        <Badge>Let Us Know What You’re Looking for</Badge>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, translateY: 30 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 0.8, delay: 0.3 }}
+                        viewport={{ once: true, amount: 1 }}
+                    >
+                        <Heading level={1} $style={{ align: "center" }}>We’ll Build it for You</Heading>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, translateY: 30 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 0.8, delay: 0.6 }}
+                        viewport={{ once: true, amount: 1 }}
+                    >
+                        <P $style={{ align: "center" }}>We are passionate about delivering great software and services.</P>
+                    </motion.div>
                 </Flex>
-                <Panel>
-                    <Flex $style={{ fDirection: "column", gap: "1rem" }}>
-                        <Flex $style={{ fDirection: "column", gap: "1.875rem", queries: { 768: { gap: "1rem" } } }}>
-                            <Flex
-                                $style={{
-                                    gap: "6.25rem",
-                                    queries: {
-                                        992: {
-                                            gap: "2rem"
-                                        },
-                                        768: {
-                                            fDirection: "column",
-                                            gap: "1rem"
+                <motion.div
+                    initial={{ opacity: 0, translateY: 20 }}
+                    whileInView={{ opacity: 1, translateY: 0 }}
+                    transition={{ duration: 0.8, delay: 0.9 }}
+                    viewport={{ once: true }}
+                >
+                    <Panel>
+                        <Flex $style={{ fDirection: "column", gap: "1rem" }}>
+                            <Flex $style={{ fDirection: "column", gap: "1.875rem", queries: { 768: { gap: "1rem" } } }}>
+                                <Flex
+                                    $style={{
+                                        gap: "6.25rem",
+                                        queries: {
+                                            992: {
+                                                gap: "2rem"
+                                            },
+                                            768: {
+                                                fDirection: "column",
+                                                gap: "1rem"
+                                            }
                                         }
-                                    }
-                                }}
-                            >
-                                <Input value="" onChange={() => { }} placeholder="Name*" />
-                                <Input value="" onChange={() => { }} placeholder="Email*" />
+                                    }}
+                                >
+                                    <Input value="" onChange={() => { }} placeholder="Name*" />
+                                    <Input value="" onChange={() => { }} placeholder="Email*" />
+                                </Flex>
+                                <Input value="" onChange={() => { }} placeholder="What are you seeking for?" />
+                                <Input value="" onChange={() => { }} placeholder="How did you hear about Inletsky?" />
+                                <Textarea value="" onChange={() => { }} placeholder="Message" />
+                                <Checkbox
+                                    label={"I agree to the Terms & Conditions*"}
+                                    isChecked={isAgreed}
+                                    onChange={() => setIsAgreed((prev) => !prev)}
+                                />
                             </Flex>
-                            <Input value="" onChange={() => { }} placeholder="What are you seeking for?" />
-                            <Input value="" onChange={() => { }} placeholder="How did you hear about Inletsky?" />
-                            <Textarea value="" onChange={() => { }} placeholder="Message" />
-                            <Checkbox
-                                label={"I agree to the Terms & Conditions*"}
-                                isChecked={isAgreed}
-                                onChange={() => setIsAgreed((prev) => !prev)}
-                            />
+                            <Flex $style={{ hAlign: "center" }}>
+                                <Button $style={{ bg: GV("danger") }}>Send message →</Button>
+                            </Flex>
                         </Flex>
-                        <Flex $style={{ hAlign: "center" }}>
-                            <Button $style={{ bg: GV("danger") }}>Send message →</Button>
-                        </Flex>
-                    </Flex>
-                </Panel>
+                    </Panel>
+                </motion.div>
             </Flex>
         </Subsection>
     )
