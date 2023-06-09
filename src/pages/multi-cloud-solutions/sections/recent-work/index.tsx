@@ -1,11 +1,12 @@
-import React, { useRef, useState } from "react";
+import React from "react";
+import styled from "styled-components";
+import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
-import Badge from "../../../../components/custom/badge";
-import Flex from "../../../../components/basic/flex";
-import Heading from "../../../../components/basic/heading";
-import { P } from "../../../../components/basic/text";
-import Icon from "../../../../components/custom/icon";
+import { GV } from "../../../../utils/style.util";
+
+import { Flex, Heading, P, Link } from "../../../../components/basic";
+import { Icon, Badge } from "../../../../components/custom";
 
 import Image1 from "../../../../assets/img/portfolio/1.png";
 import Image2 from "../../../../assets/img/portfolio/2.png";
@@ -13,10 +14,6 @@ import Image3 from "../../../../assets/img/portfolio/3.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
-
-import styled from "styled-components";
-import Link from "../../../../components/basic/link";
-import { GV } from "../../../../utils/style.util";
 
 const Card = styled.div<{ bg?: string }>`
     position: relative;
@@ -149,9 +146,34 @@ const RecentWorkSection = () => {
     return (
         <Section>
             <Flex $style={{ fDirection: "column", vAlign: "center", gap: "1rem" }}>
-                <Badge>Our Recent Work</Badge>
-                <Heading level={1} $style={{ align: "center" }}>Portfolio</Heading>
-                <P $style={{ align: "center" }}>Build. Launch. Grow</P>
+                <motion.div
+                    initial={{ opacity: 0, translateY: 20 }}
+                    whileInView={{ opacity: 1, translateY: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true, amount: 1 }}
+                >
+                    <Badge>Our Recent Work</Badge>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, translateY: 30 }}
+                    whileInView={{ opacity: 1, translateY: 0 }}
+                    transition={{ duration: 0.8, delay: 0.3 }}
+                    viewport={{ once: true, amount: 1 }}
+                >
+                    <Heading level={1} $style={{ align: "center" }}>Optimal performance</Heading>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, translateY: 30 }}
+                    whileInView={{ opacity: 1, translateY: 0 }}
+                    transition={{ duration: 0.8, delay: 0.6 }}
+                    viewport={{ once: true, amount: 1 }}
+                >
+                    <Flex $style={{
+                        maxW: "992px"
+                    }}>
+                        <P $style={{ align: "center" }}>With no need to restrict applications or workloads to one type of business cloud solution, organisations are adopting our Hybrid and Multi-Cloud model because it delivers a fluid mix of cloud computing solutions with exceptional business outcomes.</P>
+                    </Flex>
+                </motion.div>
             </Flex>
             <SwiperContainer>
                 <Swiper
