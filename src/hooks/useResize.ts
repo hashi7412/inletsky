@@ -1,9 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
+type UseResizeHookType = () => [number, number]
 
 const useResize = () => {
 
+	const [offsetWidth, setOffsetWidth] = useState(window.innerWidth);
+	const [offsetHeight, setOffsetHeight] = useState(window.innerHeight);
+
 	const resizeFunc = ((e: any) => {
-		// 
+		setOffsetWidth(window.innerWidth);
+		setOffsetHeight(window.innerHeight);
 	})
 
 	useEffect(() => {
@@ -12,7 +18,7 @@ const useResize = () => {
 		return () => window.removeEventListener("resize", resizeFunc)
 	})
 
-	return []
+	return [offsetWidth, offsetHeight]
 }
 
 export default useResize;

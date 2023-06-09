@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,6 +15,7 @@ import Image3 from "../../../../assets/img/portfolio/3.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import SlideNavigate from "../../../../components/slide-navigate";
+import useResize from "../../../../hooks/useResize";
 
 const Card = styled.div<{ bg?: string }>`
     position: relative;
@@ -50,7 +51,11 @@ const Card = styled.div<{ bg?: string }>`
 
 const SwiperContainer = styled.div`
     width: 100%;
-    height: 50vw;
+    height: 32vw;
+
+    @media (max-width: 768px) {
+        height: 50vw;
+    }
 
     & .swiper-slide-active {
         z-index: 5;
@@ -136,6 +141,18 @@ const RecentWorkSection = () => {
 
     const sliderRef = useRef<HTMLDivElement>(null);
 
+    const [isTablet, setIsTablet] = useState(false);
+
+    const [w,] = useResize();
+
+    useEffect(() => {
+        if (w <= 768) {
+            setIsTablet(true);
+        } else {
+            setIsTablet(false);
+        }
+    }, [w])
+
     return (
         <Section>
             <Flex $style={{ fDirection: "column", vAlign: "center", gap: "1rem" }}>
@@ -170,7 +187,7 @@ const RecentWorkSection = () => {
             </Flex>
             <SwiperContainer ref={sliderRef}>
                 <Swiper
-                    slidesPerView={2}
+                    slidesPerView={isTablet ? 1.7 : 2.5}
                     loop={true}
                     centeredSlides={true}
                     navigation={true}
