@@ -1,14 +1,11 @@
 import { useEffect, useState } from "react";
 import { debounce } from "../utils/debounce.util";
 
-export type ScrollPosType = {
-    x: number
-    y: number
-}
-
 type ScrollDirectionType = "up" | "" | "down"
 
-const useScroll: () => [number, number, ScrollDirectionType] = () => {
+type UseScrollHookType = () => [number, number, ScrollDirectionType]
+
+const useScroll: UseScrollHookType = () => {
     const [lastScrollTop, setLastScrollTop] = useState<number>(0);
     const [bodyOffset, setBodyOffset] = useState<DOMRect>(
         document.body.getBoundingClientRect()
