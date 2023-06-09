@@ -59,7 +59,7 @@ const Menu: React.FC<MenuPropsType> = ({ isOpen, closeMenu }) => {
                 {/* <MenuItem to="" label="Home" /> */}
                 <MenuItem to="" label="Services" />
                 <MenuItem to="" label="Geospatial AI" />
-                <MenuItem to="" label="Multi-Cloud Solutions" />
+                <MenuItem to="" label="Solutions" />
                 <MenuItem to="" label="Login" />
             </Nav>
         </MenuContainer>

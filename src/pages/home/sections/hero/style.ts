@@ -26,7 +26,7 @@ export const StyledHeroContainer = styled(Flex)`
         }
 
         @media (max-width: 600px) {
-            background-position: center 300px;
+            background-position: center 0;
         }
     }
 

@@ -175,7 +175,8 @@ const NetworkingSection = () => {
                                     w: "65%",
                                     queries: {
                                         767: {
-                                            gap: "1rem"
+                                            gap: "0.5rem",
+                                            w: "100%"
                                         }
                                     }
                                 }}
@@ -209,7 +210,8 @@ const NetworkingSection = () => {
                                     w: "65%",
                                     queries: {
                                         767: {
-                                            gap: "1rem"
+                                            gap: "0.5rem",
+                                            w: "100%"
                                         }
                                     }
                                 }}
@@ -243,7 +245,8 @@ const NetworkingSection = () => {
                                     w: "65%",
                                     queries: {
                                         767: {
-                                            gap: "1rem"
+                                            gap: "0.5rem",
+                                            w: "100%"
                                         }
                                     }
                                 }}
