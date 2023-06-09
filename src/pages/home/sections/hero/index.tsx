@@ -26,11 +26,18 @@ const HeroSection = () => {
                         }
                     }
                 }}>
-                    <Badge>Explore what’s new with inletsky</Badge>
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.5, translateY: 20 }}
-                        animate={{ opacity: 1, scale: 1, translateY: 0 }}
-                        transition={{ duration: 0.3 }}
+                        initial={{ opacity: 0, translateY: 50 }}
+                        animate={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: false }}
+                    >
+                        <Badge>Explore what’s new with inletsky</Badge>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, translateY: 50 }}
+                        animate={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 1, delay: 0.2 }}
                         viewport={{ once: false }}
                     >
                         <Heading level={1} $style={{
@@ -42,9 +49,9 @@ const HeroSection = () => {
                         w: "65%"
                     }}>
                         <motion.div
-                            initial={{ opacity: 0, scale: 0.5, translateY: -20 }}
-                            animate={{ opacity: 1, scale: 1, translateY: 0 }}
-                            transition={{ duration: 0.3, delay: 0.1 }}
+                            initial={{ opacity: 0, translateY: 50 }}
+                            animate={{ opacity: 1, translateY: 0 }}
+                            transition={{ duration: 1, delay: 0.8 }}
                             viewport={{ once: true }}
                         >
                             <P $style={{

@@ -1,11 +1,12 @@
-import React, { useRef, useState } from "react";
+import React from "react";
+import styled from "styled-components";
+import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
-import Badge from "../../../../components/custom/badge";
-import Flex from "../../../../components/basic/flex";
-import Heading from "../../../../components/basic/heading";
-import { P } from "../../../../components/basic/text";
-import Icon from "../../../../components/custom/icon";
+import { GV } from "../../../../utils/style.util";
+
+import { Badge, Icon } from "../../../../components/custom";
+import { Flex, Heading, P, Link } from "../../../../components/basic";
 
 import Image1 from "../../../../assets/img/portfolio/1.png";
 import Image2 from "../../../../assets/img/portfolio/2.png";
@@ -13,10 +14,6 @@ import Image3 from "../../../../assets/img/portfolio/3.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
-
-import styled from "styled-components";
-import Link from "../../../../components/basic/link";
-import { GV } from "../../../../utils/style.util";
 
 const Card = styled.div<{ bg?: string }>`
     position: relative;
@@ -151,126 +148,134 @@ const PortfolioSection = () => {
     }
 
     return (
-        <Section>
-            <Flex $style={{ fDirection: "column", vAlign: "center", gap: "1rem" }}>
-                <Badge>Our Recent Work</Badge>
-                <Heading level={1} $style={{ align: "center" }}>Portfolio</Heading>
-                <P $style={{ align: "center" }}>Build. Launch. Grow</P>
-            </Flex>
-            <SwiperContainer ref={sliderRef}>
-                <Swiper
-                    slidesPerView={2}
-                    loop={true}
-                    centeredSlides={true}
-                    navigation={true}
-                    modules={[Pagination, Navigation]}
-                    className="mySwiper"
-                    grabCursor={true}
-                >
-                    <SwiperSlide>
-                        <Card bg={Image1}></Card>
-                        <Flex
-                            $style={{
-                                fDirection: "column",
-                                vAlign: "flex-start",
-                                hAlign: "center",
-                                gap: "2rem",
-                                w: "65%",
-                                queries: {
-                                    767: {
-                                        gap: "1rem"
-                                    }
-                                }
-                            }}
-                        >
-                            <Badge>Microsoft</Badge>
-                            <Heading level={3}>Global Reader1</Heading>
-                            <P
+
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+        >
+            <Section>
+                <Flex $style={{ fDirection: "column", vAlign: "center", gap: "1rem" }}>
+                    <Badge>Our Recent Work</Badge>
+                    <Heading level={1} $style={{ align: "center" }}>Portfolio</Heading>
+                    <P $style={{ align: "center" }}>Build. Launch. Grow</P>
+                </Flex>
+                <SwiperContainer ref={sliderRef}>
+                    <Swiper
+                        slidesPerView={2}
+                        loop={true}
+                        centeredSlides={true}
+                        navigation={true}
+                        modules={[Pagination, Navigation]}
+                        className="mySwiper"
+                        grabCursor={true}
+                    >
+                        <SwiperSlide>
+                            <Card bg={Image1}></Card>
+                            <Flex
                                 $style={{
-                                    align: "left",
+                                    fDirection: "column",
+                                    vAlign: "flex-start",
+                                    hAlign: "center",
+                                    gap: "2rem",
+                                    w: "65%",
                                     queries: {
-                                        768: {
-                                            size: "0.5rem"
+                                        767: {
+                                            gap: "1rem"
                                         }
                                     }
                                 }}
-                            >A comprehensive production data exchange software solution that gives you Realtime information on your production capacity.</P>
-                            <Link to="">view portfolio  →</Link>
-                        </Flex>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Card bg={Image2}></Card>
-                        <Flex
-                            $style={{
-                                fDirection: "column",
-                                vAlign: "flex-start",
-                                hAlign: "center",
-                                gap: "2rem",
-                                w: "65%",
-                                queries: {
-                                    767: {
-                                        gap: "1rem"
-                                    }
-                                }
-                            }}
-                        >
-                            <Badge>Microsoft</Badge>
-                            <Heading level={3}>Global Reader1</Heading>
-                            <P
+                            >
+                                <Badge>Microsoft</Badge>
+                                <Heading level={3}>Global Reader1</Heading>
+                                <P
+                                    $style={{
+                                        align: "left",
+                                        queries: {
+                                            768: {
+                                                size: "0.5rem"
+                                            }
+                                        }
+                                    }}
+                                >A comprehensive production data exchange software solution that gives you Realtime information on your production capacity.</P>
+                                <Link to="">view portfolio  →</Link>
+                            </Flex>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card bg={Image2}></Card>
+                            <Flex
                                 $style={{
-                                    align: "left",
+                                    fDirection: "column",
+                                    vAlign: "flex-start",
+                                    hAlign: "center",
+                                    gap: "2rem",
+                                    w: "65%",
                                     queries: {
-                                        768: {
-                                            size: "0.5rem"
+                                        767: {
+                                            gap: "1rem"
                                         }
                                     }
                                 }}
-                            >A comprehensive production data exchange software solution that gives you Realtime information on your production capacity.</P>
-                            <Link to="">view portfolio  →</Link>
-                        </Flex>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Card bg={Image3}></Card>
-                        <Flex
-                            $style={{
-                                fDirection: "column",
-                                vAlign: "flex-start",
-                                hAlign: "center",
-                                gap: "2rem",
-                                w: "65%",
-                                queries: {
-                                    767: {
-                                        gap: "1rem"
-                                    }
-                                }
-                            }}
-                        >
-                            <Badge>Microsoft</Badge>
-                            <Heading level={3}>Global Reader1</Heading>
-                            <P
+                            >
+                                <Badge>Microsoft</Badge>
+                                <Heading level={3}>Global Reader1</Heading>
+                                <P
+                                    $style={{
+                                        align: "left",
+                                        queries: {
+                                            768: {
+                                                size: "0.5rem"
+                                            }
+                                        }
+                                    }}
+                                >A comprehensive production data exchange software solution that gives you Realtime information on your production capacity.</P>
+                                <Link to="">view portfolio  →</Link>
+                            </Flex>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card bg={Image3}></Card>
+                            <Flex
                                 $style={{
-                                    align: "left",
+                                    fDirection: "column",
+                                    vAlign: "flex-start",
+                                    hAlign: "center",
+                                    gap: "2rem",
+                                    w: "65%",
                                     queries: {
-                                        768: {
-                                            size: "0.5rem"
+                                        767: {
+                                            gap: "1rem"
                                         }
                                     }
                                 }}
-                            >A comprehensive production data exchange software solution that gives you Realtime information on your production capacity.</P>
-                            <Link to="">view portfolio  →</Link>
-                        </Flex>
-                    </SwiperSlide>
-                </Swiper>
-            </SwiperContainer>
-            <Flex>
-                <PrevButton onClick={onSlidePrev}>
-                    <Icon icon="ArrowLeft" />
-                </PrevButton>
-                <NextButton onClick={onSlideNext}>
-                    <Icon icon="ArrowRight" />
-                </NextButton>
-            </Flex>
-        </Section>
+                            >
+                                <Badge>Microsoft</Badge>
+                                <Heading level={3}>Global Reader1</Heading>
+                                <P
+                                    $style={{
+                                        align: "left",
+                                        queries: {
+                                            768: {
+                                                size: "0.5rem"
+                                            }
+                                        }
+                                    }}
+                                >A comprehensive production data exchange software solution that gives you Realtime information on your production capacity.</P>
+                                <Link to="">view portfolio  →</Link>
+                            </Flex>
+                        </SwiperSlide>
+                    </Swiper>
+                </SwiperContainer>
+                <Flex>
+                    <PrevButton onClick={onSlidePrev}>
+                        <Icon icon="ArrowLeft" />
+                    </PrevButton>
+                    <NextButton onClick={onSlideNext}>
+                        <Icon icon="ArrowRight" />
+                    </NextButton>
+                </Flex>
+            </Section>
+        </motion.div>
     )
 }
 

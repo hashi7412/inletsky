@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Badge from "../../../../components/custom/badge";
 import Flex from "../../../../components/basic/flex";
 import Heading from "../../../../components/basic/heading";
@@ -31,8 +32,22 @@ const ProjectScopeSection = () => {
                 }}
             >
                 <Flex $style={{ fDirection: "column", vAlign: "center", gap: "0.5rem" }}>
-                    <Badge>Build A Success-Driven Development team to protect your</Badge>
-                    <Heading level={1} $style={{ align: "center" }}>Project Scope</Heading>
+                    <motion.div
+                        initial={{ opacity: 0, translateY: 20 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true, amount: 1 }}
+                    >
+                        <Badge>Build A Success-Driven Development team to protect your</Badge>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, translateY: 30 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 0.8, delay: 0.3 }}
+                        viewport={{ once: true, amount: 1 }}
+                    >
+                        <Heading level={1} $style={{ align: "center" }}>Project Scope</Heading>
+                    </motion.div>
                 </Flex>
                 <Flex $style={{
                     fDirection: "column",

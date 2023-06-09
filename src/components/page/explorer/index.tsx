@@ -10,9 +10,9 @@ const ExplorerButton = () => {
     return (
         <ExplorerContainer to={"#"}>
             <motion.div
-                initial={{ translateY: "100%" }}
-                animate={{ translateY: 0 }}
-                transition={{ duration: 0.3, delay: 0.3 }}
+                initial={{ opacity: 0, translateY: "150%" }}
+                animate={{ opacity: 1, translateY: 0 }}
+                transition={{ duration: 0.3, delay: 1 }}
             >
                 <Flex $style={{
                     fDirection: "column",

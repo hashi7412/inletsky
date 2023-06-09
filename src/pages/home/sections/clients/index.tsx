@@ -33,25 +33,32 @@ const ClientSection = () => {
                 vAlign: "center",
                 gap: "6rem"
             }}>
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 0.5 }}
-                    viewport={{ once: true, amount: 1 }}
-                >
-                    <Flex $style={{
-                        fDirection: "column",
-                        gap: "1rem",
-                        queries: {
-                            768: {
-                                vAlign: "center"
-                            }
+                <Flex $style={{
+                    fDirection: "column",
+                    gap: "1rem",
+                    queries: {
+                        768: {
+                            vAlign: "center"
                         }
-                    }}>
+                    }
+                }}>
+                    <motion.div
+                        initial={{ opacity: 0, translateY: 20 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true, amount: 1 }}
+                    >
                         <Badge>Trusted by the industry leaders</Badge>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, translateY: 30 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 0.8, delay: 0.3 }}
+                        viewport={{ once: true, amount: 1 }}
+                    >
                         <Heading level={1}>Our Clients</Heading>
-                    </Flex>
-                </motion.div>
+                    </motion.div>
+                </Flex>
                 <Grid $style={{
                     justifyContent: "center",
                     justifyItems: "center",
@@ -67,7 +74,7 @@ const ClientSection = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.05 }}
+                        transition={{ duration: 0.3, delay: 0.05 + 0.7}}
                         viewport={{ once: true }}
                     >
                         <img src={Img1} />
@@ -75,7 +82,7 @@ const ClientSection = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.1 }}
+                        transition={{ duration: 0.3, delay: 0.1 + 0.7}}
                         viewport={{ once: true }}
                     >
                         <img src={Img2} />
@@ -83,7 +90,7 @@ const ClientSection = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.15 }}
+                        transition={{ duration: 0.3, delay: 0.15 + 0.7}}
                         viewport={{ once: true }}
                     >
                         <img src={Img3} />
@@ -91,7 +98,7 @@ const ClientSection = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.2 }}
+                        transition={{ duration: 0.3, delay: 0.2 + 0.7}}
                         viewport={{ once: true }}
                     >
                         <img src={Img4} />
@@ -99,7 +106,7 @@ const ClientSection = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.25 }}
+                        transition={{ duration: 0.3, delay: 0.25 + 0.7}}
                         viewport={{ once: true }}
                     >
                         <img src={Img5} />
@@ -107,7 +114,7 @@ const ClientSection = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.3 }}
+                        transition={{ duration: 0.3, delay: 0.3 + 0.7}}
                         viewport={{ once: true }}
                     >
                         <img src={Img6} />
@@ -115,7 +122,7 @@ const ClientSection = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.35 }}
+                        transition={{ duration: 0.3, delay: 0.35 + 0.7}}
                         viewport={{ once: true }}
                     >
                         <img src={Img7} />
@@ -123,7 +130,7 @@ const ClientSection = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.4 }}
+                        transition={{ duration: 0.3, delay: 0.4 + 0.7}}
                         viewport={{ once: true }}
                     >
                         <img src={Img8} />
@@ -131,7 +138,7 @@ const ClientSection = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.45 }}
+                        transition={{ duration: 0.3, delay: 0.45 + 0.7}}
                         viewport={{ once: true }}
                     >
                         <img src={Img9} />
@@ -139,7 +146,7 @@ const ClientSection = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.5 }}
+                        transition={{ duration: 0.3, delay: 0.5 + 0.7}}
                         viewport={{ once: true }}
                     >
                         <img src={Img10} />
@@ -147,7 +154,7 @@ const ClientSection = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.55 }}
+                        transition={{ duration: 0.3, delay: 0.55 + 0.7}}
                         viewport={{ once: true }}
                     >
                         <img src={Img11} />
@@ -155,7 +162,7 @@ const ClientSection = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.6 }}
+                        transition={{ duration: 0.3, delay: 0.6 + 0.7}}
                         viewport={{ once: true }}
                     >
                         <img src={Img12} />
@@ -163,7 +170,7 @@ const ClientSection = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.65 }}
+                        transition={{ duration: 0.3, delay: 0.65 + 0.7}}
                         viewport={{ once: true }}
                     >
                         <img src={Img13} />
@@ -171,7 +178,7 @@ const ClientSection = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.7 }}
+                        transition={{ duration: 0.3, delay: 0.7 + 0.7}}
                         viewport={{ once: true }}
                     >
                         <img src={Img14} />
@@ -179,16 +186,23 @@ const ClientSection = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.75 }}
+                        transition={{ duration: 0.3, delay: 0.75 + 0.7}}
                         viewport={{ once: true }}
                     >
                         <img src={Img15} />
                     </motion.div>
                 </Grid>
-                <Link to="" $style={{
-                    color: GV("danger"),
-                    textTransform: "uppercase"
-                }}>View customere stories  →</Link>
+                <motion.div
+                    initial={{ opacity: 0, translateY: 20 }}
+                    whileInView={{ opacity: 1, translateY: 0 }}
+                    transition={{ duration: 0.8, delay: 1 }}
+                    viewport={{ once: true, amount: 1 }}
+                >
+                    <Link to="" $style={{
+                        color: GV("danger"),
+                        textTransform: "uppercase"
+                    }}>View customere stories  →</Link>
+                </motion.div>
             </Flex>
         </Subsection>
     )

@@ -1,16 +1,14 @@
 import React from "react";
-import Flex from "../../../../components/basic/flex";
-import Badge from "../../../../components/custom/badge";
-import Heading from "../../../../components/basic/heading";
-import Panel from "../../../../components/custom/panel";
+import { motion } from "framer-motion";
+import { GV } from "../../../../utils/style.util";
+
+import Subsection from "../../../../components/layout/subsection";
+import { Flex, Heading, Link, List, ListItem } from "../../../../components/basic";
+import { Badge, Panel } from "../../../../components/custom";
 
 import Image1 from "../../../../assets/img/data-kind/1.png";
 import Image2 from "../../../../assets/img/data-kind/2.png";
 import Image3 from "../../../../assets/img/data-kind/3.png";
-import List, { ListItem } from "../../../../components/basic/list";
-import Link from "../../../../components/basic/link";
-import Subsection from "../../../../components/layout/subsection";
-import { GV } from "../../../../utils/style.util";
 
 const DataKindSection = () => {
     return (
@@ -25,13 +23,27 @@ const DataKindSection = () => {
                     }
                 }
             }}>
-                <Badge>any kind of data</Badge>
+                <motion.div
+                    initial={{ opacity: 0, translateY: 20 }}
+                    whileInView={{ opacity: 1, translateY: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                >
+                    <Badge>any kind of data</Badge>
+                </motion.div>
                 <Flex $style={{
                     maxW: "900px"
                 }}>
-                    <Heading level={1} $style={{
-                        align: "center"
-                    }}>Analyze your Unique, Multidimensional data.</Heading>
+                    <motion.div
+                        initial={{ opacity: 0, translateY: 40 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
+                        <Heading level={1} $style={{
+                            align: "center"
+                        }}>Analyze your Unique, Multidimensional data.</Heading>
+                    </motion.div>
                 </Flex>
                 <Flex $style={{
                     gap: "3.5rem",
@@ -55,30 +67,37 @@ const DataKindSection = () => {
                             }
                         }
                     }}>
-                        <Panel>
-                            <Flex $style={{
-                                fDirection: "column",
-                                vAlign: "center",
-                                gap: "3rem",
-                                queries: {
-                                    768: {
-                                        gap: "1rem"
-                                    }
-                                }
-                            }}>
-                                <img src={Image1} />
-                                <List>
-                                    <ListItem $style={{
-                                        size: "20px",
-                                        queries: {
-                                            768: {
-                                                size: "12px"
-                                            }
+                        <motion.div
+                            initial={{ opacity: 0, translateY: 40 }}
+                            whileInView={{ opacity: 1, translateY: 0 }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
+                            <Panel>
+                                <Flex $style={{
+                                    fDirection: "column",
+                                    vAlign: "center",
+                                    gap: "3rem",
+                                    queries: {
+                                        768: {
+                                            gap: "1rem"
                                         }
-                                    }}>Full Motion Video</ListItem>
-                                </List>
-                            </Flex>
-                        </Panel>
+                                    }
+                                }}>
+                                    <img src={Image1} />
+                                    <List>
+                                        <ListItem $style={{
+                                            size: "20px",
+                                            queries: {
+                                                768: {
+                                                    size: "12px"
+                                                }
+                                            }
+                                        }}>Full Motion Video</ListItem>
+                                    </List>
+                                </Flex>
+                            </Panel>
+                        </motion.div>
                     </Flex>
                     <Flex $style={{
                         hAlign: "center",
@@ -90,30 +109,37 @@ const DataKindSection = () => {
                             }
                         }
                     }}>
-                        <Panel>
-                            <Flex $style={{
-                                fDirection: "column",
-                                vAlign: "center",
-                                gap: "3rem",
-                                queries: {
-                                    768: {
-                                        gap: "1rem"
-                                    }
-                                }
-                            }}>
-                                <img src={Image2} />
-                                <List>
-                                    <ListItem $style={{
-                                        size: "20px",
-                                        queries: {
-                                            768: {
-                                                size: "12px"
-                                            }
+                        <motion.div
+                            initial={{ opacity: 0, translateY: 40 }}
+                            whileInView={{ opacity: 1, translateY: 0 }}
+                            transition={{ duration: 0.5, delay: 0.4 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
+                            <Panel>
+                                <Flex $style={{
+                                    fDirection: "column",
+                                    vAlign: "center",
+                                    gap: "3rem",
+                                    queries: {
+                                        768: {
+                                            gap: "1rem"
                                         }
-                                    }}>Geospatial Data</ListItem>
-                                </List>
-                            </Flex>
-                        </Panel>
+                                    }
+                                }}>
+                                    <img src={Image2} />
+                                    <List>
+                                        <ListItem $style={{
+                                            size: "20px",
+                                            queries: {
+                                                768: {
+                                                    size: "12px"
+                                                }
+                                            }
+                                        }}>Geospatial Data</ListItem>
+                                    </List>
+                                </Flex>
+                            </Panel>
+                        </motion.div>
                     </Flex>
                     <Flex $style={{
                         hAlign: "center",
@@ -125,38 +151,52 @@ const DataKindSection = () => {
                             }
                         }
                     }}>
-                        <Panel>
-                            <Flex $style={{
-                                fDirection: "column",
-                                vAlign: "center",
-                                gap: "3rem",
-                                queries: {
-                                    768: {
-                                        gap: "1rem"
-                                    }
-                                }
-                            }}>
-                                <img src={Image3} />
-                                <List>
-                                    <ListItem $style={{
-                                        size: "20px",
-                                        queries: {
-                                            768: {
-                                                size: "12px"
-                                            }
+                        <motion.div
+                            initial={{ opacity: 0, translateY: 40 }}
+                            whileInView={{ opacity: 1, translateY: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
+                            <Panel>
+                                <Flex $style={{
+                                    fDirection: "column",
+                                    vAlign: "center",
+                                    gap: "3rem",
+                                    queries: {
+                                        768: {
+                                            gap: "1rem"
                                         }
-                                    }}>Image Data</ListItem>
-                                </List>
-                            </Flex>
-                        </Panel>
+                                    }
+                                }}>
+                                    <img src={Image3} />
+                                    <List>
+                                        <ListItem $style={{
+                                            size: "20px",
+                                            queries: {
+                                                768: {
+                                                    size: "12px"
+                                                }
+                                            }
+                                        }}>Image Data</ListItem>
+                                    </List>
+                                </Flex>
+                            </Panel>
+                        </motion.div>
                     </Flex>
                 </Flex>
-                <Link to="" $style={{
-                    color: GV("danger"),
-                    textTransform: "uppercase"
-                }}>Learn More  →</Link>
+                <motion.div
+                    initial={{ opacity: 0, translateY: 40 }}
+                    whileInView={{ opacity: 1, translateY: 0 }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                >
+                    <Link to="" $style={{
+                        color: GV("danger"),
+                        textTransform: "uppercase"
+                    }}>Learn More  →</Link>
+                </motion.div>
             </Flex>
-        </Subsection>
+        </Subsection >
     )
 }
 

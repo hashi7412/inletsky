@@ -4,13 +4,16 @@ import { GV, declearStyleVariables } from "../utils/style.util";
 
 const GlobalStyle = createGlobalStyle`
 
-	@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+	/* @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); */
 
 	:root {
 		${declearStyleVariables(variables)}
 	}
 
 	html {
+		-ms-text-size-adjust: 100%;
+		-webkit-text-size-adjust: 100%;
+
 		@media (max-width: 1200px) {
 			${declearStyleVariables(desVariables, "!important")}
 		}
@@ -22,6 +25,16 @@ const GlobalStyle = createGlobalStyle`
 		@media (max-width: 768px) {
 			${declearStyleVariables(smVariables, "!important")}
 		}
+	}
+	body {
+		box-sizing: border-box;
+		margin: 0;
+		background: ${GV('bg')};
+		font-family: 'Chakra Petch', sans-serif;
+		line-height: 150%;
+		font-size: ${GV('font-size')};
+		color: ${GV('color')};
+		overflow-x: hidden;
 	}
 	*, *::before, *::after {
 		box-sizing: inherit;
@@ -67,22 +80,6 @@ const GlobalStyle = createGlobalStyle`
 	}
 	figure{
 		margin:0;
-	}
-
-	html {
-		-ms-text-size-adjust: 100%;
-		-webkit-text-size-adjust: 100%;
-	}
-
-	body {
-		margin: 0;
-		box-sizing: border-box;
-		font-family: 'Montserrat', sans-serif;
-		background: ${GV('bg')};
-		color: ${GV('color')};
-		line-height: 150%;
-		font-size: ${GV('font-size')};
-		overflow-x: hidden;
 	}
 
 	article,

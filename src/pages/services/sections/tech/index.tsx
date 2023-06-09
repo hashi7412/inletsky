@@ -1,8 +1,10 @@
 import React from "react";
+import { motion } from "framer-motion"
+
+import Subsection from "../../../../components/layout/subsection";
 import Badge from "../../../../components/custom/badge";
-import Heading from "../../../../components/basic/heading";
-import Grid from "../../../../components/basic/grid";
-import Flex from "../../../../components/basic/flex";
+import { Flex, Grid, Heading } from "../../../../components/basic";
+
 import TechIamge1 from "../../../../assets/illustration/tech/1.svg"
 import TechIamge2 from "../../../../assets/illustration/tech/2.svg"
 import TechIamge3 from "../../../../assets/illustration/tech/3.svg"
@@ -24,15 +26,28 @@ import TechIamge18 from "../../../../assets/illustration/tech/18.svg"
 import TechIamge19 from "../../../../assets/illustration/tech/19.svg"
 import TechIamge20 from "../../../../assets/illustration/tech/20.svg"
 import TechIamge21 from "../../../../assets/illustration/tech/21.svg"
-import Subsection from "../../../../components/layout/subsection";
 
 const TechSection = () => {
     return (
         <Subsection>
             <Flex $style={{ fDirection: "column", vAlign: "center", gap: "4rem" }}>
                 <Flex $style={{ fDirection: "column", vAlign: "center", gap: "1rem" }}>
-                    <Badge>Our Favorite Folder Of The</Badge>
-                    <Heading level={1} $style={{ align: "center" }}>Technologies</Heading>
+                    <motion.div
+                        initial={{ opacity: 0, translateY: 20 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true, amount: 1 }}
+                    >
+                        <Badge>Our Favorite Folder Of The</Badge>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, translateY: 30 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 0.8, delay: 0.3 }}
+                        viewport={{ once: true, amount: 1 }}
+                    >
+                        <Heading level={1} $style={{ align: "center" }}>Technologies</Heading>
+                    </motion.div>
                 </Flex>
                 <Grid
                     $style={{
@@ -53,27 +68,174 @@ const TechSection = () => {
                         }
                     }}
                 >
-                    <img src={TechIamge1} />
-                    <img src={TechIamge2} />
-                    <img src={TechIamge3} />
-                    <img src={TechIamge4} />
-                    <img src={TechIamge5} />
-                    <img src={TechIamge6} />
-                    <img src={TechIamge7} />
-                    <img src={TechIamge8} />
-                    <img src={TechIamge9} />
-                    <img src={TechIamge10} />
-                    <img src={TechIamge11} />
-                    <img src={TechIamge12} />
-                    <img src={TechIamge13} />
-                    <img src={TechIamge14} />
-                    <img src={TechIamge15} />
-                    <img src={TechIamge16} />
-                    <img src={TechIamge17} />
-                    <img src={TechIamge18} />
-                    <img src={TechIamge19} />
-                    <img src={TechIamge20} />
-                    <img src={TechIamge21} />
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.05 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge1} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.1 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge2} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.15 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge3} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.2 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge4} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.25 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge5} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.3 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge6} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.35 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge7} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.4 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge8} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.45 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge9} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.5 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge10} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.55 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge11} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.6 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge12} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.65 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge13} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.7 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge14} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.75 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge15} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.8 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge16} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.85 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge17} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.9 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge18} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.95 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge19} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 1 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge20} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 1.05 + 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={TechIamge21} />
+                    </motion.div>
                 </Grid>
             </Flex>
         </Subsection>
