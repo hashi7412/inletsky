@@ -40,7 +40,7 @@ const HeroSection = () => {
                     >
                         <Heading level={1} $style={{
                             align: "center",
-                            mb: "1.5rem"
+                            mb: "0.5em"
                         }}>Geospatial AI</Heading>
                     </motion.div>
                     <Flex $style={{

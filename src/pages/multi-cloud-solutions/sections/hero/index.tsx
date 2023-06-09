@@ -41,7 +41,7 @@ const HeroSection = () => {
                     >
                         <Heading level={1} $style={{
                             align: "center",
-                            mb: "1.5rem"
+                            mb: "0.5em"
                         }}>Multi-Cloud Solutions</Heading>
                     </motion.div>
                     <Flex $style={{

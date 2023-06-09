@@ -41,7 +41,8 @@ const HeroSection = () => {
                         viewport={{ once: false }}
                     >
                         <Heading level={1} $style={{
-                            align: "center"
+                            align: "center",
+                            mb: "0.5em"
                         }}>BrainNet. GL JS</Heading>
                     </motion.div>
                     <Flex $style={{

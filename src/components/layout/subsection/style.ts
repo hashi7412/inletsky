@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 interface InlineSubsectionPropsType {
 	p?: string,
-	mb?:string
+	mb?: string,
+	bg?: string
 }
 
 type QueryType = { [key: string]: InlineSubsectionPropsType };
@@ -15,11 +16,13 @@ export interface StyledSubsectionPropsType extends InlineSubsectionPropsType {
 
 const setInlineStyle = ({
 	p,
-	mb
+	mb,
+	bg
 }: InlineSubsectionPropsType) => {
 	return `
 		${p ? `padding:				${p};` : ``}
 		${mb ? `margin-bottom:		${mb};` : ``}
+		${bg ? `background:			${bg};` : ``}
 	`
 }
 
@@ -46,6 +49,7 @@ export const SubsectionContainer = styled.div<StyledSubsectionPropsType>`
 	flex: 1;
 	max-width: 1400px;
 	margin: 0 auto;
+	border-radius: 1.5rem;
 
 	${({ $style }: StyledSubsectionPropsType) => setStyle({ $style })}
 `

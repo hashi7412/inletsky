@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,6 +14,7 @@ import Image3 from "../../../../assets/img/portfolio/3.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import SlideNavigate from "../../../../components/slide-navigate";
 
 const Card = styled.div<{ bg?: string }>`
     position: relative;
@@ -133,15 +134,7 @@ const NextButton = styled.div`
 
 const RecentWorkSection = () => {
 
-    const onSlidePrev = () => {
-        const prevBtn = document.querySelector('.swiper-button-prev') as HTMLElement;
-        prevBtn?.click();
-    }
-
-    const onSlideNext = () => {
-        const nextBtn = document.querySelector('.swiper-button-next') as HTMLElement;
-        nextBtn?.click();
-    }
+    const sliderRef = useRef<HTMLDivElement>(null);
 
     return (
         <Section>
@@ -175,7 +168,7 @@ const RecentWorkSection = () => {
                     </Flex>
                 </motion.div>
             </Flex>
-            <SwiperContainer>
+            <SwiperContainer ref={sliderRef}>
                 <Swiper
                     slidesPerView={2}
                     loop={true}
@@ -286,14 +279,7 @@ const RecentWorkSection = () => {
                     </SwiperSlide>
                 </Swiper>
             </SwiperContainer>
-            <Flex>
-                <PrevButton onClick={onSlidePrev}>
-                    <Icon icon="ArrowLeft" />
-                </PrevButton>
-                <NextButton onClick={onSlideNext}>
-                    <Icon icon="ArrowRight" />
-                </NextButton>
-            </Flex>
+            <SlideNavigate sliderRef={sliderRef} />
         </Section>
     )
 }
