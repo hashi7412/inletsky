@@ -1,0 +1,38 @@
+{
+    "lang": "en",
+    "name": "Inletsky",
+    "description": "BrainNet. GL JS is a Networking library for vector networking on  the Web. Its performance, real-time styling, and interactivity features set the bar for anyone building fast, immersive tech on the web.",
+
+    "explore": "EXPLORE MORE",
+
+    "menu.services": "SERVICES",
+    "menu.geospatialai": "GEOSPATIAL AI",
+    "menu.solutions": "SOLUTIONS",
+
+    "menu.login": "LOGIN",
+    "menu.resigter": "SIGNUP",
+
+    "home.hero.title": "BrainNet. GL JS",
+    "home.hero.badge": "Explore what’s new with inletsky",
+    "home.hero.desc": "BrainNet. GL JS is a Networking library for vector networking on the Web. Its performance, real-time styling, and interactivity features set the bar for anyone building fast, immersive tech on the web.",
+
+    "footer.products": "PRODUCTS",
+    "footer.products.fleet": "Fleet",
+    "footer.products.addressautofill": "Address Autofill",
+    "footer.products.navigationsdk": "Navigation SDK",
+    "footer.products.dash": "Dash",
+    "footer.products.search": "Search",
+    "footer.products.maps": "Maps",
+    "footer.products.mobilemapssdk": "Mobile Maps SDK",
+    "footer.products.studio": "Studio",
+    "footer.products.data": "Data",
+    "footer.products.vision": "Vision",
+    "footer.products.atlas": "Atlas",
+    "footer.products.pricing": "Pricing",
+
+    "footer.resources": "RESOURCES",
+    "footer.resources.industries": "Industries",
+    "footer.resources.usecases": "Use Cases",
+    "footer.resources.howtovideos": "How-to Videos",
+    "footer.resources.events": "Events"
+}

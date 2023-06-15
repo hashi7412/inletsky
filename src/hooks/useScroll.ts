@@ -15,6 +15,14 @@ const useScroll: UseScrollHookType = () => {
     const [scrollY, setScrollY] = useState<number>(bodyOffset.left);
     const [direction, setDirection] = useState<ScrollDirectionType>("");
 
+    // const scrollFunc = debounce(((e: any) => {
+    //     setBodyOffset(document.body.getBoundingClientRect());
+    //     setScrollY(-bodyOffset.top);
+    //     setScrollX(bodyOffset.left);
+    //     setDirection(lastScrollTop > -bodyOffset.top ? "down" : "up");
+    //     setLastScrollTop(-bodyOffset.top);
+    // }))
+
     const scrollFunc = ((e: any) => {
         setBodyOffset(document.body.getBoundingClientRect());
         setScrollY(-bodyOffset.top);
