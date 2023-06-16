@@ -1,0 +1,41 @@
+{
+    "lang": "zh",
+    "name": "Inletsky",
+    "description": "腦網。 GL JS 是一個用於 Web 上矢量網絡的網絡庫。 它的性能、實時樣式和交互功能為任何在網絡上構建快速、沉浸式技術的人樹立了標杆。",
+
+    "explore": "探索更多",
+
+    "menu.services": "服務",
+    "menu.geospatialai": "地理空間人工智能",
+    "menu.solutions": "解決方案",
+
+    "menu.login": "登錄",
+    "menu.resigter": "報名",
+
+    "home.hero.title": "BrainNet. GL JS",
+    "home.hero.badge": "探索 inletsky 的新功能",
+    "home.hero.desc": "腦網。 GL JS 是一個用於 Web 上矢量網絡的網絡庫。 它的性能、實時樣式和交互功能為任何在網絡上構建快速、沉浸式技術的人樹立了標杆。",
+
+    "footer.products": "產品",
+    "footer.products.fleet": "艦隊",
+    "footer.products.addressautofill": "地址自動填充",
+    "footer.products.navigationsdk": "導航SDK",
+    "footer.products.dash": "儀表板",
+    "footer.products.search": "搜索",
+    "footer.products.maps": "地圖",
+    "footer.products.mobilemapssdk": "手機地圖SDK",
+    "footer.products.studio": "工作室",
+    "footer.products.data": "數據",
+    "footer.products.vision": "想像",
+    "footer.products.atlas": "阿特拉斯",
+    "footer.products.pricing": "價錢",
+
+    "footer.resources": "資源",
+    "footer.resources.industries": "行業",
+    "footer.resources.usecases": "用例",
+    "footer.resources.howtovideos": "操作視頻",
+    "footer.resources.events": "事件",
+
+    "footer.company": "公司",
+    "footer.company.customers": "顧客"
+}
