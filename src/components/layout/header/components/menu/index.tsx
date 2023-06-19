@@ -3,6 +3,7 @@ import Flex from "../../../../basic/flex";
 import Icon from "../../../../custom/icon";
 import { Hamburger, MenuContainer, MenuLink, Nav, StyledMenuItem, Submenu, SubmenuItem } from "./style";
 import _ROUTERS from "../../../../../constants/menu.constant";
+import useStore from "../../../../../useStore";
 
 type MenuPropsType = {
     isOpen: boolean
@@ -54,14 +55,16 @@ const MenuItem: React.FC<MenuItemPropsType> = (props) => {
 }
 
 const Menu: React.FC<MenuPropsType> = ({ isOpen, closeMenu }) => {
+    const { T } = useStore();
+
     return (
         <MenuContainer isOpen={isOpen}>
             <Nav>
                 {/* <MenuItem to="" label="Home" /> */}
-                <MenuItem to={_ROUTERS.services} label="Services" />
-                <MenuItem to={_ROUTERS.geospatial_ai} label="Geospatial AI" />
-                <MenuItem to={_ROUTERS.solutions} label="Solutions" />
-                <MenuItem to="" label="Login" />
+                <MenuItem to={_ROUTERS.services} label={T("menu.services")} />
+                <MenuItem to={_ROUTERS.geospatial_ai} label={T("menu.geospatialai")} />
+                <MenuItem to={_ROUTERS.solutions} label={T("menu.solutions")} />
+                <MenuItem to="" label={T("menu.login")} />
             </Nav>
         </MenuContainer>
     )
