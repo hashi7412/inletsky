@@ -1,6 +1,5 @@
 import React from "react";
 import { StyledLink, StyledLinkPropsType } from "./style";
-import { LinkProps } from 'react-router-dom';
 
 type LinkPropsType = {
     children: any

@@ -34,5 +34,16 @@
     "footer.resources.industries": "Industries",
     "footer.resources.usecases": "Use Cases",
     "footer.resources.howtovideos": "How-to Videos",
-    "footer.resources.events": "Events"
+    "footer.resources.events": "Events",
+
+    "footer.company": "COMPANY",
+    "footer.company.customers": "Customers",
+    "footer.company.community": "Community",
+    "footer.company.careers": "Careers",
+    "footer.company.sustainability": "Sustainability",
+    "footer.company.diversity": "Diversity & Inclusion",
+    "footer.company.team": "Team",
+    "footer.company.blog": "Blog",
+    "footer.company.press": "Press",
+    "footer.company.contact": "Contact"
 }

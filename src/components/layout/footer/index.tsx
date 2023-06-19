@@ -169,6 +169,10 @@ const Footer = () => {
                         <Link to={""}>
                             <Span $style={{color: GV("color-secondary"), size: "0.8rem"}}>Security</Span>
                         </Link>
+                        <select style={{ background: "var(--bg)" }}>
+                            <option>en</option>
+                            <option>zh</option>
+                        </select>
                     </Flex>
                     <Flex $style={{ gap: "2rem", hAlign: "center" }}>
                         <Link to={""}>
