@@ -8,8 +8,12 @@ import { GV } from "../../../utils/style.util";
 import { Span } from "../../basic/text";
 import Icon from "../../custom/icon";
 import Link from "../../basic/link";
+import useStore from "../../../useStore";
 
 const Footer = () => {
+
+    const {T} = useStore();
+
     return (
         <FooterContainer>
             <Flex
@@ -32,57 +36,57 @@ const Footer = () => {
                 >
                     <Logo />
                     <Flex $style={{ fDirection: "column", gap: "0.7rem" }}>
-                        <Heading level={6} $style={{ txtTransform: "uppercase" }}>Products</Heading>
+                        <Heading level={6} $style={{ txtTransform: "uppercase" }}>{T("footer.products")}</Heading>
                         <List dir="column" gap="0.5rem">
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Fleet</Link>
+                                <Link to={""}>{T("footer.products.fleet")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Address Autofill</Link>
+                                <Link to={""}>{T("footer.products.addressautofill")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Navigation SDK</Link>
+                                <Link to={""}>{T("footer.products.navigationsdk")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Dash</Link>
+                                <Link to={""}>{T("footer.products.dash")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Search</Link>
+                                <Link to={""}>{T("footer.products.search")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Maps</Link>
+                                <Link to={""}>{T("footer.products.maps")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Mobile Maps SDK</Link>
+                                <Link to={""}>{T("footer.products.mobilemapssdk")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Studio</Link>
+                                <Link to={""}>{T("footer.products.studio")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Data</Link>
+                                <Link to={""}>{T("footer.products.data")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Vision</Link>
+                                <Link to={""}>{T("footer.products.vision")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Atlas</Link>
+                                <Link to={""}>{T("footer.products.atlas")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Pricing</Link>
+                                <Link to={""}>{T("footer.products.pricing")}</Link>
                             </ListItem>
                         </List>
                     </Flex>
                     <Flex $style={{ fDirection: "column", gap: "0.7rem" }}>
-                        <Heading level={6} $style={{ txtTransform: "uppercase" }}>Resources</Heading>
+                        <Heading level={6} $style={{ txtTransform: "uppercase" }}>{T("footer.resources")}</Heading>
                         <List dir="column" gap="0.5rem">
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Industries</Link>
+                                <Link to={""}>{T("footer.resources.industries")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Use Cases</Link>
+                                <Link to={""}>{T("footer.resources.usecases")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>How-to Videos</Link>
+                                <Link to={""}>{T("footer.resources.howtovideos")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
                                 <Link to={""}>Webinars</Link>
@@ -91,54 +95,51 @@ const Footer = () => {
                         </List>
                     </Flex>
                     <Flex $style={{ fDirection: "column", gap: "0.7rem" }}>
-                        <Heading level={6} $style={{ txtTransform: "uppercase" }}>SUPPORT</Heading>
+                        <Heading level={6} $style={{ txtTransform: "uppercase" }}>{T("footer.support")}</Heading>
                         <List dir="column" gap="0.5rem">
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Help</Link>
+                                <Link to={""}>{T("footer.support.help")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Support Services</Link>
+                                <Link to={""}>{T("footer.support.supportservices")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Documentation</Link>
+                                <Link to={""}>{T("footer.support.documentation")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Open source</Link>
+                                <Link to={""}>{T("footer.support.opensource")}</Link>
                             </ListItem>
                         </List>
                     </Flex>
                     <Flex $style={{ fDirection: "column", gap: "0.7rem" }}>
-                        <Heading level={6} $style={{ txtTransform: "uppercase" }}>company</Heading>
+                        <Heading level={6} $style={{ txtTransform: "uppercase" }}>{T("footer.company")}</Heading>
                         <List dir="column" gap="0.5rem">
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Customers</Link>
+                                <Link to={""}>{T("footer.company.customers")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Customers</Link>
+                                <Link to={""}>{T("footer.company.community")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Community</Link>
+                                <Link to={""}>{T("footer.company.careers")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Careers</Link>
+                                <Link to={""}>{T("footer.company.sustainability")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Sustainability</Link>
+                                <Link to={""}>{T("footer.company.diversity")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Diversity & Inclusion</Link>
+                                <Link to={""}>{T("footer.company.team")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Team</Link>
+                                <Link to={""}>{T("footer.company.blog")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Blog</Link>
+                                <Link to={""}>{T("footer.company.press")}</Link>
                             </ListItem>
                             <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Press</Link>
-                            </ListItem>
-                            <ListItem hideDot $style={{ size: "0.8rem", color: GV('input-color') }}>
-                                <Link to={""}>Contact</Link>
+                                <Link to={""}>{T("footer.company.contact")}</Link>
                             </ListItem>
                         </List>
                     </Flex>
@@ -158,16 +159,16 @@ const Footer = () => {
                 >
                     <Flex $style={{ gap: "1rem" }}>
                         <Link to={""}>
-                            <Span $style={{color: GV("color-secondary"), size: "0.8rem"}}>© Inletsky</Span>
+                            <Span $style={{color: GV("color-secondary"), size: "0.8rem"}}>T{"footer.copyright"}</Span>
                         </Link>
                         <Link to={""}>
-                            <Span $style={{color: GV("color-secondary"), size: "0.8rem"}}>Terms</Span>
+                            <Span $style={{color: GV("color-secondary"), size: "0.8rem"}}>T{"footer.terms"}</Span>
                         </Link>
                         <Link to={""}>
-                            <Span $style={{color: GV("color-secondary"), size: "0.8rem"}}>Privacy</Span>
+                            <Span $style={{color: GV("color-secondary"), size: "0.8rem"}}>T{"footer.privacy"}</Span>
                         </Link>
                         <Link to={""}>
-                            <Span $style={{color: GV("color-secondary"), size: "0.8rem"}}>Security</Span>
+                            <Span $style={{color: GV("color-secondary"), size: "0.8rem"}}>T{"footer.security"}</Span>
                         </Link>
                         <select style={{ background: "var(--bg)" }}>
                             <option>en</option>

@@ -8,8 +8,11 @@ import Badge from "../../../../components/custom/badge";
 import Subsection from "../../../../components/layout/subsection";
 import Flex from "../../../../components/basic/flex";
 import ExplorerButton from "../../../../components/page/explorer";
+import useStore from "../../../../useStore";
 
 const HeroSection = () => {
+    const { T } = useStore();
+
     return (
         <StyledHeroContainer>
             <Subsection $style={{
@@ -32,7 +35,7 @@ const HeroSection = () => {
                         transition={{ duration: 1 }}
                         viewport={{ once: false }}
                     >
-                        <Badge>Explore what’s new with inletsky</Badge>
+                        <Badge>{T("home.hero.badge")}</Badge>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 50 }}
@@ -43,7 +46,7 @@ const HeroSection = () => {
                         <Heading level={1} $style={{
                             align: "center",
                             mb: "0.5em"
-                        }}>BrainNet. GL JS</Heading>
+                        }}>{T("home.hero.title")}</Heading>
                     </motion.div>
                     <Flex $style={{
                         vAlign: "center",
@@ -67,7 +70,7 @@ const HeroSection = () => {
                                         size: "10px"
                                     }
                                 }
-                            }}>BrainNet. GL JS is a Networking library for vector networking on  the Web. Its performance, real-time styling, and interactivity features set the bar for anyone building fast, immersive tech on the web.</P>
+                            }}>{T("home.hero.desc")}</P>
                         </motion.div>
                     </Flex>
                 </Flex>
