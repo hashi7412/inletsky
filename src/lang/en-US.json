@@ -12,11 +12,45 @@
     "menu.login": "LOGIN",
     "menu.resigter": "SIGNUP",
 
-    "home.hero.title": "BrainNet. GL JS",
     "home.hero.badge": "Explore what’s new with inletsky",
+    "home.hero.title": "BrainNet. GL JS",
     "home.hero.desc": "BrainNet. GL JS is a Networking library for vector networking on the Web. Its performance, real-time styling, and interactivity features set the bar for anyone building fast, immersive tech on the web.",
 
-    
+    "home.clients.badge": "Trusted by the industry leaders",
+    "home.clients.title": "Our Clients",
+    "home.clients.desc": "View customere stories  →",
+
+    "home.faqs.badge": "Question people often asks",
+    "home.faqs.title": "FAQs",
+
+    "home.getstarted.badge": "You’re Good to Go",
+    "home.getstarted.title": "Ready to Get Started",
+    "home.getstarted.desc": "Ready to Get Started",
+
+    "home.networks.design.badge": "Design without limits",
+    "home.networks.design.title": "Design",
+    "home.networks.design.desc": "Style your map with lines, polygons, labels, icons, patterns, extrusions, raster & terrain with hundreds of options and a powerful expression language, not only controlling all visual aspects through the zoom range but having the freedom to change them at any time dynamically.",
+    "home.networks.design.link": "Learn more about design  →",
+
+    "home.networks.navigation.badge": "Design without limits",
+    "home.networks.navigation.title": "Navigation",
+    "home.networks.navigation.desc": "Inletsky provides powerful routing engines, accurate, traffic-powered travel times, and intuitive turn-by-turn directions to help you build engaging navigation experiences.",
+    "home.networks.navigation.link": "more about navigate  →",
+
+    "home.networks.studio.badge": "See what’s inside our studio",
+    "home.networks.studio.title": "Studio",
+    "home.networks.studio.desc": "Inletsky Studio is like Photoshop, for maps. We give designers control over everything from colors and fonts, to 3D features and camera angles, to the pitch of the map as a car enters a turn.",
+    "home.networks.studio.link": "know more about design  →",
+
+    "home.networks.maps.badge": "Experience our maps",
+    "home.networks.maps.title": "Maps",
+    "home.networks.maps.desc": "Our APIs, SDKs, and live updating map data give developers tools to build better mapping, navigation, and search experiences across platforms.",
+    "home.networks.maps.link": "more about maps  →",
+
+    "home.networks.search.badge": "Tell us what to explore",
+    "home.networks.search.title": "Search",
+    "home.networks.search.desc": "Search and geocoding is tied to everything we build — maps, navigation, AR — and underlies every app that helps humans explore their world.",
+    "home.networks.search.link": "discover search  →",
 
     "footer.products": "PRODUCTS",
     "footer.products.fleet": "Fleet",

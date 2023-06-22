@@ -10,8 +10,12 @@ import Heading from "../../../../components/basic/heading";
 import { P } from "../../../../components/basic/text";
 import Link from "../../../../components/basic/link";
 import Button from "../../../../components/custom/button";
+import useStore from "../../../../useStore";
 
 const GetStartedSection = () => {
+
+    const { T } = useStore();
+
     return (
         <Subsection>
             <motion.div
@@ -23,10 +27,10 @@ const GetStartedSection = () => {
                 <Flex $style={{ p: "0 3.125rem", queries: { 992: { p: "0 1rem" } } }}>
                     <AppDevProcessContainer>
                         <Flex $style={{ fDirection: "column", vAlign: "center", gap: "1rem" }}>
-                            <Badge>You’re Good to Go</Badge>
-                            <Heading level={1} $style={{ align: "center" }}>Ready to Get Started</Heading>
+                            <Badge>{T("home.getstarted.badge")}</Badge>
+                            <Heading level={1} $style={{ align: "center" }}>{T("home.getstarted.title")}</Heading>
                         </Flex>
-                        <P $style={{ align: "center" }}>Create an account or talk to one of our experts.</P>
+                        <P $style={{ align: "center" }}>{T("home.getstarted.desc")}</P>
                         <Flex $style={{
                             gap: "3rem"
                         }}>

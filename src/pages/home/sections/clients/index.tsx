@@ -24,8 +24,11 @@ import Img12 from "../../../../assets/illustration/partners/12.svg"
 import Img13 from "../../../../assets/illustration/partners/13.svg"
 import Img14 from "../../../../assets/illustration/partners/14.svg"
 import Img15 from "../../../../assets/illustration/partners/15.svg"
+import useStore from "../../../../useStore";
 
 const ClientSection = () => {
+    const {T} = useStore();
+
     return (
         <Subsection>
             <Flex $style={{
@@ -49,7 +52,7 @@ const ClientSection = () => {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true, amount: 1 }}
                     >
-                        <Badge>Trusted by the industry leaders</Badge>
+                        <Badge>{T("home.clients.badge")}</Badge>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 30 }}
@@ -57,7 +60,7 @@ const ClientSection = () => {
                         transition={{ duration: 0.8, delay: 0.3 }}
                         viewport={{ once: true, amount: 1 }}
                     >
-                        <Heading level={1}>Our Clients</Heading>
+                        <Heading level={1}>{T("home.clients.title")}</Heading>
                     </motion.div>
                 </Flex>
                 <Grid $style={{
@@ -202,7 +205,7 @@ const ClientSection = () => {
                     <Link to="" $style={{
                         color: GV("danger"),
                         textTransform: "uppercase"
-                    }}>View customere stories  →</Link>
+                    }}>{T("home.clients.desc")}</Link>
                 </motion.div>
             </Flex>
         </Subsection>
