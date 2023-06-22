@@ -14,6 +14,7 @@ import "swiper/css/pagination";
 import Avatar from "../../../../assets/img/avatar.png";
 import SlideNavigate from "../../../../components/slide-navigate";
 import Subsection from "../../../../components/layout/subsection";
+import useStore from "../../../../useStore";
 
 const PrevButton = styled.div`
     position: relative;
@@ -76,6 +77,7 @@ const Card = styled.div`
 
 const TestimonialsSection = () => {
 
+    const { T } = useStore();
     const sliderRef = React.useRef<HTMLDivElement>(null);
 
     const onSlidePrev = () => {
@@ -111,7 +113,7 @@ const TestimonialsSection = () => {
                         transition={{ duration: 1 }}
                         viewport={{ once: false }}
                     >
-                        <Badge>Tell us what to explore</Badge>
+                        <Badge>{T("home.testimonials.badge")}</Badge>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 50 }}
@@ -119,7 +121,7 @@ const TestimonialsSection = () => {
                         transition={{ duration: 1, delay: 0.2 }}
                         viewport={{ once: false }}
                     >
-                        <Heading level={1}>Testimonials</Heading>
+                        <Heading level={1}>{T("home.testimonials.title")}</Heading>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 50 }}
@@ -127,7 +129,7 @@ const TestimonialsSection = () => {
                         transition={{ duration: 1, delay: 0.4 }}
                         viewport={{ once: true }}
                     >
-                        <P>Search and geocoding is tied to everything we build — maps, navigation, AR — and underlies every app that helps humans explore their world.</P>
+                        <P>{T("home.testimonials.desc")}</P>
                     </motion.div>
                 </Flex>
                 <motion.div

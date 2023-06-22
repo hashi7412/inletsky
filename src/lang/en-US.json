@@ -52,6 +52,26 @@
     "home.networks.search.desc": "Search and geocoding is tied to everything we build — maps, navigation, AR — and underlies every app that helps humans explore their world.",
     "home.networks.search.link": "discover search  →",
 
+    "home.services.vision.badge": "The vision behind Inletsky",
+    "home.services.vision.title": "Vision",
+    "home.services.vision.desc": "The Inletsky Vision SDK describes every curb, lane, street sign, and road hazard it sees as data. Developers use the SDK's AI-powered semantic segmentation, object detection, and classification to deliver precise navigation guidance, display driver assistance alerts, and detect and map road incidents.",
+    "home.services.vision.link": "Discover Vision  →",
+
+    "home.services.data.badge": "Your data is our responsibility",
+    "home.services.data.title": "Data",
+    "home.services.data.desc": "The Inletsky Vision SDK describes every curb, lane, street sign, and road hazard it sees as data. Developers use the SDK's AI-powered semantic segmentation, object detection, and classification to deliver precise navigation guidance, display driver assistance alerts, and detect and map road incidents.",
+    "home.services.data.link": "more about data  →",
+
+    "home.services.atlas.badge": "Our Newest Product",
+    "home.services.atlas.title": "Atlas",
+    "home.services.atlas.desc": "With Atlas, you can self-host Inletsky maps and geocoding APIs, Streets, Satellite, and Terrain tilesets, and Inletsky Studio on your network, behind a firewall, or even air-gapped. Use Atlas to power on-premises applications using Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and Android.",
+    "home.services.atlas.link": "Try atlas  →",
+
+    "home.testimonials.badge": "Tell us what to explore",
+    "home.testimonials.title": "Testimonials",
+    "home.testimonials.desc": "Search and geocoding is tied to everything we build — maps, navigation, AR — and underlies every app that helps humans explore their world.",
+    "home.testimonials.link": "Try atlas  →",
+
     "footer.products": "PRODUCTS",
     "footer.products.fleet": "Fleet",
     "footer.products.addressautofill": "Address Autofill",
