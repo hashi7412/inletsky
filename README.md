@@ -6,6 +6,9 @@
 
 ### Codebase: Custom ui building system based on React + Styled Components + TypeScript
 
+![mobile](https://github.com/hashi7412/inletsky/assets/105185902/bd124198-1e44-4c4f-b689-f2dc1d383158) ![mobile (1)](https://github.com/hashi7412/inletsky/assets/105185902/8d8d36bc-f970-4d99-a94c-836b2f53a31f)
+
+
 ## Papar Information
 - Title:  `Inletsky`
 - Authors:  `shinobi712`, `hashi7412`
