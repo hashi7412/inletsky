@@ -4,9 +4,11 @@ import Badge from "../../../../components/custom/badge";
 import Heading from "../../../../components/basic/heading";
 import Subsection from "../../../../components/layout/subsection";
 import FaqItem from "../../../../components/page/faq-item";
+import useStore from "../../../../useStore";
 
 const FaqsSection = () => {
 
+    const { T } = useStore();
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     const setActiveItem = (index: number) => {
@@ -31,8 +33,8 @@ const FaqsSection = () => {
                 }}
             >
                 <Flex $style={{ fDirection: "column", vAlign: "center", gap: "1rem" }}>
-                    <Badge>Question people often asks</Badge>
-                    <Heading level={1} $style={{ align: "center" }}>FAQs</Heading>
+                    <Badge>{T("home.faqs.badge")}</Badge>
+                    <Heading level={1} $style={{ align: "center" }}>{T("home.faqs.title")}</Heading>
                 </Flex>
                 <Flex $style={{ fDirection: "column" }}>
                     <FaqItem
