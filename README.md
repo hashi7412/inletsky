@@ -1,13 +1,10 @@
 # Inletsky
 
-### Website: Networking library for vector networking on the web. Its performance, real-time styling, and interactivity features set the bar for anyone building fast, immersive tech on the web.
+Website:  Networking library for vector networking on the web. Its performance, real-time styling, and interactivity features set the bar for anyone building fast, immersive tech on the web.
 
 ===
 
-### Codebase: Custom ui building system based on React + Styled Components + TypeScript
-
-![mobile](https://github.com/hashi7412/inletsky/assets/105185902/bd124198-1e44-4c4f-b689-f2dc1d383158) ![mobile (1)](https://github.com/hashi7412/inletsky/assets/105185902/8d8d36bc-f970-4d99-a94c-836b2f53a31f)
-
+Codebase:  Custom ui building system based on React + Styled Components + TypeScript
 
 ## Papar Information
 - Title:  `Inletsky`
@@ -119,3 +116,6 @@
 |—— yarn.lock
 ```
 
+===
+
+![mobile](https://github.com/hashi7412/inletsky/assets/105185902/bd124198-1e44-4c4f-b689-f2dc1d383158)
