@@ -18,8 +18,12 @@ import Image3 from "../../../../assets/illustration/services/3.svg";
 import Image4 from "../../../../assets/illustration/services/4.svg";
 import Image5 from "../../../../assets/illustration/services/5.svg";
 import Image6 from "../../../../assets/illustration/services/6.svg";
+import useStore from "../../../../useStore";
 
 const DevServicesSection = () => {
+
+    const { T } = useStore();
+
     return (
         <Subsection>
             <Flex
@@ -43,7 +47,7 @@ const DevServicesSection = () => {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true, amount: 1 }}
                     >
-                        <Badge>A Wide Range of Web Application</Badge>
+                        <Badge>{T("services.dev.badge")}</Badge>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 30 }}
@@ -51,7 +55,7 @@ const DevServicesSection = () => {
                         transition={{ duration: 0.8, delay: 0.3 }}
                         viewport={{ once: true, amount: 1 }}
                     >
-                        <Heading level={1} $style={{ align: "center" }}>Developement Services</Heading>
+                        <Heading level={1} $style={{ align: "center" }}>{T("services.dev.title")}</Heading>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 30 }}
@@ -59,7 +63,7 @@ const DevServicesSection = () => {
                         transition={{ duration: 0.8, delay: 0.6 }}
                         viewport={{ once: true, amount: 1 }}
                     >
-                        <P $style={{ align: "center" }}>Light years ahead of our competitors, Inletsky offers custom web app development services and uses the latest technologies that will compel your customers to spend lavishly on your products.</P>
+                        <P $style={{ align: "center" }}>{T("services.dev.desc")}</P>
                     </motion.div>
                 </Flex>
                 <Flex
@@ -103,8 +107,8 @@ const DevServicesSection = () => {
                                                 <img src={Image1} />
                                             </Flex>
                                         </Flex>
-                                        <Heading level={4}>Progressive Web Applications (PWAs)</Heading>
-                                        <P>Invest your hard-earned money in progressive web app development to provide accessible and user-friendly online experiences.</P>
+                                        <Heading level={4}>{T("services.dev.detail.1.title")}</Heading>
+                                        <P>{T("services.dev.detail.1.desc")}</P>
                                     </Flex>
                                 </Panel>
                                 <Seperator />
@@ -139,8 +143,8 @@ const DevServicesSection = () => {
                                                 <img src={Image2} />
                                             </Flex>
                                         </Flex>
-                                        <Heading level={4}>Enterprise Web Application</Heading>
-                                        <P>Build industry-standard enterprise web apps by using our customer-centric agile methodologies and keep your business competitive.</P>
+                                        <Heading level={4}>{T("services.dev.detail.2.title")}</Heading>
+                                        <P>{T("services.dev.detail.2.desc")}</P>
                                     </Flex>
                                 </Panel>
                                 <Seperator />
@@ -170,8 +174,8 @@ const DevServicesSection = () => {
                                                 <img src={Image4} />
                                             </Flex>
                                         </Flex>
-                                        <Heading level={4}>Cloud-Based Web Applications</Heading>
-                                        <P>Hire our developers to leverage the competency of hosting web apps in the cloud, which provides additional benefits such as scale, affordability, security, and high uptime.</P>
+                                        <Heading level={4}>{T("services.dev.detail.3.title")}</Heading>
+                                        <P>{T("services.dev.detail.3.desc")}</P>
                                     </Flex>
                                 </Panel>
                                 <Seperator />
@@ -201,8 +205,8 @@ const DevServicesSection = () => {
                                                 <img src={Image3} />
                                             </Flex>
                                         </Flex>
-                                        <Heading level={4}>Web Portals</Heading>
-                                        <P>Partner with Inletsky to leverage the competency to host web apps in the cloud, which provides additional benefits such as scale, affordability, security, and high uptime.</P>
+                                        <Heading level={4}>{T("services.dev.detail.4.title")}</Heading>
+                                        <P>{T("services.dev.detail.4.desc")}</P>
                                     </Flex>
                                 </Panel>
                                 <Seperator />
@@ -237,8 +241,8 @@ const DevServicesSection = () => {
                                                 <img src={Image5} />
                                             </Flex>
                                         </Flex>
-                                        <Heading level={4}>Supply Chain Management Web Apps</Heading>
-                                        <P>Outsource web app development services to us and develop automated software to streamline the interconnected network of suppliers, manufacturers, warehouses, distributors and retailers.</P>
+                                        <Heading level={4}>{T("services.dev.detail.5.title")}</Heading>
+                                        <P>{T("services.dev.detail.5.desc")}</P>
                                     </Flex>
                                 </Panel>
                                 <Seperator />
@@ -268,8 +272,8 @@ const DevServicesSection = () => {
                                                 <img src={Image6} />
                                             </Flex>
                                         </Flex>
-                                        <Heading level={4}>Web Application Consulting</Heading>
-                                        <P>Our team enjoys the challenge of working on uncharted prospects and helps with brainstorming, analysis, and finalizing the solution landscape for web application development.</P>
+                                        <Heading level={4}>{T("services.dev.detail.6.title")}</Heading>
+                                        <P>{T("services.dev.detail.6.desc")}</P>
                                     </Flex>
                                 </Panel>
                                 <Seperator />
@@ -277,7 +281,7 @@ const DevServicesSection = () => {
                         </motion.div>
                     </Grid>
                 </Flex>
-                <Link to="" $style={{ color: GV("danger"), textTransform: "uppercase" }}>hire dedicated developement team  →</Link>
+                <Link to="" $style={{ color: GV("danger"), textTransform: "uppercase" }}>{T("services.dev.link")}</Link>
             </Flex>
         </Subsection>
     )

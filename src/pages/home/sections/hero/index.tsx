@@ -15,7 +15,7 @@ const HeroSection = () => {
 
     return (
         <StyledHeroContainer>
-            <Subsection $style={{
+            <Subsection $style={{   
                 mb: "0 auto"
             }}>
                 <Flex $style={{

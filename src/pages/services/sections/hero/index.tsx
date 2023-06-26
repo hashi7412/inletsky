@@ -12,8 +12,12 @@ import Link from "../../../../components/basic/link";
 import HeroSvg from '../../../../assets/illustration/hero.svg';
 import Subsection from "../../../../components/layout/subsection";
 import HeroContainer from "../../../../components/layout/hero";
+import useStore from "../../../../useStore";
 
 const HeroSection = () => {
+
+    const { T } = useStore();
+
     return (
         <HeroContainer>
             <Subsection $style={{
@@ -38,7 +42,7 @@ const HeroSection = () => {
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
                     >
-                        <Badge>Explore what’s new with inletsky</Badge>
+                        <Badge>{T("services.hero.badge")}</Badge>
                     </motion.div>
                     <Flex $style={{
                         vAlign: "center"
@@ -67,7 +71,7 @@ const HeroSection = () => {
                                             align: "center"
                                         }
                                     }
-                                }}>Innovative Web Solutions</Heading>
+                                }}>{T("services.hero.title")}</Heading>
                             </motion.div>
                             <motion.div
                                 initial={{ opacity: 0, translateY: 20 }}
@@ -84,7 +88,7 @@ const HeroSection = () => {
                                             }
                                         }
                                     }}
-                                >We are a leading custom web app development company that creates scalable web applications, web portals and solutions with high-quality standards. </P>
+                                >{T("services.hero.desc")}</P>
                             </motion.div>
                             <List dir="column">
                                 <motion.div
@@ -102,7 +106,7 @@ const HeroSection = () => {
                                                     size: "1rem"
                                                 }
                                             }
-                                        }}>Latest web technologies like Elixir, ReactJS, Laravel, Node.js</ListItem>
+                                        }}>{T("services.hero.details.1")}</ListItem>
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0 }}
@@ -119,7 +123,7 @@ const HeroSection = () => {
                                                     size: "1rem"
                                                 }
                                             }
-                                        }}>Wallet-friendly engagement models to hire developers</ListItem>
+                                        }}>{T("services.hero.details.2")}</ListItem>
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0 }}
@@ -136,7 +140,7 @@ const HeroSection = () => {
                                                     size: "1rem"
                                                 }
                                             }
-                                        }}>Daily collaborative meetings with product managers</ListItem>
+                                        }}>{T("services.hero.details.3")}</ListItem>
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0 }}
@@ -153,7 +157,7 @@ const HeroSection = () => {
                                                     size: "1rem"
                                                 }
                                             }
-                                        }}>Free full-cycle quality assurance</ListItem>
+                                        }}>{T("services.hero.details.4")}</ListItem>
                                 </motion.div>
                             </List>
                             <motion.div
@@ -162,7 +166,7 @@ const HeroSection = () => {
                                 transition={{ duration: 0.8, delay: 2 }}
                                 viewport={{ once: true }}
                             >
-                                <Link to="" $style={{ color: GV("danger"), textTransform: "uppercase" }}>want a free consultation  →</Link>
+                                <Link to="" $style={{ color: GV("danger"), textTransform: "uppercase" }}>{T("services.hero.link")}</Link>
                             </motion.div>
                         </Flex>
                         <ImageWrapper>
