@@ -8,7 +8,7 @@ Codebase:  Custom ui building system based on React + Styled Components + TypeSc
 
 ## Papar Information
 - Title:  `Inletsky`
-- Authors:  `shinobi712`, `hashi7412`
+- Authors:  `shinobi8894`, `hashi7412`
 - Preprint: here is [live site](https://main--inletsky-dev.netlify.app/)
 
 ## Install & Dependence
@@ -24,11 +24,11 @@ Codebase:  Custom ui building system based on React + Styled Components + TypeSc
 ## Use
 - for npm
   ```
-  npm start
+  npm dev
   ```
 - for yarn
   ```
-  yarn start
+  yarn dev
   ```
 
 ## Code Details
