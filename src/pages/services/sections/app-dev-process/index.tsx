@@ -5,8 +5,12 @@ import { AppDevProcessContainer } from "./style";
 import { Badge, Button } from "../../../../components/custom";
 import { Flex, Heading, Link, P } from "../../../../components/basic";
 import Subsection from "../../../../components/layout/subsection";
+import useStore from "../../../../useStore";
 
 const AppDevProcessSection = () => {
+
+    const { T } = useStore();
+
     return (
         <Subsection>
 
@@ -19,12 +23,12 @@ const AppDevProcessSection = () => {
                 <Flex $style={{ p: "0 3.125rem", queries: { 992: { p: "0 1rem" } } }}>
                     <AppDevProcessContainer>
                         <Flex $style={{ fDirection: "column", vAlign: "center", gap: "1rem" }}>
-                            <Badge>Need a Roadmap to a Seamless Web</Badge>
-                            <Heading level={1} $style={{ align: "center" }}>App Development Process</Heading>
+                            <Badge>{T("services.process.badge")}</Badge>
+                            <Heading level={1} $style={{ align: "center" }}>{T("services.process.title")}</Heading>
                         </Flex>
-                        <P $style={{ align: "center" }}>Schedule A 7-Day Trial To Witness Our Quality Standards</P>
+                        <P $style={{ align: "center" }}>{T("services.process.desc")}</P>
                         <Link to="">
-                            <Button>Discuss my web app development project →</Button>
+                            <Button>{T("services.process.link")}</Button>
                         </Link>
                     </AppDevProcessContainer>
                 </Flex>

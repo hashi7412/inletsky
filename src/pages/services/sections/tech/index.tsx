@@ -26,8 +26,12 @@ import TechIamge18 from "../../../../assets/illustration/tech/18.svg"
 import TechIamge19 from "../../../../assets/illustration/tech/19.svg"
 import TechIamge20 from "../../../../assets/illustration/tech/20.svg"
 import TechIamge21 from "../../../../assets/illustration/tech/21.svg"
+import useStore from "../../../../useStore";
 
 const TechSection = () => {
+
+    const { T } = useStore();
+
     return (
         <Subsection>
             <Flex $style={{ fDirection: "column", vAlign: "center", gap: "4rem" }}>
@@ -38,7 +42,7 @@ const TechSection = () => {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true, amount: 1 }}
                     >
-                        <Badge>Our Favorite Folder Of The</Badge>
+                        <Badge>{T("services.tech.badge")}</Badge>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 30 }}
@@ -46,7 +50,7 @@ const TechSection = () => {
                         transition={{ duration: 0.8, delay: 0.3 }}
                         viewport={{ once: true, amount: 1 }}
                     >
-                        <Heading level={1} $style={{ align: "center" }}>Technologies</Heading>
+                        <Heading level={1} $style={{ align: "center" }}>{T("services.tech.title")}</Heading>
                     </motion.div>
                 </Flex>
                 <Grid
