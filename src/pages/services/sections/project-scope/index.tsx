@@ -14,8 +14,12 @@ import { GV } from "../../../../utils/style.util";
 import Subsection from "../../../../components/layout/subsection";
 import CrossListItem from "../../../../components/page/cross-list-item";
 import { ColSeparator } from "../../../../components/page/cross-list-item/style";
+import useStore from "../../../../useStore";
 
 const ProjectScopeSection = () => {
+
+    const { T } = useStore();
+
     return (
         <Subsection>
             <Flex
@@ -55,37 +59,37 @@ const ProjectScopeSection = () => {
                 }}>
                     <CrossListItem
                         image={Image1}
-                        title="Designer"
-                        desc="UI/UX Designers are responsible for the whole appearance and feel of a web application, including the User Interface (UI) and User Experience (UX) design. They impact design decisions since they are in charge of the entire product design, including color, typeface, navigation, and other elements."
+                        title={T("services.scope.details.1.title")}
+                        desc={T("services.scope.details.1.desc")}
                     />
                     <ColSeparator />
                     <CrossListItem
                         isReverse
                         image={Image2}
-                        title="Backend Developer"
-                        desc="Want a clear picture of database structure, data processing, and third-party integrations? Our backend web applications developers will manage everything for you in a timely manner. They actively ensure that data is exchanged securely and efficiently."
+                        title={T("services.scope.details.2.title")}
+                        desc={T("services.scope.details.2.desc")}
                     />
                     <ColSeparator />
                     <CrossListItem
                         image={Image3}
-                        title="Frontend Developers"
-                        desc="The visual aspect of a web app is the face of your brand. Hire web app developers to determine how your users will view and interact. They bring the web app's layout to life by building scripts and collaborating with dynamic libraries and frameworks."
+                        title={T("services.scope.details.3.title")}
+                        desc={T("services.scope.details.3.desc")}
                     />
                     <ColSeparator />
                     <CrossListItem
                         isReverse
                         image={Image4}
-                        title="Product Manager"
-                        desc="Our domain-savvy product manager keeps the team focused and protects the project scope. They are in charge of the budget, planning, and ensuring that the team is filled with the greatest minds."
+                        title={T("services.scope.details.4.title")}
+                        desc={T("services.scope.details.4.desc")}
                     />
                     <ColSeparator />
                     <CrossListItem
                         image={Image5}
-                        title="Quality Assurance Engineer"
-                        desc="Our Q/A testing does not occur at the conclusion of the development process. Instead, the process begins once the team has created a UI layout and continues till the launch stage. To guarantee that the design meets the criteria, our QA assurance engineer will use automated or manual testing methods."
+                        title={T("services.scope.details.5.title")}
+                        desc={T("services.scope.details.5.desc")}
                     />
                 </Flex>
-                <Link to="" $style={{ color: GV("danger"), textTransform: "uppercase" }}>discuss my web app development project  →</Link>
+                <Link to="" $style={{ color: GV("danger"), textTransform: "uppercase" }}>{T("services.scope.link")}</Link>
             </Flex>
         </Subsection>
     )

@@ -98,6 +98,35 @@
     "services.dev.detail.6.desc": "Our team enjoys the challenge of working on uncharted prospects and helps with brainstorming, analysis, and finalizing the solution landscape for web application development.",
     "services.dev.link": "hire dedicated developement team  →",
 
+    "services.tech.badge": "Our Favorite Folder Of The",
+    "services.tech.title": "Technologies",
+
+    "services.scope.badge": "Build A Success-Driven Development team to protect your",
+    "services.scope.title": "Project Scope",
+    "services.scope.details.1.title": "Designer",
+    "services.scope.details.1.desc": "UI/UX Designers are responsible for the whole appearance and feel of a web application, including the User Interface (UI) and User Experience (UX) design. They impact design decisions since they are in charge of the entire product design, including color, typeface, navigation, and other elements.",
+    "services.scope.details.2.title": "Backend Developer",
+    "services.scope.details.2.desc": "Want a clear picture of database structure, data processing, and third-party integrations? Our backend web applications developers will manage everything for you in a timely manner. They actively ensure that data is exchanged securely and efficiently.",
+    "services.scope.details.3.title": "Frontend Developers",
+    "services.scope.details.3.desc": "The visual aspect of a web app is the face of your brand. Hire web app developers to determine how your users will view and interact. They bring the web app's layout to life by building scripts and collaborating with dynamic libraries and frameworks.",
+    "services.scope.details.4.title": "Product Manager",
+    "services.scope.details.4.desc": "Our domain-savvy product manager keeps the team focused and protects the project scope. They are in charge of the budget, planning, and ensuring that the team is filled with the greatest minds.",
+    "services.scope.details.5.title": "Quality Assurance Engineer",
+    "services.scope.details.5.desc": "Our Q/A testing does not occur at the conclusion of the development process. Instead, the process begins once the team has created a UI layout and continues till the launch stage. To guarantee that the design meets the criteria, our QA assurance engineer will use automated or manual testing methods.",
+    "services.scope.link": "discuss my web app development project  →",
+
+    "services.process.badge": "Need a Roadmap to a Seamless Web",
+    "services.process.title": "App Development Process",
+    "services.process.desc": "Schedule A 7-Day Trial To Witness Our Quality Standards",
+    "services.process.link": "DISCUSS MY WEB APP DEVELOPMENT PROJECT →",
+
+    "services.portfolio.badge": "Our Recent Work",
+    "services.portfolio.title": "Portfolio",
+    "services.portfolio.desc": "Build. Launch. Grow",
+
+    "services.faq.badge": "Question people often asks",
+    "services.faq.title": "FAQs",
+
     "footer.products": "PRODUCTS",
     "footer.products.fleet": "Fleet",
     "footer.products.addressautofill": "Address Autofill",

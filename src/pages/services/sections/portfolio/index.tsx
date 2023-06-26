@@ -15,6 +15,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import SlideNavigate from "../../../../components/slide-navigate";
 import useResize from "../../../../hooks/useResize";
+import useStore from "../../../../useStore";
 
 const Card = styled.div<{ bg?: string }>`
     position: relative;
@@ -102,6 +103,7 @@ const Section = styled.div`
 
 const PortfolioSection = () => {
 
+    const { T } = useStore();
     const sliderRef = React.useRef<HTMLDivElement>(null);
 
     const [isTablet, setIsTablet] = useState(false);
@@ -126,9 +128,9 @@ const PortfolioSection = () => {
         >
             <Section>
                 <Flex $style={{ fDirection: "column", vAlign: "center", gap: "1rem" }}>
-                    <Badge>Our Recent Work</Badge>
-                    <Heading level={1} $style={{ align: "center" }}>Portfolio</Heading>
-                    <P $style={{ align: "center" }}>Build. Launch. Grow</P>
+                    <Badge>{T("services.portfolio.badge")}</Badge>
+                    <Heading level={1} $style={{ align: "center" }}>{T("services.portfolio.title")}</Heading>
+                    <P $style={{ align: "center" }}>{T("services.portfolio.desc")}</P>
                 </Flex>
                 <SwiperContainer ref={sliderRef}>
                     <Swiper
