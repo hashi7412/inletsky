@@ -127,6 +127,38 @@
     "services.faq.badge": "Question people often asks",
     "services.faq.title": "FAQs",
 
+    "geospatial.hero.badge": "Instant automated detection,for anything.",
+    "geospatial.hero.title": "Geospatial AI.",
+    "geospatial.hero.desc": "he power to dynamically manage your ground assets and critical infrastructure.Remotely. At scale. Cost effectively.",
+
+    "geospatial.detection.badge": "order from disorder",
+    "geospatial.detection.title": "Detection in minutes, without labeled data.",
+    "geospatial.detection.desc1": "Inletsky’s LiDAR (Light Detection and Ranging) automates the analysis of large, unstructured datasets so you can train and deploy AI models radically faster than traditional approaches.",
+    "geospatial.detection.desc2": "With LiDAR, non-technical teams can build and run classification and detection models in minutes without labeled data",
+
+    "geospatial.data.badge": "any kind of data",
+    "geospatial.data.title": "Analyze your Unique, Multidimensional data.",
+    "geospatial.data.link": "Learn More  →",
+
+    "geospatial.intel.badge": "say goodbye to labeling",
+    "geospatial.intel.title": "The new standard of Intelligence.",
+    "geospatial.intel.desc": "The days of labeling data by hand over weeks, months, or even years are gone. LiDAR is an end-to-end AI pipeline that automates the analysis of a variety of large, unstructured datasets, from security camera footage to geospatial imagery. You can ingest, search, and categorize your data - build and train models - run inference - and integrate or access LiDAR through cloud-hosted APIs. Integrate LiDAR into your current workflows today to exponentially accelerate your speed-to-insight.",
+    "geospatial.intel.link": "See More Examples  →",
+
+    "geospatial.partners.badge": "WE WORK WITH SOME OF THE BEST TO UNLOCK IMPOSSIBLE AI.",
+    "geospatial.partners.title": "Our Partners",
+    "geospatial.partners.link": "View customere stories  →",
+
+    "geospatial.minute.badge": "say goodbye to labeling",
+    "geospatial.minute.title": "AI in Minutes, Not Months.",
+    "geospatial.minute.desc": "You don’t really want AI, you want answers. Getting them today takes months - or years - and costs millions of dollars. What if you could get around the problem of needing massive amounts of human-labeled data? What if you could use AI to get critical insights - even when data is unstructured or sparse? Instead of needing months of human labeling to have some base AI performance in a new situation, RAIC can get to work immediately, radically reducing the latency between data collection and actionable insights.",
+    "geospatial.minute.link": "Learn More  →",
+
+    "geospatial.reach.badge": "accelerate your speed-to-insight",
+    "geospatial.reach.title": "Reach Us",
+    "geospatial.reach.desc": "What if you could develop and train AI models in minutes without labeled data? Let us help you transcend data limitations and unleash the value of AI in your business today.",
+    "geospatial.reach.link": "Let’s Talk →",
+
     "footer.products": "PRODUCTS",
     "footer.products.fleet": "Fleet",
     "footer.products.addressautofill": "Address Autofill",

@@ -9,8 +9,12 @@ import { Badge, Panel } from "../../../../components/custom";
 import Image1 from "../../../../assets/img/data-kind/1.png";
 import Image2 from "../../../../assets/img/data-kind/2.png";
 import Image3 from "../../../../assets/img/data-kind/3.png";
+import useStore from "../../../../useStore";
 
 const DataKindSection = () => {
+
+    const { T } = useStore();
+
     return (
         <Subsection>
             <Flex $style={{
@@ -29,7 +33,7 @@ const DataKindSection = () => {
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true, amount: 0.5 }}
                 >
-                    <Badge>any kind of data</Badge>
+                    <Badge>{T("geospatial.data.badge")}</Badge>
                 </motion.div>
                 <Flex $style={{
                     maxW: "900px"
@@ -42,7 +46,7 @@ const DataKindSection = () => {
                     >
                         <Heading level={1} $style={{
                             align: "center"
-                        }}>Analyze your Unique, Multidimensional data.</Heading>
+                        }}>{T("geospatial.data.title")}</Heading>
                     </motion.div>
                 </Flex>
                 <Flex $style={{
@@ -193,7 +197,7 @@ const DataKindSection = () => {
                     <Link to="" $style={{
                         color: GV("danger"),
                         textTransform: "uppercase"
-                    }}>Learn More  →</Link>
+                    }}>{T("geospatial.data.link")}</Link>
                 </motion.div>
             </Flex>
         </Subsection >

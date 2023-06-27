@@ -6,8 +6,12 @@ import { Heading, P, Flex } from "../../../../components/basic";
 import { Badge } from "../../../../components/custom";
 import Subsection from "../../../../components/layout/subsection";
 import ExplorerButton from "../../../../components/page/explorer";
+import useStore from "../../../../useStore";
 
 const HeroSection = () => {
+
+    const { T } = useStore();
+
     return (
         <StyledHeroContainer>
             <Subsection $style={{
@@ -30,7 +34,7 @@ const HeroSection = () => {
                         transition={{ duration: 1 }}
                         viewport={{ once: false }}
                     >
-                        <Badge>Instant automated detection,for anything.</Badge>
+                        <Badge>{T("geospatial.hero.badge")}</Badge>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 50 }}
@@ -41,7 +45,7 @@ const HeroSection = () => {
                         <Heading level={1} $style={{
                             align: "center",
                             mb: "0.5em"
-                        }}>Geospatial AI</Heading>
+                        }}>{T("geospatial.hero.title")}</Heading>
                     </motion.div>
                     <Flex $style={{
                         vAlign: "center",
@@ -65,7 +69,7 @@ const HeroSection = () => {
                                         size: "10px"
                                     }
                                 }
-                            }}>he power to dynamically manage your ground assets and critical infrastructure.Remotely. At scale. Cost effectively.</P>
+                            }}>{T("geospatial.hero.desc")}</P>
                         </motion.div>
                     </Flex>
 

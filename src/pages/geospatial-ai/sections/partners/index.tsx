@@ -11,8 +11,12 @@ import Img2 from "../../../../assets/illustration/partners/2.svg"
 import Img3 from "../../../../assets/illustration/partners/3.svg"
 import Img4 from "../../../../assets/illustration/partners/4.png"
 import Img5 from "../../../../assets/illustration/partners/5.svg"
+import useStore from "../../../../useStore";
 
 const PatnersSection = () => {
+
+    const { T } = useStore();
+
     return (
         <Subsection>
             <Flex $style={{
@@ -36,7 +40,7 @@ const PatnersSection = () => {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true, amount: 1 }}
                     >
-                        <Badge>WE WORK WITH SOME OF THE BEST TO UNLOCK IMPOSSIBLE AI.</Badge>
+                        <Badge>{T("geospatial.partners.badge")}</Badge>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 30 }}
@@ -44,7 +48,7 @@ const PatnersSection = () => {
                         transition={{ duration: 0.8, delay: 0.3 }}
                         viewport={{ once: true, amount: 1 }}
                     >
-                        <Heading level={1}>Our Partners</Heading>
+                        <Heading level={1}>{T("geospatial.partners.title")}</Heading>
                     </motion.div>
                 </Flex>
                 <Grid $style={{
@@ -109,7 +113,7 @@ const PatnersSection = () => {
                     <Link to="" $style={{
                         color: GV("danger"),
                         textTransform: "uppercase"
-                    }}>View customere stories  →</Link>
+                    }}>{T("geospatial.partners.link")}</Link>
                 </motion.div>
             </Flex>
         </Subsection>
