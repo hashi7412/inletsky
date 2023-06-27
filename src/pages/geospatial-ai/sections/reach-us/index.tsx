@@ -5,8 +5,12 @@ import { Container } from "./style";
 
 import { Flex, Heading, P } from "../../../../components/basic";
 import { Badge, Button } from "../../../../components/custom";
+import useStore from "../../../../useStore";
 
 const ReachUsSection = () => {
+
+    const { T } = useStore();
+
     return (
         <motion.div
             initial={{ opacity: 0, translateY: 20 }}
@@ -34,10 +38,10 @@ const ReachUsSection = () => {
                             }
                         }}
                     >
-                        <Badge>accelerate your speed-to-insight</Badge>
+                        <Badge>{T("geospatial.reach.badge")}</Badge>
                         <Heading level={1} $style={{
                             align: "center"
-                        }}>Reach Us</Heading>
+                        }}>{T("geospatial.reach.title")}</Heading>
                         <P $style={{
                             align: "center",
                             size: "20px",
@@ -46,10 +50,10 @@ const ReachUsSection = () => {
                                     size: "10px"
                                 }
                             }
-                        }}>What if you could develop and train AI models in minutes without labeled data? Let us help you transcend data limitations and unleash the value of AI in your business today.</P>
+                        }}>{T("geospatial.reach.desc")}</P>
                         <Button $style={{
                             bg: GV("danger")
-                        }}>Let’s Talk →</Button>
+                        }}>{T("geospatial.reach.link")}</Button>
                     </Flex>
                 </Flex>
             </Container>

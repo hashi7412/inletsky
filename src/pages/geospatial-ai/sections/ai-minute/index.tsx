@@ -8,8 +8,12 @@ import { Badge } from "../../../../components/custom";
 
 import Image from "../../../../assets/img/ai-in-minutes-not-months.png";
 import { ImageWrapper } from "./style";
+import useStore from "../../../../useStore";
 
 const AiMinuteSection = () => {
+
+    const { T } = useStore();
+
     return (
         <Subsection>
             <Flex $style={{
@@ -43,7 +47,7 @@ const AiMinuteSection = () => {
                             transition={{ duration: 0.5 }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <Badge>say goodbye to labeling</Badge>
+                            <Badge>{T("geospatial.minute.badge")}</Badge>
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, translateY: 40 }}
@@ -57,7 +61,7 @@ const AiMinuteSection = () => {
                                         align: "center"
                                     }
                                 }
-                            }}>AI in Minutes, Not Months.</Heading>
+                            }}>{T("geospatial.minute.title")}</Heading>
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, translateY: 50 }}
@@ -73,7 +77,7 @@ const AiMinuteSection = () => {
                                         size: "10px"
                                     }
                                 }
-                            }}>You don’t really want AI, you want answers. Getting them today takes months - or years - and costs millions of dollars. What if you could get around the problem of needing massive amounts of human-labeled data? What if you could use AI to get critical insights - even when data is unstructured or sparse? Instead of needing months of human labeling to have some base AI performance in a new situation, RAIC can get to work immediately, radically reducing the latency between data collection and actionable insights.</P>
+                            }}>{T("geospatial.minute.desc")}</P>
                         </motion.div>
                     </Flex >
                     <ImageWrapper>
@@ -96,7 +100,7 @@ const AiMinuteSection = () => {
                     <Link to="" $style={{
                         color: GV("danger"),
                         textTransform: "uppercase"
-                    }}>Learn More  →</Link>
+                    }}>{T("geospatial.minute.link")}</Link>
                 </motion.div>
             </Flex>
         </Subsection>

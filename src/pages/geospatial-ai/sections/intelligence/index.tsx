@@ -8,8 +8,12 @@ import { Flex, Heading, P, Link } from "../../../../components/basic";
 import { Badge } from "../../../../components/custom";
 
 import Image from "../../../../assets/img/new-standard-of-intelligence.png";
+import useStore from "../../../../useStore";
 
 const IntelligenceSection = () => {
+
+    const { T } = useStore();
+
     return (
         <Container>
             <Subsection mb="0px">
@@ -49,7 +53,7 @@ const IntelligenceSection = () => {
                                 transition={{ duration: 0.5 }}
                                 viewport={{ once: true, amount: 0.5 }}
                             >
-                                <Badge>say goodbye to labeling</Badge>
+                                <Badge>{T("geospatial.intel.badge")}</Badge>
                             </motion.div>
                             <motion.div
                                 initial={{ opacity: 0, translateY: 40 }}
@@ -64,7 +68,7 @@ const IntelligenceSection = () => {
                                             align: "center"
                                         }
                                     }
-                                }}>The new standard of Intelligence.</Heading>
+                                }}>{T("geospatial.intel.title")}</Heading>
                             </motion.div>
                             <motion.div
                                 initial={{ opacity: 0, translateY: 50 }}
@@ -81,7 +85,7 @@ const IntelligenceSection = () => {
                                             size: "10px"
                                         }
                                     }
-                                }}>The days of labeling data by hand over weeks, months, or even years are gone. LiDAR is an end-to-end AI pipeline that automates the analysis of a variety of large, unstructured datasets, from security camera footage to geospatial imagery. You can ingest, search, and categorize your data - build and train models - run inference - and integrate or access LiDAR through cloud-hosted APIs. Integrate LiDAR into your current workflows today to exponentially accelerate your speed-to-insight.</P>
+                                }}>{T("geospatial.intel.desc")}</P>
                             </motion.div>
                         </Flex>
                     </Flex>
@@ -94,7 +98,7 @@ const IntelligenceSection = () => {
                         <Link to="" $style={{
                             color: GV("danger"),
                             textTransform: "uppercase"
-                        }}>See More Examples  →</Link>
+                        }}>{T("geospatial.intel.link")}</Link>
                     </motion.div>
                 </Flex>
             </Subsection>

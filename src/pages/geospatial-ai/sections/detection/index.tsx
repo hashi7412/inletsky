@@ -8,8 +8,12 @@ import { Badge } from "../../../../components/custom";
 import DetectImg from "../../../../assets/illustration/detect/detect.svg";
 import Detect1Img from "../../../../assets/illustration/detect/detect1.svg";
 import Detect2Img from "../../../../assets/illustration/detect/detect2.svg";
+import useStore from "../../../../useStore";
 
 const DetectionSection = () => {
+
+    const { T } = useStore();
+
     return (
         <Subsection>
             <Flex $style={{
@@ -42,7 +46,7 @@ const DetectionSection = () => {
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true, amount: 0.5 }}
                     >
-                        <Badge>order from disorder</Badge>
+                        <Badge>{T("geospatial.detection.badge")}</Badge>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 40 }}
@@ -56,7 +60,7 @@ const DetectionSection = () => {
                                     align: "center"
                                 }
                             }
-                        }}>Detection in minutes, without labeled data.</Heading>
+                        }}>{T("geospatial.detection.title")}</Heading>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 50 }}
@@ -78,7 +82,7 @@ const DetectionSection = () => {
                                         size: "10px"
                                     }
                                 }
-                            }}>Inletsky’s LiDAR (Light Detection and Ranging) automates the analysis of large, unstructured datasets so you can train and deploy AI models radically faster than traditional approaches.</P>
+                            }}>{T("geospatial.detection.desc1")}</P>
                         </Flex>
                     </motion.div>
                     <motion.div
@@ -101,7 +105,7 @@ const DetectionSection = () => {
                                         size: "10px"
                                     }
                                 }
-                            }}>With LiDAR, non-technical teams can build and run classification and detection models in minutes without labeled data</P>
+                            }}>{T("geospatial.detection.desc2")}</P>
                         </Flex>
                     </motion.div>
                 </Flex>
