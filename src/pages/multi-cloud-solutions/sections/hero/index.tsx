@@ -6,9 +6,12 @@ import ExplorerButton from "../../../../components/page/explorer";
 import Subsection from "../../../../components/layout/subsection";
 import { Flex, Heading, P } from "../../../../components/basic";
 import { Badge } from "../../../../components/custom";
-
+import useStore from "../../../../useStore";
 
 const HeroSection = () => {
+
+    const { T } = useStore();
+
     return (
         <StyledHeroContainer>
             <Subsection $style={{
@@ -31,7 +34,7 @@ const HeroSection = () => {
                         transition={{ duration: 1 }}
                         viewport={{ once: false }}
                     >
-                        <Badge>Most cost-effective way possible through cloud IT solutions</Badge>
+                        <Badge>{T("solution.hero.badge")}</Badge>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 50 }}
@@ -42,7 +45,7 @@ const HeroSection = () => {
                         <Heading level={1} $style={{
                             align: "center",
                             mb: "0.5em"
-                        }}>Multi-Cloud Solutions</Heading>
+                        }}>{T("solution.hero.title")}</Heading>
                     </motion.div>
                     <Flex $style={{
                         vAlign: "center",
@@ -66,7 +69,7 @@ const HeroSection = () => {
                                         size: "10px"
                                     }
                                 }
-                            }}>Having your data and applications located in the optimal cloud environment for your workloads not only delivers performance benefits, it also enables you to enjoy huge cost savings.</P>
+                            }}>{T("solution.hero.desc")}</P>
                         </motion.div>
                     </Flex>
                     <ExplorerButton />
