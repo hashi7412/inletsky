@@ -11,8 +11,12 @@ import Image2 from "../../../../assets/illustration/services/2.svg";
 import Image3 from "../../../../assets/illustration/services/3.svg";
 import Image4 from "../../../../assets/illustration/services/4.svg";
 import Image5 from "../../../../assets/illustration/services/5.svg";
+import useStore from "../../../../useStore";
 
 const SolutionSection = () => {
+
+    const { T } = useStore();
+
     return (
         <Subsection>
             <Flex $style={{

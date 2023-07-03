@@ -5,8 +5,12 @@ import { GV } from "../../../../utils/style.util";
 import Subsection from "../../../../components/layout/subsection";
 import { Flex, Heading, P } from "../../../../components/basic";
 import { Badge, Panel, Button, Input } from "../../../../components/custom";
+import useStore from "../../../../useStore";
 
 const DeliveringSection = () => {
+
+    const { T } = useStore();
+
     return (
         <Subsection>
             <Flex $style={{
@@ -36,7 +40,7 @@ const DeliveringSection = () => {
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true, amount: 0.5 }}
                 >
-                    <Badge>Delivering optimal architecture and performance</Badge>
+                    <Badge>{T("solution.hero.badge")}</Badge>
                             </motion.div>
                             <motion.div
                                 initial={{ opacity: 0, translateY: 40 }}
@@ -50,7 +54,7 @@ const DeliveringSection = () => {
                                 align: "center"
                             }
                         }
-                    }}>Cost-effective way possible through cloud IT solutions.</Heading>
+                    }}>{T("solution.delivering.title")}</Heading>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 50 }}
@@ -69,7 +73,7 @@ const DeliveringSection = () => {
                                 size: "10px"
                             }
                         }
-                    }}>Designed, implemented, and managed to deliver the highest performing and most secure business cloud solutions, Inletsky Multi-Cloud and Hybrid Cloud Solutions deliver the right application for your modern, dynamic, and flexible working environment.</P>
+                    }}>{T("solution.delivering.desc1")}</P>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 50 }}
@@ -88,7 +92,7 @@ const DeliveringSection = () => {
                                 size: "10px"
                             }
                         }
-                    }}>And because Inletsky fully managed Hybrid and Multi-Cloud environments can be reconfigured at the flick of a switch to respond to the changing rhythm of your business, you enjoy complete freedom, flexibility, and control in the cloud.</P>
+                    }}>{T("solution.delivering.desc2")}</P>
                     </motion.div>
                 </Flex>
                 <Flex $style={{
@@ -106,8 +110,8 @@ const DeliveringSection = () => {
                                 gap: "2rem",
                                 p: "5rem 0"
                             }}>
-                                <Heading level={3}>Free Download: Cloud Best Practice Top Ten Checklist</Heading>
-                                <P>The top-ten priorities for selecting the right cloud services for your business. Our step-by-step checklist puts you in the know.</P>
+                                <Heading level={3}>{T("solution.delivering.form.title")}</Heading>
+                                <P>{T("solution.delivering.form.desc")}</P>
                                 <Input placeholder="Name*" value="" />
                                 <Input placeholder="Email*" value="" />
                                 <Button $style={{
