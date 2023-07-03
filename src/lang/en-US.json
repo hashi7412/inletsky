@@ -174,6 +174,21 @@
     "solution.solution.title": "Business Cloud Solutions",
     "solution.solution.desc": "Hybrid and Multi-Cloud environment",
 
+    "solution.solution.detail1.title": "Security by Default",
+    "solution.solution.detail1.desc": "At Inletsky, security is built into all our services and solutions by default. Our Managed IT Security Services experts will ensure you have complete control and confidence in the integrity of your data and the efficacy of your security systems, procedures, and protocols.",
+    "solution.solution.detail2.title": "Managed Multi Cloud",
+    "solution.solution.detail2.desc": "Inletsky Managed Multi-cloud service ensures you always get the best performing architecture for your applications and workloads. Understanding how and where your business is using its application and services allows us to align your cloud IT solutions with your business operations to risk, complexity, and cost.",
+    "solution.solution.detail3.title": "Virtual Data Centre",
+    "solution.solution.detail3.desc": "As an experienced Hybrid and Multi-Cloud solution provider, we’ll provision and de-provision resources in response to your changing needs. To ensure you get the ongoing support you need, our co-managed environment allows your IT teams to collaborate with our local Inletsky engineers as if Inletsky was an extension of your own data center. This is a fully flexible service based on your internal capabilities and capacity.",
+    "solution.solution.detail4.title": "Cloud Migration",
+    "solution.solution.detail4.desc": "Because you need to be able to respond to changing market conditions, as part of Inletsky Hybrid and Multi-cloud solutions, we also deliver Cloud Migration solutions to enable a speedy and efficient platform migration and modernization. Our Cloud Services team can migrate different types of platforms to keep them updated and operating at peak performance. This includes your Public Cloud migrations to AWS and Azure.",
+    "solution.solution.detail5.title": "Security by Default",
+    "solution.solution.detail5.desc": "At Inletsky, security is built into all our services and solutions by default. Our Managed IT Security Services experts will ensure you have complete control and confidence in the integrity of your data and the efficacy of your security systems, procedures, and protocols.",
+
+    "solution.recentwork.badge": "Our Recent Work",
+    "solution.recentwork.title": "Optimal performance",
+    "solution.recentwork.desc": "With no need to restrict applications or workloads to one type of business cloud solution, organisations are adopting our Hybrid and Multi-Cloud model because it delivers a fluid mix of cloud computing solutions with exceptional business outcomes.",
+
     "footer.products": "PRODUCTS",
     "footer.products.fleet": "Fleet",
     "footer.products.addressautofill": "Address Autofill",

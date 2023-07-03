@@ -16,6 +16,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import SlideNavigate from "../../../../components/slide-navigate";
 import useResize from "../../../../hooks/useResize";
+import useStore from "../../../../useStore";
 
 const Card = styled.div<{ bg?: string }>`
     position: relative;
@@ -139,10 +140,9 @@ const NextButton = styled.div`
 
 const RecentWorkSection = () => {
 
+    const { T } = useStore();
     const sliderRef = useRef<HTMLDivElement>(null);
-
     const [isTablet, setIsTablet] = useState(false);
-
     const [w,] = useResize();
 
     useEffect(() => {
@@ -162,7 +162,7 @@ const RecentWorkSection = () => {
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true, amount: 1 }}
                 >
-                    <Badge>Our Recent Work</Badge>
+                    <Badge>{T("solution.recentwork.badge")}</Badge>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, translateY: 30 }}
@@ -170,7 +170,7 @@ const RecentWorkSection = () => {
                     transition={{ duration: 0.8, delay: 0.3 }}
                     viewport={{ once: true, amount: 1 }}
                 >
-                    <Heading level={1} $style={{ align: "center" }}>Optimal performance</Heading>
+                    <Heading level={1} $style={{ align: "center" }}>{T("solution.recentwork.title")}</Heading>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, translateY: 30 }}
@@ -181,7 +181,7 @@ const RecentWorkSection = () => {
                     <Flex $style={{
                         maxW: "992px"
                     }}>
-                        <P $style={{ align: "center" }}>With no need to restrict applications or workloads to one type of business cloud solution, organisations are adopting our Hybrid and Multi-Cloud model because it delivers a fluid mix of cloud computing solutions with exceptional business outcomes.</P>
+                        <P $style={{ align: "center" }}>{T("solution.recentwork.desc")}</P>
                     </Flex>
                 </motion.div>
             </Flex>
