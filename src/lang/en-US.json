@@ -127,6 +127,12 @@
     "services.faq.badge": "Question people often asks",
     "services.faq.title": "FAQs",
 
+    "services.contact.badge": "Let Us Know What You’re Looking for",
+    "services.contact.title": "We’ll Build it for You",
+    "services.contact.desc": "We are passionate about delivering great software and services.",
+    "services.contact.term": "I agree to the Terms & Conditions*",
+    "services.contact.link": "Send message →",
+
     "geospatial.hero.badge": "Instant automated detection,for anything.",
     "geospatial.hero.title": "Geospatial AI.",
     "geospatial.hero.desc": "he power to dynamically manage your ground assets and critical infrastructure.Remotely. At scale. Cost effectively.",
@@ -188,6 +194,12 @@
     "solution.recentwork.badge": "Our Recent Work",
     "solution.recentwork.title": "Optimal performance",
     "solution.recentwork.desc": "With no need to restrict applications or workloads to one type of business cloud solution, organisations are adopting our Hybrid and Multi-Cloud model because it delivers a fluid mix of cloud computing solutions with exceptional business outcomes.",
+
+    "solution.env.product.1.title": "Selecting the Right Cloud for Your Business.",
+    "solution.env.product.1.desc": "There are a myriad of cloud options and service levels available today – the challenge is to ensure that service capabilities align with your business requirements and help your business accelerate growth and unlock innovation.",
+
+    "solution.env.product.2.title": "Selecting the Right Cloud for Your Business.",
+    "solution.env.product.2.desc": "There are a myriad of cloud options and service levels available today – the challenge is to ensure that service capabilities align with your business requirements and help your business accelerate growth and unlock innovation.",
 
     "footer.products": "PRODUCTS",
     "footer.products.fleet": "Fleet",

@@ -5,9 +5,11 @@ import { GV } from "../../../../utils/style.util";
 import { Flex, Heading, P } from "../../../../components/basic";
 import { Badge, Panel, Input, Textarea, Button, Checkbox } from "../../../../components/custom";
 import Subsection from "../../../../components/layout/subsection";
+import useStore from "../../../../useStore";
 
 const ContactSection = () => {
 
+    const { T } = useStore();
     const [isAgreed, setIsAgreed] = useState<boolean>(false);
     return (
         <Subsection>
@@ -30,7 +32,7 @@ const ContactSection = () => {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true, amount: 1 }}
                     >
-                        <Badge>Let Us Know What You’re Looking for</Badge>
+                        <Badge>{T("services.contact.badge")}</Badge>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 30 }}
@@ -38,7 +40,7 @@ const ContactSection = () => {
                         transition={{ duration: 0.8, delay: 0.3 }}
                         viewport={{ once: true, amount: 1 }}
                     >
-                        <Heading level={1} $style={{ align: "center" }}>We’ll Build it for You</Heading>
+                        <Heading level={1} $style={{ align: "center" }}>{T("services.contact.title")}</Heading>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, translateY: 30 }}
@@ -46,7 +48,7 @@ const ContactSection = () => {
                         transition={{ duration: 0.8, delay: 0.6 }}
                         viewport={{ once: true, amount: 1 }}
                     >
-                        <P $style={{ align: "center" }}>We are passionate about delivering great software and services.</P>
+                        <P $style={{ align: "center" }}>{T("services.contact.desc")}</P>
                     </motion.div>
                 </Flex>
                 <motion.div
@@ -79,13 +81,13 @@ const ContactSection = () => {
                                 <Input value="" onChange={() => { }} placeholder="How did you hear about Inletsky?" />
                                 <Textarea value="" onChange={() => { }} placeholder="Message" />
                                 <Checkbox
-                                    label={"I agree to the Terms & Conditions*"}
+                                    label={T("services.contact.term")}
                                     isChecked={isAgreed}
                                     onChange={() => setIsAgreed((prev) => !prev)}
                                 />
                             </Flex>
                             <Flex $style={{ hAlign: "center" }}>
-                                <Button $style={{ bg: GV("danger") }}>Send message →</Button>
+                                <Button $style={{ bg: GV("danger") }}>{T("services.contact.link")}</Button>
                             </Flex>
                         </Flex>
                     </Panel>
