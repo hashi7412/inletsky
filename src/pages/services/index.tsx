@@ -6,7 +6,7 @@ import ProjectScopeSection from "./sections/project-scope";
 import AppDevProcessSection from "./sections/app-dev-process";
 import PortfolioSection from "./sections/portfolio";
 import FaqsSection from "./sections/faqs";
-import ContactSection from "./sections/contact";
+import ContactSection from "../../components/page/contact-page";
 
 const ServicesPage: React.FC = () => {
     return (
