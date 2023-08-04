@@ -4,8 +4,8 @@ import DeliveringSection from "./sections/delivering";
 import SolutionSection from "./sections/solutions";
 import RecentWorkSection from "./sections/recent-work";
 import EnvironmentSection from "./sections/environment";
-import ContactSection from "../services/sections/contact";
 import { BgSection } from "./style";
+import ContactSection from "../../components/page/contact-page";
 
 const MultiCouldSolutionsPage = () => {
     return (

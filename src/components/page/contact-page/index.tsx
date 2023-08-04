@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { GV } from "../../../../utils/style.util";
+import useStore from "../../../useStore";
+import Subsection from "../../layout/subsection";
+import { Flex, Heading, P } from "../../basic";
+import { Badge, Button, Checkbox, Input, Panel, Textarea } from "../../custom";
+import { GV } from "../../../utils/style.util";
 
-import { Flex, Heading, P } from "../../../../components/basic";
-import { Badge, Panel, Input, Textarea, Button, Checkbox } from "../../../../components/custom";
-import Subsection from "../../../../components/layout/subsection";
-import useStore from "../../../../useStore";
 
 const ContactSection = () => {
 
