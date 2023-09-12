@@ -120,4 +120,4 @@ Codebase:  Custom ui building system based on React + Styled Components + TypeSc
 
 ![mobile](https://github.com/hashi7412/inletsky/assets/105185902/bd124198-1e44-4c4f-b689-f2dc1d383158)
 
-Created by Hashi
+Created by Hashi and lbayer
